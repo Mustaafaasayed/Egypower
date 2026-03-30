@@ -5,9 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Egypower | خدمات الديزل المتكاملة في مصر – صيانة، قطع غيار، ضبط طلمبات</title>
 <meta name="description" content="Egypower – الوكيل الحصري لـ Boten Diesel و Deqpa في مصر. نقدم صيانة الديزل الثقيل، قطع الغيار الأصلية، وضبط الطلمبات ووحدات الحقن منذ 2000.">
-<meta name="keywords" content="صيانة ديزل مصر, قطع غيار ديزل, ضبط طلمبات, وحدات حقن, Boten Diesel Egypt, Deqpa Egypt, diesel maintenance Egypt, Egypower, طنطا">
+<meta name="keywords" content="صيانة ديزل مصر, قطع غيار ديزل, ضبط طلمبات, وحدات حقن, Boten Diesel Egypt, Deqpa Egypt, diesel maintenance Egypt, Egypower">
 <meta property="og:title" content="Egypower | خدمات الديزل المتكاملة في مصر">
-<meta property="og:description" content="الوكيل الحصري لـ Boten Diesel و Deqpa – صيانة، قطع غيار أصلية، وضبط طلمبات ووحدات حقن. طنطا، مصر.">
+<meta property="og:description" content="الوكيل الحصري لـ Boten Diesel و Deqpa – صيانة، قطع غيار أصلية، وضبط طلمبات ووحدات حقن. المطرية، القاهرة.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="ar_EG">
 <meta name="robots" content="index, follow">
@@ -17,12 +17,14 @@
   "@type": "LocalBusiness",
   "name": "Egypower",
   "description": "Comprehensive diesel services in Egypt – maintenance, imported spare parts, pump and injection calibration.",
-  "telephone": "+201000000000",
+  "telephone": "+201116998695",
   "email": "egypower@gmail.com",
   "address": {
     "@type": "PostalAddress",
-    "addressLocality": "Tanta",
-    "addressRegion": "Gharbia",
+    "streetAddress": "477P+RQR, Abd Allah Hussein Abd El-Hady, Al Izab",
+    "addressLocality": "El Matareya",
+    "addressRegion": "Cairo",
+    "postalCode": "4530001",
     "addressCountry": "EG"
   },
   "foundingDate": "2000",
@@ -30,804 +32,239 @@
   "serviceType": ["Diesel Maintenance", "Pump Calibration", "Injection Units", "Imported Spare Parts"]
 }
 </script>
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Barlow+Condensed:wght@500;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<link rel="stylesheet" href="css/style.css">
-
 <style>
 :root {
-  --navy: #0a1628;
-  --navy-mid: #0f2040;
-  --navy-light: #1a3260;
-  --blue: #1565C0;
-  --blue-bright: #1976D2;
-  --blue-glow: #2196F3;
-  --gold: #F59E0B;
-  --gold-light: #FCD34D;
-  --white: #FFFFFF;
-  --gray-100: #F1F5F9;
-  --gray-200: #E2E8F0;
-  --gray-400: #94A3B8;
-  --gray-600: #475569;
-  --gray-800: #1E293B;
-  --text-main: #0f172a;
-  --text-muted: #64748b;
+  --navy: #0a1628; --navy-mid: #0f2040; --navy-light: #1a3260;
+  --blue: #1565C0; --blue-bright: #1976D2; --blue-glow: #2196F3;
+  --gold: #F59E0B; --gold-light: #FCD34D;
+  --white: #FFFFFF; --gray-100: #F1F5F9; --gray-200: #E2E8F0;
+  --gray-400: #94A3B8; --gray-600: #475569; --gray-800: #1E293B;
+  --text-main: #0f172a; --text-muted: #64748b;
 }
-
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
 html { font-size: 16px; }
-
-body {
-  font-family: 'Cairo', sans-serif;
-  background: var(--white);
-  color: var(--text-main);
-  direction: rtl;
-  overflow-x: hidden;
-}
-
-body.ltr {
-  direction: ltr;
-  font-family: 'Barlow Condensed', 'Cairo', sans-serif;
-}
-
-/* ─── SCROLLBAR ─── */
+body { font-family: 'Cairo', sans-serif; background: var(--white); color: var(--text-main); direction: rtl; overflow-x: hidden; }
+body.ltr { direction: ltr; font-family: 'Barlow Condensed', 'Cairo', sans-serif; }
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: var(--navy); }
 ::-webkit-scrollbar-thumb { background: var(--blue-glow); border-radius: 3px; }
 
-/* ─── NAV ─── */
-nav {
-  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-  display: flex; align-items: center; justify-content: space-between;
-  padding: 0 40px;
-  height: 70px;
-  background: rgba(10,22,40,0.96);
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(255,255,255,0.06);
-  transition: all 0.3s;
-}
-
-.nav-logo {
-  display: flex; align-items: center; gap: 10px;
-  text-decoration: none;
-}
-.nav-logo img {
-  height: 40px; width: auto; object-fit: contain;
-  filter: brightness(0) invert(1);
-}
-.nav-logo-text {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 26px; font-weight: 900;
-  color: var(--white);
-  letter-spacing: 2px;
-  line-height: 1;
-}
+/* NAV */
+nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 0 40px; height: 70px; background: rgba(10,22,40,0.96); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255,255,255,0.06); transition: all 0.3s; }
+.nav-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+.nav-logo-text { font-family: 'Barlow Condensed', sans-serif; font-size: 26px; font-weight: 900; color: var(--white); letter-spacing: 2px; line-height: 1; }
 .nav-logo-text span { color: var(--gold); }
-
-.nav-links {
-  display: flex; align-items: center; gap: 32px;
-  list-style: none;
-}
-.nav-links a {
-  color: rgba(255,255,255,0.75);
-  text-decoration: none;
-  font-size: 15px; font-weight: 600;
-  letter-spacing: 0.5px;
-  transition: color 0.2s;
-  position: relative;
-}
-.nav-links a::after {
-  content: '';
-  position: absolute; bottom: -4px; right: 0; left: 0;
-  height: 2px; background: var(--gold);
-  transform: scaleX(0); transform-origin: center;
-  transition: transform 0.25s;
-}
+.nav-links { display: flex; align-items: center; gap: 32px; list-style: none; }
+.nav-links a { color: rgba(255,255,255,0.75); text-decoration: none; font-size: 15px; font-weight: 600; letter-spacing: 0.5px; transition: color 0.2s; position: relative; }
+.nav-links a::after { content: ''; position: absolute; bottom: -4px; right: 0; left: 0; height: 2px; background: var(--gold); transform: scaleX(0); transform-origin: center; transition: transform 0.25s; }
 .nav-links a:hover { color: var(--white); }
 .nav-links a:hover::after { transform: scaleX(1); }
-
 .nav-actions { display: flex; align-items: center; gap: 12px; }
-
-.btn-lang {
-  background: transparent;
-  border: 1px solid rgba(255,255,255,0.25);
-  color: rgba(255,255,255,0.8);
-  padding: 6px 14px; border-radius: 4px;
-  font-family: 'Cairo', sans-serif; font-size: 13px; font-weight: 600;
-  cursor: pointer; transition: all 0.2s;
-}
-.btn-lang:hover {
-  background: rgba(255,255,255,0.1);
-  border-color: rgba(255,255,255,0.5);
-  color: var(--white);
-}
-
-.btn-whatsapp-nav {
-  display: flex; align-items: center; gap: 8px;
-  background: #25D366;
-  color: var(--white);
-  text-decoration: none;
-  padding: 8px 18px; border-radius: 4px;
-  font-size: 14px; font-weight: 700;
-  transition: all 0.2s;
-}
+.btn-lang { background: transparent; border: 1px solid rgba(255,255,255,0.25); color: rgba(255,255,255,0.8); padding: 6px 14px; border-radius: 4px; font-family: 'Cairo', sans-serif; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s; }
+.btn-lang:hover { background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.5); color: var(--white); }
+.btn-whatsapp-nav { display: flex; align-items: center; gap: 8px; background: #25D366; color: var(--white); text-decoration: none; padding: 8px 18px; border-radius: 4px; font-size: 14px; font-weight: 700; transition: all 0.2s; }
 .btn-whatsapp-nav:hover { background: #22be5c; transform: translateY(-1px); }
+.mobile-menu-btn { display: none; background: none; border: none; color: var(--white); font-size: 22px; cursor: pointer; }
+#mobileDrawer { display: none; position: fixed; top: 70px; left: 0; right: 0; background: var(--navy-mid); border-bottom: 1px solid rgba(255,255,255,0.1); z-index: 99; flex-direction: column; padding: 20px 24px; gap: 18px; }
+#mobileDrawer.open { display: flex; }
+#mobileDrawer a { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 17px; font-weight: 600; padding-bottom: 16px; border-bottom: 1px solid rgba(255,255,255,0.08); }
+#mobileDrawer a:last-child { border-bottom: none; }
 
-/* ─── HERO ─── */
-#home {
-  position: relative;
-  min-height: 100vh;
-  display: flex; align-items: center;
-  overflow: hidden;
-  background: var(--navy);
-  padding-top: 70px;
-}
-
-.hero-bg-img {
-  position: absolute; inset: 0;
-  background-image: url('https://images.unsplash.com/photo-1581092580497-e0d23cbdffd4?q=80&w=2070&auto=format&fit=crop');
-  background-size: cover; background-position: center;
-  opacity: 0.18;
-}
-
-.hero-grid-overlay {
-  position: absolute; inset: 0;
-  background-image:
-    linear-gradient(rgba(21,101,192,0.07) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(21,101,192,0.07) 1px, transparent 1px);
-  background-size: 60px 60px;
-}
-
-.hero-gradient {
-  position: absolute; inset: 0;
-  background: linear-gradient(135deg, rgba(10,22,40,0.98) 0%, rgba(10,22,40,0.85) 50%, rgba(15,32,64,0.92) 100%);
-}
-
-.hero-accent {
-  position: absolute;
-  width: 600px; height: 600px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(33,150,243,0.12) 0%, transparent 70%);
-  top: -100px; left: -100px;
-  pointer-events: none;
-}
-
-.hero-content {
-  position: relative; z-index: 2;
-  width: 100%; max-width: 1200px;
-  margin: 0 auto; padding: 0 40px;
-  display: grid; grid-template-columns: 1fr 380px; gap: 60px; align-items: center;
-}
-
-.hero-badge {
-  display: inline-flex; align-items: center; gap: 8px;
-  background: rgba(245,158,11,0.12);
-  border: 1px solid rgba(245,158,11,0.3);
-  color: var(--gold-light);
-  padding: 6px 16px; border-radius: 2px;
-  font-size: 13px; font-weight: 600;
-  letter-spacing: 1px;
-  margin-bottom: 24px;
-}
-
-.hero-title {
-  font-family: 'Barlow Condensed', 'Cairo', sans-serif;
-  font-size: clamp(38px, 5vw, 64px);
-  font-weight: 900;
-  line-height: 1.05;
-  color: var(--white);
-  margin-bottom: 20px;
-}
+/* HERO */
+#home { position: relative; min-height: 100vh; display: flex; align-items: center; overflow: hidden; background: var(--navy); padding-top: 70px; }
+.hero-bg-img { position: absolute; inset: 0; background-image: url('https://images.unsplash.com/photo-1581092580497-e0d23cbdffd4?q=80&w=2070&auto=format&fit=crop'); background-size: cover; background-position: center; opacity: 0.18; }
+.hero-grid-overlay { position: absolute; inset: 0; background-image: linear-gradient(rgba(21,101,192,0.07) 1px, transparent 1px), linear-gradient(90deg, rgba(21,101,192,0.07) 1px, transparent 1px); background-size: 60px 60px; }
+.hero-gradient { position: absolute; inset: 0; background: linear-gradient(135deg, rgba(10,22,40,0.98) 0%, rgba(10,22,40,0.85) 50%, rgba(15,32,64,0.92) 100%); }
+.hero-accent { position: absolute; width: 600px; height: 600px; border-radius: 50%; background: radial-gradient(circle, rgba(33,150,243,0.12) 0%, transparent 70%); top: -100px; left: -100px; pointer-events: none; }
+.hero-content { position: relative; z-index: 2; width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 40px; display: grid; grid-template-columns: 1fr 380px; gap: 60px; align-items: center; }
+.hero-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(245,158,11,0.12); border: 1px solid rgba(245,158,11,0.3); color: var(--gold-light); padding: 6px 16px; border-radius: 2px; font-size: 13px; font-weight: 600; letter-spacing: 1px; margin-bottom: 24px; }
+.hero-title { font-family: 'Barlow Condensed', 'Cairo', sans-serif; font-size: clamp(38px, 5vw, 64px); font-weight: 900; line-height: 1.05; color: var(--white); margin-bottom: 20px; }
 .hero-title .accent { color: var(--gold); }
+.hero-subtitle { font-size: 17px; font-weight: 400; color: rgba(255,255,255,0.65); line-height: 1.8; margin-bottom: 36px; max-width: 520px; }
+.hero-cta { display: flex; gap: 14px; flex-wrap: wrap; }
 
-.hero-subtitle {
-  font-size: 17px; font-weight: 400;
-  color: rgba(255,255,255,0.65);
-  line-height: 1.8;
-  margin-bottom: 36px;
-  max-width: 520px;
-}
-
-.hero-cta {
-  display: flex; gap: 14px; flex-wrap: wrap;
-}
-
-.btn-primary {
-  display: inline-flex; align-items: center; gap: 8px;
-  background: var(--blue-bright);
-  color: var(--white);
-  text-decoration: none;
-  padding: 14px 28px; border-radius: 4px;
-  font-size: 15px; font-weight: 700;
-  transition: all 0.25s;
-  border: none; cursor: pointer;
-}
-.btn-primary:hover { background: var(--blue-glow); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(33,150,243,0.35); }
-
-.btn-secondary {
-  display: inline-flex; align-items: center; gap: 8px;
-  background: transparent;
-  color: var(--white);
-  text-decoration: none;
-  padding: 14px 28px; border-radius: 4px;
-  font-size: 15px; font-weight: 700;
-  border: 1px solid rgba(255,255,255,0.3);
-  transition: all 0.25s;
-}
-.btn-secondary:hover { background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.6); }
-
-/* Hero stats card */
-.hero-stats {
+/* Hero trust card — replaced stats */
+.hero-trust {
   background: rgba(255,255,255,0.04);
   border: 1px solid rgba(255,255,255,0.1);
-  border-radius: 8px;
-  padding: 32px;
+  border-radius: 10px; padding: 28px;
   backdrop-filter: blur(10px);
+  display: flex; flex-direction: column; gap: 0;
 }
+.trust-item {
+  display: flex; align-items: center; gap: 16px;
+  padding: 18px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+}
+.trust-item:last-child { border-bottom: none; padding-bottom: 0; }
+.trust-item:first-child { padding-top: 0; }
+.trust-icon {
+  width: 44px; height: 44px; flex-shrink: 0;
+  background: rgba(21,101,192,0.25);
+  border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--blue-glow); font-size: 18px;
+}
+.trust-icon.gold-bg { background: rgba(245,158,11,0.2); color: var(--gold); }
+.trust-icon.green-bg { background: rgba(37,211,102,0.2); color: #25D366; }
+.trust-text-title { font-size: 14px; font-weight: 700; color: var(--white); line-height: 1.3; }
+.trust-text-sub { font-size: 12px; color: rgba(255,255,255,0.45); margin-top: 3px; }
 
-.stat-item {
-  padding: 20px 0;
-  border-bottom: 1px solid rgba(255,255,255,0.08);
-}
-.stat-item:last-child { border-bottom: none; padding-bottom: 0; }
-.stat-item:first-child { padding-top: 0; }
-
-.stat-number {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 42px; font-weight: 900;
-  color: var(--gold);
-  line-height: 1;
-  margin-bottom: 4px;
-}
-.stat-label {
-  font-size: 14px; font-weight: 600;
-  color: rgba(255,255,255,0.55);
-}
-
-/* Hero partners strip */
-.hero-partners-strip {
-  position: absolute; bottom: 0; left: 0; right: 0;
-  background: rgba(255,255,255,0.04);
-  border-top: 1px solid rgba(255,255,255,0.08);
-  padding: 14px 40px;
-  display: flex; align-items: center; gap: 32px;
-  z-index: 2;
-}
-.hero-partners-strip .label {
-  color: rgba(255,255,255,0.35);
-  font-size: 12px; font-weight: 600;
-  letter-spacing: 1.5px;
-  white-space: nowrap;
-}
-.partner-pill {
-  background: rgba(255,255,255,0.07);
-  border: 1px solid rgba(255,255,255,0.1);
-  color: rgba(255,255,255,0.7);
-  padding: 6px 16px; border-radius: 2px;
-  font-size: 13px; font-weight: 700;
-  letter-spacing: 1px;
-  white-space: nowrap;
-}
+.hero-partners-strip { position: absolute; bottom: 0; left: 0; right: 0; background: rgba(255,255,255,0.04); border-top: 1px solid rgba(255,255,255,0.08); padding: 14px 40px; display: flex; align-items: center; gap: 32px; z-index: 2; }
+.hero-partners-strip .label { color: rgba(255,255,255,0.35); font-size: 12px; font-weight: 600; letter-spacing: 1.5px; white-space: nowrap; }
+.partner-pill { background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.1); color: rgba(255,255,255,0.7); padding: 6px 16px; border-radius: 2px; font-size: 13px; font-weight: 700; letter-spacing: 1px; white-space: nowrap; }
 .partner-pill.gold { border-color: rgba(245,158,11,0.4); color: var(--gold-light); }
 
-/* ─── CONTACT BAR ─── */
-.contact-bar {
-  background: var(--blue);
-  padding: 12px 40px;
-  display: flex; align-items: center; justify-content: center; gap: 40px;
-}
-.contact-bar-item {
-  display: flex; align-items: center; gap: 10px;
-  color: rgba(255,255,255,0.9);
-  text-decoration: none;
-  font-size: 14px; font-weight: 600;
-  transition: color 0.2s;
-}
+/* BUTTONS */
+.btn-primary { display: inline-flex; align-items: center; gap: 8px; background: var(--blue-bright); color: var(--white); text-decoration: none; padding: 14px 28px; border-radius: 4px; font-size: 15px; font-weight: 700; transition: all 0.25s; border: none; cursor: pointer; }
+.btn-primary:hover { background: var(--blue-glow); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(33,150,243,0.35); }
+.btn-secondary { display: inline-flex; align-items: center; gap: 8px; background: transparent; color: var(--white); text-decoration: none; padding: 14px 28px; border-radius: 4px; font-size: 15px; font-weight: 700; border: 1px solid rgba(255,255,255,0.3); transition: all 0.25s; }
+.btn-secondary:hover { background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.6); }
+
+/* CONTACT BAR */
+.contact-bar { background: var(--blue); padding: 12px 40px; display: flex; align-items: center; justify-content: center; gap: 40px; }
+.contact-bar-item { display: flex; align-items: center; gap: 10px; color: rgba(255,255,255,0.9); text-decoration: none; font-size: 14px; font-weight: 600; transition: color 0.2s; }
 .contact-bar-item:hover { color: var(--gold-light); }
 .contact-bar-item i { font-size: 16px; opacity: 0.8; }
 
-/* ─── SECTION COMMON ─── */
+/* SECTIONS */
 section { padding: 80px 0; }
-
-.section-inner {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 40px;
-}
-
-.section-tag {
-  display: inline-block;
-  background: rgba(21,101,192,0.1);
-  color: var(--blue);
-  border: 1px solid rgba(21,101,192,0.2);
-  padding: 4px 14px; border-radius: 2px;
-  font-size: 12px; font-weight: 700;
-  letter-spacing: 2px;
-  margin-bottom: 14px;
-}
-
-.section-title {
-  font-family: 'Barlow Condensed', 'Cairo', sans-serif;
-  font-size: clamp(28px, 4vw, 42px);
-  font-weight: 900;
-  color: var(--navy);
-  line-height: 1.1;
-  margin-bottom: 16px;
-}
-
-.section-divider {
-  width: 48px; height: 3px;
-  background: var(--gold);
-  margin-bottom: 20px;
-  border-radius: 2px;
-}
+.section-inner { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
+.section-tag { display: inline-block; background: rgba(21,101,192,0.1); color: var(--blue); border: 1px solid rgba(21,101,192,0.2); padding: 4px 14px; border-radius: 2px; font-size: 12px; font-weight: 700; letter-spacing: 2px; margin-bottom: 14px; }
+.section-title { font-family: 'Barlow Condensed', 'Cairo', sans-serif; font-size: clamp(28px, 4vw, 42px); font-weight: 900; color: var(--navy); line-height: 1.1; margin-bottom: 16px; }
+.section-divider { width: 48px; height: 3px; background: var(--gold); margin-bottom: 20px; border-radius: 2px; }
 [dir="rtl"] .section-divider { margin-right: 0; }
+.section-desc { font-size: 16px; color: var(--text-muted); line-height: 1.8; max-width: 560px; }
 
-.section-desc {
-  font-size: 16px;
-  color: var(--text-muted);
-  line-height: 1.8;
-  max-width: 560px;
-}
-
-/* ─── ABOUT ─── */
+/* ABOUT */
 #about { background: var(--gray-100); }
-
-.about-grid {
-  display: grid; grid-template-columns: 1fr 1fr;
-  gap: 64px; align-items: center;
-}
-
-.about-img-wrap {
-  position: relative; border-radius: 6px; overflow: hidden;
-}
-.about-img-wrap img {
-  width: 100%; height: 420px; object-fit: cover; display: block;
-}
-.about-img-badge {
-  position: absolute; bottom: 20px;
-  background: var(--navy);
-  color: var(--white);
-  padding: 16px 22px;
-  border-left: 4px solid var(--gold);
-}
-[dir="rtl"] .about-img-badge {
-  right: 20px;
-  border-left: none;
-  border-right: 4px solid var(--gold);
-}
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+.about-img-wrap { position: relative; border-radius: 6px; overflow: hidden; }
+.about-img-wrap img { width: 100%; height: 420px; object-fit: cover; display: block; }
+.about-img-badge { position: absolute; bottom: 20px; background: var(--navy); color: var(--white); padding: 16px 22px; border-left: 4px solid var(--gold); }
+[dir="rtl"] .about-img-badge { right: 20px; border-left: none; border-right: 4px solid var(--gold); }
 [dir="ltr"] .about-img-badge { left: 20px; }
-.about-img-badge strong {
-  display: block;
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 34px; font-weight: 900; color: var(--gold); line-height: 1;
-}
+.about-img-badge strong { display: block; font-family: 'Barlow Condensed', sans-serif; font-size: 34px; font-weight: 900; color: var(--gold); line-height: 1; }
 .about-img-badge span { font-size: 13px; opacity: 0.75; }
-
 .about-points { list-style: none; margin-top: 28px; display: flex; flex-direction: column; gap: 14px; }
-.about-points li {
-  display: flex; align-items: center; gap: 12px;
-  font-size: 15px; font-weight: 600; color: var(--gray-800);
-}
+.about-points li { display: flex; align-items: center; gap: 12px; font-size: 15px; font-weight: 600; color: var(--gray-800); }
 .about-points li i { color: var(--blue); font-size: 16px; }
 
-/* ─── SERVICES ─── */
+/* SERVICES */
 #services { background: var(--white); }
-
 .services-header { text-align: center; margin-bottom: 56px; }
 .services-header .section-divider { margin: 0 auto 20px; }
-
-.services-grid {
-  display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px;
-}
-
-.service-card {
-  background: var(--white);
-  border: 1px solid var(--gray-200);
-  border-radius: 6px;
-  padding: 36px 24px;
-  text-align: center;
-  position: relative; overflow: hidden;
-  transition: all 0.3s;
-  cursor: default;
-}
-.service-card::before {
-  content: '';
-  position: absolute; top: 0; left: 0; right: 0;
-  height: 3px;
-  background: var(--blue);
-  transform: scaleX(0);
-  transform-origin: center;
-  transition: transform 0.3s;
-}
+.services-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+.service-card { background: var(--white); border: 1px solid var(--gray-200); border-radius: 6px; padding: 36px 24px; text-align: center; position: relative; overflow: hidden; transition: all 0.3s; cursor: default; }
+.service-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--blue); transform: scaleX(0); transform-origin: center; transition: transform 0.3s; }
 .service-card:hover { transform: translateY(-6px); box-shadow: 0 16px 40px rgba(10,22,40,0.12); border-color: transparent; }
 .service-card:hover::before { transform: scaleX(1); }
-
-.service-icon {
-  width: 64px; height: 64px;
-  background: rgba(21,101,192,0.08);
-  color: var(--blue);
-  border-radius: 50%;
-  display: flex; align-items: center; justify-content: center;
-  font-size: 26px;
-  margin: 0 auto 20px;
-  transition: all 0.3s;
-}
-.service-card:hover .service-icon {
-  background: var(--blue); color: var(--white);
-}
-
-.service-title {
-  font-family: 'Barlow Condensed', 'Cairo', sans-serif;
-  font-size: 20px; font-weight: 700;
-  color: var(--navy); margin-bottom: 12px;
-}
+.service-icon { width: 64px; height: 64px; background: rgba(21,101,192,0.08); color: var(--blue); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 26px; margin: 0 auto 20px; transition: all 0.3s; }
+.service-card:hover .service-icon { background: var(--blue); color: var(--white); }
+.service-title { font-family: 'Barlow Condensed', 'Cairo', sans-serif; font-size: 20px; font-weight: 700; color: var(--navy); margin-bottom: 12px; }
 .service-desc { font-size: 14px; color: var(--text-muted); line-height: 1.7; }
 
-/* ─── PARTNERS ─── */
-#partners { background: var(--navy); padding: 60px 0; }
-
-.partners-inner {
-  max-width: 1200px; margin: 0 auto; padding: 0 40px;
-  display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center;
-}
-
-.partners-heading {
-  font-family: 'Barlow Condensed', 'Cairo', sans-serif;
-  font-size: 34px; font-weight: 900; color: var(--white); line-height: 1.1;
-}
+/* PARTNERS — enhanced */
+#partners { background: var(--navy); padding: 80px 0; }
+.partners-inner { max-width: 1200px; margin: 0 auto; padding: 0 40px; display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: start; }
+.partners-heading { font-family: 'Barlow Condensed', 'Cairo', sans-serif; font-size: 38px; font-weight: 900; color: var(--white); line-height: 1.1; }
 .partners-heading span { color: var(--gold); }
-.partners-sub { color: rgba(255,255,255,0.5); font-size: 15px; margin-top: 10px; }
+.partners-sub { color: rgba(255,255,255,0.5); font-size: 15px; margin-top: 12px; line-height: 1.7; }
+.partners-cards { display: flex; flex-direction: column; gap: 20px; }
+.partner-card { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 24px; display: flex; align-items: flex-start; gap: 20px; text-decoration: none; transition: all 0.3s; }
+.partner-card:hover { background: rgba(255,255,255,0.09); border-color: rgba(245,158,11,0.45); transform: translateY(-3px); box-shadow: 0 12px 32px rgba(0,0,0,0.3); }
+.partner-logo-box { width: 80px; height: 80px; flex-shrink: 0; background: var(--white); border-radius: 10px; display: flex; align-items: center; justify-content: center; overflow: hidden; padding: 10px; }
+.partner-logo-box img { width: 100%; height: 100%; object-fit: contain; }
+.partner-logo-text { font-family: 'Barlow Condensed', sans-serif; font-weight: 900; font-size: 18px; text-align: center; line-height: 1.1; }
+.partner-logo-text .sub { font-size: 11px; letter-spacing: 2px; display: block; }
+.partner-info { flex: 1; }
+.partner-name-big { font-family: 'Barlow Condensed', sans-serif; font-size: 22px; font-weight: 900; color: var(--white); letter-spacing: 1px; line-height: 1; }
+.partner-origin { font-size: 11px; font-weight: 700; letter-spacing: 2px; color: var(--gold); margin-top: 4px; display: block; }
+.partner-desc { font-size: 13px; color: rgba(255,255,255,0.55); margin-top: 10px; line-height: 1.65; }
+.partner-visit { display: inline-flex; align-items: center; gap: 6px; margin-top: 12px; font-size: 12px; font-weight: 700; color: rgba(255,255,255,0.35); transition: color 0.2s; }
+.partner-card:hover .partner-visit { color: var(--gold); }
 
-.partners-cards { display: flex; flex-direction: column; gap: 16px; }
-
-.partner-card {
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.1);
-  border-radius: 6px; padding: 20px 24px;
-  display: flex; align-items: center; justify-content: space-between;
-  text-decoration: none;
-  transition: all 0.25s;
-}
-.partner-card:hover { background: rgba(255,255,255,0.09); border-color: rgba(245,158,11,0.4); }
-
-.partner-name {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 26px; font-weight: 900; color: var(--white); letter-spacing: 2px;
-}
-.partner-name .sub { font-size: 13px; color: var(--gold); font-weight: 600; letter-spacing: 3px; display: block; margin-top: 2px; }
-.partner-link { color: rgba(255,255,255,0.4); font-size: 13px; display: flex; align-items: center; gap: 6px; }
-.partner-card:hover .partner-link { color: var(--gold); }
-
-/* ─── CLIENTS ─── */
+/* CLIENTS marquee — bigger cards */
 #clients { background: var(--gray-100); }
-
-/* ─── CLIENTS MARQUEE ─── */
-.marquee-outer {
-  overflow: hidden;
-  margin-top: 48px;
-  -webkit-mask-image: linear-gradient(90deg, transparent 0%, black 8%, black 92%, transparent 100%);
-  mask-image: linear-gradient(90deg, transparent 0%, black 8%, black 92%, transparent 100%);
-}
-.marquee-track {
-  display: flex;
-  gap: 20px;
-  width: max-content;
-  animation: marquee-scroll 32s linear infinite;
-}
+.marquee-outer { overflow: hidden; margin-top: 48px; -webkit-mask-image: linear-gradient(90deg, transparent 0%, black 6%, black 94%, transparent 100%); mask-image: linear-gradient(90deg, transparent 0%, black 6%, black 94%, transparent 100%); }
+.marquee-track { display: flex; gap: 24px; width: max-content; animation: marquee-scroll 40s linear infinite; }
 .marquee-track:hover { animation-play-state: paused; }
+@keyframes marquee-scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+.client-card { flex-shrink: 0; width: 200px; background: var(--white); border: 1px solid var(--gray-200); border-radius: 12px; padding: 24px 16px 20px; display: flex; flex-direction: column; align-items: center; gap: 14px; text-decoration: none; transition: all 0.25s; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+.client-card:hover { border-color: var(--blue); box-shadow: 0 8px 28px rgba(21,101,192,0.15); transform: translateY(-5px); }
+.client-logo-wrap { width: 88px; height: 88px; background: var(--gray-100); border: 1px solid var(--gray-200); border-radius: 12px; display: flex; align-items: center; justify-content: center; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.06); padding: 10px; }
+.client-logo-wrap img { width: 100%; height: 100%; object-fit: contain; }
+.client-initials { font-family: 'Barlow Condensed', sans-serif; font-size: 26px; font-weight: 900; color: var(--blue); display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; }
+.client-name { font-size: 13px; font-weight: 700; color: var(--gray-600); text-align: center; line-height: 1.4; }
 
-@keyframes marquee-scroll {
-  0%   { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
-
-.client-card {
-  flex-shrink: 0;
-  width: 160px;
-  background: var(--white);
-  border: 1px solid var(--gray-200);
-  border-radius: 10px;
-  padding: 20px 14px 16px;
-  display: flex; flex-direction: column; align-items: center; gap: 12px;
-  text-decoration: none;
-  transition: all 0.25s;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-}
-.client-card:hover {
-  border-color: var(--blue);
-  box-shadow: 0 6px 20px rgba(21,101,192,0.14);
-  transform: translateY(-4px);
-}
-
-.client-logo-wrap {
-  width: 72px; height: 72px;
-  background: var(--white);
-  border: 1px solid var(--gray-200);
-  border-radius: 10px;
-  display: flex; align-items: center; justify-content: center;
-  overflow: hidden;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
-}
-.client-logo-wrap img {
-  width: 48px; height: 48px;
-  object-fit: contain;
-}
-.client-initials {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 22px; font-weight: 900;
-  color: var(--blue);
-  display: flex; align-items: center; justify-content: center;
-  width: 100%; height: 100%;
-}
-.client-name {
-  font-size: 12px; font-weight: 700;
-  color: var(--gray-600);
-  text-align: center; line-height: 1.4;
-}
-
-/* ─── TESTIMONIALS ─── */
-#testimonials { background: var(--white); }
-
-.testimonials-grid {
-  display: grid; grid-template-columns: repeat(3, 1fr);
-  gap: 24px; margin-top: 48px;
-}
-
-.testimonial-card {
-  background: var(--gray-100);
-  border-radius: 6px; padding: 28px;
-  border: 1px solid var(--gray-200);
-  position: relative;
-}
-
-.quote-mark {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 64px; font-weight: 900; line-height: 0.7;
-  color: var(--blue); opacity: 0.15;
-  margin-bottom: 12px;
-}
-
-.testimonial-text {
-  font-size: 15px; line-height: 1.75;
-  color: var(--gray-600); margin-bottom: 20px;
-  font-style: italic;
-}
-
-.testimonial-author { display: flex; align-items: center; gap: 12px; }
-.author-avatar {
-  width: 42px; height: 42px; border-radius: 50%;
-  background: var(--blue); color: var(--white);
-  display: flex; align-items: center; justify-content: center;
-  font-size: 16px; font-weight: 700;
-  flex-shrink: 0;
-}
-.author-name { font-size: 14px; font-weight: 700; color: var(--navy); }
-.author-company { font-size: 12px; color: var(--text-muted); }
-
-.star-row { display: flex; gap: 2px; margin-bottom: 12px; color: var(--gold); font-size: 13px; }
-
-/* ─── CONTACT ─── */
+/* CONTACT */
 #contact { background: var(--navy); }
-
-.contact-grid {
-  display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start;
-}
-
-.contact-info-title {
-  font-family: 'Barlow Condensed', 'Cairo', sans-serif;
-  font-size: 38px; font-weight: 900; color: var(--white); line-height: 1.1; margin-bottom: 12px;
-}
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; }
+.contact-info-title { font-family: 'Barlow Condensed', 'Cairo', sans-serif; font-size: 38px; font-weight: 900; color: var(--white); line-height: 1.1; margin-bottom: 12px; }
 .contact-info-sub { color: rgba(255,255,255,0.5); font-size: 15px; margin-bottom: 36px; line-height: 1.7; }
-
-.contact-methods { display: flex; flex-direction: column; gap: 16px; margin-bottom: 36px; }
-
-.contact-method {
-  display: flex; align-items: center; gap: 16px;
-  text-decoration: none;
-  padding: 16px 20px;
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.08);
-  border-radius: 6px;
-  transition: all 0.2s;
-}
+.contact-methods { display: flex; flex-direction: column; gap: 14px; margin-bottom: 28px; }
+.contact-method { display: flex; align-items: center; gap: 16px; text-decoration: none; padding: 16px 20px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; transition: all 0.2s; }
 .contact-method:hover { background: rgba(255,255,255,0.09); border-color: rgba(33,150,243,0.4); }
-.contact-method-icon {
-  width: 42px; height: 42px; border-radius: 6px;
-  display: flex; align-items: center; justify-content: center;
-  font-size: 18px; flex-shrink: 0;
-}
+.contact-method-icon { width: 42px; height: 42px; border-radius: 6px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0; }
 .contact-method-icon.blue { background: rgba(21,101,192,0.3); color: var(--blue-glow); }
 .contact-method-icon.green { background: rgba(37,211,102,0.2); color: #25D366; }
 .contact-method-icon.gold { background: rgba(245,158,11,0.2); color: var(--gold); }
-
 .contact-method-label { font-size: 12px; color: rgba(255,255,255,0.4); font-weight: 600; display: block; }
 .contact-method-value { font-size: 15px; font-weight: 700; color: var(--white); }
-
-/* Contact form */
-.contact-form {
-  background: rgba(255,255,255,0.04);
-  border: 1px solid rgba(255,255,255,0.1);
-  border-radius: 8px; padding: 36px;
-}
-
-.form-title {
-  font-size: 20px; font-weight: 700; color: var(--white); margin-bottom: 24px;
-}
-
+.map-wrap { border-radius: 8px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1); }
+.contact-form { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 36px; }
+.form-title { font-size: 20px; font-weight: 700; color: var(--white); margin-bottom: 24px; }
 .form-group { margin-bottom: 18px; }
-.form-label {
-  display: block; font-size: 13px; font-weight: 600;
-  color: rgba(255,255,255,0.55); margin-bottom: 8px;
-}
-.form-input {
-  width: 100%;
-  background: rgba(255,255,255,0.07);
-  border: 1px solid rgba(255,255,255,0.12);
-  color: var(--white);
-  padding: 12px 16px; border-radius: 4px;
-  font-family: 'Cairo', sans-serif; font-size: 14px;
-  transition: border-color 0.2s;
-  outline: none;
-}
+.form-label { display: block; font-size: 13px; font-weight: 600; color: rgba(255,255,255,0.55); margin-bottom: 8px; }
+.form-input { width: 100%; background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.12); color: var(--white); padding: 12px 16px; border-radius: 4px; font-family: 'Cairo', sans-serif; font-size: 14px; transition: border-color 0.2s; outline: none; }
 .form-input::placeholder { color: rgba(255,255,255,0.25); }
 .form-input:focus { border-color: var(--blue-glow); }
 textarea.form-input { resize: vertical; min-height: 110px; }
-
-.btn-submit {
-  width: 100%;
-  background: var(--blue-bright);
-  color: var(--white);
-  border: none; border-radius: 4px;
-  padding: 14px 24px;
-  font-family: 'Cairo', sans-serif; font-size: 15px; font-weight: 700;
-  cursor: pointer; transition: all 0.25s;
-  display: flex; align-items: center; justify-content: center; gap: 8px;
-}
+.btn-submit { width: 100%; background: var(--blue-bright); color: var(--white); border: none; border-radius: 4px; padding: 14px 24px; font-family: 'Cairo', sans-serif; font-size: 15px; font-weight: 700; cursor: pointer; transition: all 0.25s; display: flex; align-items: center; justify-content: center; gap: 8px; }
 .btn-submit:hover { background: var(--blue-glow); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(33,150,243,0.3); }
-.btn-submit:disabled { opacity: 0.75; cursor: not-allowed; transform: none; box-shadow: none; }
+.form-msg { display: none; padding: 14px 16px; border-radius: 6px; margin-top: 14px; font-size: 14px; font-weight: 600; text-align: center; }
+.form-msg.success { background: rgba(22,163,74,0.15); border: 1px solid rgba(22,163,74,0.4); color: #4ade80; display: block; }
+.form-msg.error { background: rgba(220,38,38,0.15); border: 1px solid rgba(220,38,38,0.4); color: #f87171; display: block; }
 
-.btn-spinner {
-  width: 18px;
-  height: 18px;
-  border-radius: 999px;
-  border: 2px solid rgba(255, 255, 255, 0.35);
-  border-top-color: rgba(255, 255, 255, 0.95);
-  display: none;
-  animation: spin 0.8s linear infinite;
-}
-
-.btn-submit.is-loading .btn-spinner { display: inline-block; }
-.btn-submit.is-loading .btn-icon { display: none; }
-
-@keyframes spin { to { transform: rotate(360deg); } }
-
-.form-status {
-  margin: 14px 0 4px;
-  padding: 12px 14px;
-  border-radius: 6px;
-  border: 1px solid transparent;
-  display: none;
-  font-size: 14px;
-  line-height: 1.6;
-}
-.form-status.is-success {
-  display: block;
-  background: rgba(22, 163, 74, 0.12);
-  border-color: rgba(22, 163, 74, 0.35);
-  color: rgba(187, 247, 208, 0.95);
-}
-.form-status.is-error {
-  display: block;
-  background: rgba(220, 38, 38, 0.12);
-  border-color: rgba(220, 38, 38, 0.35);
-  color: rgba(254, 202, 202, 0.95);
-}
-
-/* map */
-.map-wrap {
-  border-radius: 6px; overflow: hidden;
-  border: 1px solid rgba(255,255,255,0.1);
-  margin-top: 24px;
-}
-
-/* ─── FOOTER ─── */
-footer {
-  background: rgba(0,0,0,0.4);
-  border-top: 1px solid rgba(255,255,255,0.07);
-  padding: 24px 40px;
-}
-.footer-inner {
-  max-width: 1200px; margin: 0 auto;
-  display: flex; align-items: center; justify-content: space-between;
-}
+/* FOOTER */
+footer { background: rgba(0,0,0,0.35); border-top: 1px solid rgba(255,255,255,0.07); padding: 24px 40px; }
+.footer-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; }
 .footer-copy { font-size: 13px; color: rgba(255,255,255,0.35); }
 .social-links { display: flex; gap: 10px; }
-.social-link {
-  width: 34px; height: 34px; border-radius: 4px;
-  background: rgba(255,255,255,0.07);
-  color: rgba(255,255,255,0.5);
-  display: flex; align-items: center; justify-content: center;
-  font-size: 14px; text-decoration: none;
-  transition: all 0.2s;
-}
+.social-link { width: 34px; height: 34px; border-radius: 4px; background: rgba(255,255,255,0.07); color: rgba(255,255,255,0.5); display: flex; align-items: center; justify-content: center; font-size: 14px; text-decoration: none; transition: all 0.2s; }
 .social-link:hover { background: var(--blue); color: var(--white); }
 .social-link.wa:hover { background: #25D366; }
 
-/* ─── WHATSAPP FLOAT ─── */
-.wa-float {
-  position: fixed; bottom: 28px;
-  z-index: 200;
-  display: flex; align-items: center; gap: 10px;
-  background: #25D366;
-  color: var(--white);
-  text-decoration: none;
-  padding: 12px 20px; border-radius: 50px;
-  font-size: 14px; font-weight: 700;
-  box-shadow: 0 6px 24px rgba(37,211,102,0.4);
-  transition: all 0.3s;
-  animation: float-pulse 3s ease-in-out infinite;
-}
+/* WA FLOAT */
+.wa-float { position: fixed; bottom: 28px; z-index: 200; display: flex; align-items: center; gap: 10px; background: #25D366; color: var(--white); text-decoration: none; padding: 13px 22px; border-radius: 50px; font-size: 15px; font-weight: 700; box-shadow: 0 6px 24px rgba(37,211,102,0.4); transition: all 0.3s; animation: wapulse 3s ease-in-out infinite; }
 [dir="rtl"] .wa-float { right: 28px; }
 [dir="ltr"] .wa-float { left: 28px; }
-.wa-float:hover { transform: translateY(-3px); box-shadow: 0 10px 32px rgba(37,211,102,0.5); }
-.wa-float i { font-size: 20px; }
+.wa-float:hover { transform: translateY(-3px); box-shadow: 0 10px 32px rgba(37,211,102,0.55); }
+.wa-float i { font-size: 22px; }
+@keyframes wapulse { 0%,100%{box-shadow:0 6px 24px rgba(37,211,102,0.4)} 50%{box-shadow:0 6px 36px rgba(37,211,102,0.7)} }
 
-@keyframes float-pulse {
-  0%, 100% { box-shadow: 0 6px 24px rgba(37,211,102,0.4); }
-  50% { box-shadow: 0 6px 32px rgba(37,211,102,0.65); }
-}
-
-/* ─── MOBILE MENU ─── */
-.mobile-menu-btn {
-  display: none; background: none; border: none;
-  color: var(--white); font-size: 22px; cursor: pointer;
-}
-
-#mobileDrawer {
-  display: none;
-  position: fixed; top: 70px; left: 0; right: 0;
-  background: var(--navy-mid);
-  border-bottom: 1px solid rgba(255,255,255,0.1);
-  z-index: 99;
-  flex-direction: column;
-  padding: 20px 24px;
-  gap: 18px;
-}
-#mobileDrawer.open { display: flex; }
-#mobileDrawer a {
-  color: rgba(255,255,255,0.8); text-decoration: none;
-  font-size: 17px; font-weight: 600;
-  padding-bottom: 16px; border-bottom: 1px solid rgba(255,255,255,0.08);
-}
-#mobileDrawer a:last-child { border-bottom: none; }
-
-/* ─── ANIMATIONS ─── */
-@keyframes fadeUp {
-  from { opacity: 0; transform: translateY(28px); }
-  to   { opacity: 1; transform: translateY(0); }
-}
-.hero-badge  { animation: fadeUp 0.5s ease both; }
-.hero-title  { animation: fadeUp 0.6s ease 0.1s both; }
+/* ANIMATIONS */
+@keyframes fadeUp { from{opacity:0;transform:translateY(28px)} to{opacity:1;transform:translateY(0)} }
+.hero-badge { animation: fadeUp 0.5s ease both; }
+.hero-title { animation: fadeUp 0.6s ease 0.1s both; }
 .hero-subtitle { animation: fadeUp 0.6s ease 0.2s both; }
-.hero-cta    { animation: fadeUp 0.6s ease 0.3s both; }
-.hero-stats  { animation: fadeUp 0.6s ease 0.4s both; }
+.hero-cta { animation: fadeUp 0.6s ease 0.3s both; }
+.hero-trust { animation: fadeUp 0.6s ease 0.4s both; }
 
-/* ─── RESPONSIVE ─── */
+/* RESPONSIVE */
 @media (max-width: 900px) {
   nav { padding: 0 20px; }
   .nav-links { display: none; }
   .btn-whatsapp-nav { display: none; }
   .mobile-menu-btn { display: block; }
   .hero-content { grid-template-columns: 1fr; }
-  .hero-stats { display: none; }
+  .hero-trust { display: none; }
   .about-grid { grid-template-columns: 1fr; }
   .services-grid { grid-template-columns: repeat(2, 1fr); }
-  .testimonials-grid { grid-template-columns: 1fr; }
   .clients-grid { grid-template-columns: repeat(2, 1fr); }
   .contact-grid { grid-template-columns: 1fr; }
   .partners-inner { grid-template-columns: 1fr; }
@@ -850,7 +287,7 @@ footer {
   <a href="#home" class="nav-logo">
     <div class="nav-logo-text">EGY<span>POWER</span></div>
   </a>
-  <ul class="nav-links" id="navLinks">
+  <ul class="nav-links">
     <li><a href="#home" data-ar="الرئيسية" data-en="Home">الرئيسية</a></li>
     <li><a href="#about" data-ar="من نحن" data-en="About">من نحن</a></li>
     <li><a href="#services" data-ar="خدماتنا" data-en="Services">خدماتنا</a></li>
@@ -860,7 +297,7 @@ footer {
   </ul>
   <div class="nav-actions">
     <button class="btn-lang" onclick="toggleLang()" id="langBtn">EN</button>
-    <a href="https://wa.me/201000000000" target="_blank" class="btn-whatsapp-nav">
+    <a href="https://wa.me/201116998695" target="_blank" class="btn-whatsapp-nav">
       <i class="fa-brands fa-whatsapp"></i>
       <span data-ar="واتساب" data-en="WhatsApp">واتساب</span>
     </a>
@@ -876,8 +313,8 @@ footer {
   <a href="#partners" onclick="toggleMobile()" data-ar="وكلاؤنا" data-en="Partners">وكلاؤنا</a>
   <a href="#clients" onclick="toggleMobile()" data-ar="عملاؤنا" data-en="Clients">عملاؤنا</a>
   <a href="#contact" onclick="toggleMobile()" data-ar="تواصل معنا" data-en="Contact">تواصل معنا</a>
-  <a href="https://wa.me/201000000000" target="_blank" style="color:#25D366;">
-    <i class="fa-brands fa-whatsapp"></i> +20 100 000 0000
+  <a href="https://wa.me/201116998695" target="_blank" style="color:#25D366;">
+    <i class="fa-brands fa-whatsapp"></i> +20 111 699 8695
   </a>
 </div>
 
@@ -887,7 +324,6 @@ footer {
   <div class="hero-grid-overlay"></div>
   <div class="hero-gradient"></div>
   <div class="hero-accent"></div>
-
   <div class="hero-content">
     <div class="hero-left">
       <div class="hero-badge">
@@ -904,25 +340,42 @@ footer {
           <i class="fa-solid fa-wrench"></i>
           <span data-ar="استكشف خدماتنا" data-en="Explore Services">استكشف خدماتنا</span>
         </a>
-        <a href="https://wa.me/201000000000" target="_blank" class="btn-secondary" style="border-color:rgba(37,211,102,0.5);color:#25D366;">
+        <a href="https://wa.me/201116998695" target="_blank" class="btn-secondary" style="border-color:rgba(37,211,102,0.5);color:#25D366;">
           <i class="fa-brands fa-whatsapp"></i>
           <span data-ar="تواصل عبر واتساب" data-en="Chat on WhatsApp">تواصل عبر واتساب</span>
         </a>
       </div>
     </div>
 
-    <div class="hero-stats">
-      <div class="stat-item">
-        <div class="stat-number">25+</div>
-        <div class="stat-label" data-ar="سنة خبرة في السوق المصري" data-en="Years of experience in Egypt">سنة خبرة في السوق المصري</div>
+    <!-- TRUST CARD — replaces low-number stats -->
+    <div class="hero-trust">
+      <div class="trust-item">
+        <div class="trust-icon"><i class="fa-solid fa-award"></i></div>
+        <div>
+          <div class="trust-text-title" data-ar="أكثر من 25 عاماً من الخبرة" data-en="Over 25 Years of Expertise">أكثر من 25 عاماً من الخبرة</div>
+          <div class="trust-text-sub" data-ar="رواد في السوق المصري منذ عام 2000" data-en="Leading the Egyptian market since 2000">رواد في السوق المصري منذ عام 2000</div>
+        </div>
       </div>
-      <div class="stat-item">
-        <div class="stat-number">11+</div>
-        <div class="stat-label" data-ar="شركة كبرى في قائمة عملائنا" data-en="Major companies served">شركة كبرى في قائمة عملائنا</div>
+      <div class="trust-item">
+        <div class="trust-icon gold-bg"><i class="fa-solid fa-handshake"></i></div>
+        <div>
+          <div class="trust-text-title" data-ar="وكالات حصرية عالمية" data-en="Exclusive Global Agencies">وكالات حصرية عالمية</div>
+          <div class="trust-text-sub" data-ar="الممثل الوحيد لـ Boten Diesel و Deqpa في مصر" data-en="Sole representative of Boten Diesel & Deqpa in Egypt">الممثل الوحيد لـ Boten Diesel و Deqpa في مصر</div>
+        </div>
       </div>
-      <div class="stat-item">
-        <div class="stat-number">2</div>
-        <div class="stat-label" data-ar="وكالات حصرية عالمية" data-en="Exclusive global partnerships">وكالات حصرية عالمية</div>
+      <div class="trust-item">
+        <div class="trust-icon"><i class="fa-solid fa-building"></i></div>
+        <div>
+          <div class="trust-text-title" data-ar="شركاء كبرى المقاولين" data-en="Partnered with Top Contractors">شركاء كبرى المقاولين</div>
+          <div class="trust-text-sub" data-ar="Hassan Allam، المقاولون العرب، Petrojet وغيرهم" data-en="Hassan Allam, Arab Contractors, Petrojet & more">Hassan Allam، المقاولون العرب، Petrojet وغيرهم</div>
+        </div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon green-bg"><i class="fa-solid fa-shield-halved"></i></div>
+        <div>
+          <div class="trust-text-title" data-ar="قطع غيار أصلية مضمونة" data-en="Guaranteed Genuine Parts">قطع غيار أصلية مضمونة</div>
+          <div class="trust-text-sub" data-ar="مستوردة مباشرة من المصنّع مع ضمان الجودة" data-en="Imported directly from manufacturer with quality guarantee">مستوردة مباشرة من المصنّع مع ضمان الجودة</div>
+        </div>
       </div>
     </div>
   </div>
@@ -936,19 +389,10 @@ footer {
 
 <!-- CONTACT BAR -->
 <div class="contact-bar">
-  <a href="tel:+201000000000" class="contact-bar-item">
-    <i class="fa-solid fa-phone"></i> +20 100 000 0000
-  </a>
-  <a href="https://wa.me/201000000000" target="_blank" class="contact-bar-item">
-    <i class="fa-brands fa-whatsapp" style="color:#25D366"></i> WhatsApp
-  </a>
-  <a href="mailto:egypower@gmail.com" class="contact-bar-item">
-    <i class="fa-solid fa-envelope"></i> egypower@gmail.com
-  </a>
-  <a href="#contact" class="contact-bar-item">
-    <i class="fa-solid fa-location-dot"></i>
-    <span data-ar="طنطا، الغربية" data-en="Tanta, Gharbia">طنطا، الغربية</span>
-  </a>
+  <a href="tel:+201116998695" class="contact-bar-item"><i class="fa-solid fa-phone"></i> +20 111 699 8695</a>
+  <a href="https://wa.me/201116998695" target="_blank" class="contact-bar-item"><i class="fa-brands fa-whatsapp" style="color:#25D366"></i> WhatsApp</a>
+  <a href="mailto:egypower@gmail.com" class="contact-bar-item"><i class="fa-solid fa-envelope"></i> egypower@gmail.com</a>
+  <a href="https://maps.app.goo.gl/9scowmYLTC28GRVq7" target="_blank" class="contact-bar-item"><i class="fa-solid fa-location-dot"></i> <span data-ar="المطرية، القاهرة" data-en="El Matareya, Cairo">المطرية، القاهرة</span></a>
 </div>
 
 <!-- ABOUT -->
@@ -1011,162 +455,74 @@ footer {
   </div>
 </section>
 
-<!-- PARTNERS -->
-<section id="partners" style="padding: 60px 0;">
+<!-- PARTNERS — enhanced with logos and descriptions -->
+<section id="partners" style="padding:80px 0;">
   <div class="partners-inner">
     <div>
       <div class="section-tag" style="background:rgba(245,158,11,0.15);border-color:rgba(245,158,11,0.3);color:var(--gold-light);" data-ar="شركاؤنا" data-en="OUR PARTNERS">شركاؤنا</div>
-      <h2 class="partners-heading"><span data-ar="وكلاء حصريون" data-en="Exclusive">وكلاء حصريون</span><br><span class="accent" data-ar="لعلامات عالمية" data-en="Global Partners">لعلامات عالمية</span></h2>
-      <p class="partners-sub" data-ar="نمثل أفضل العلامات التجارية العالمية في مجال معدات الديزل وأجهزة المعايرة في السوق المصري." data-en="We represent the best global brands in diesel equipment and calibration tools in the Egyptian market.">نمثل أفضل العلامات التجارية العالمية في مجال معدات الديزل وأجهزة المعايرة في السوق المصري.</p>
+      <h2 class="partners-heading"><span data-ar="وكلاء حصريون" data-en="Exclusive">وكلاء حصريون</span><br><span style="color:var(--gold)" data-ar="لعلامات عالمية" data-en="Global Partners">لعلامات عالمية</span></h2>
+      <p class="partners-sub" data-ar="نمثل أفضل العلامات التجارية العالمية في مجال معدات الديزل وأجهزة المعايرة — الأجهزة التي يثق بها محترفو الديزل في أوروبا وتركيا وعبر العالم." data-en="We represent the world's top brands in diesel equipment and calibration tools — the devices trusted by diesel professionals across Europe, Turkey, and beyond.">نمثل أفضل العلامات التجارية العالمية في مجال معدات الديزل وأجهزة المعايرة — الأجهزة التي يثق بها محترفو الديزل في أوروبا وتركيا وعبر العالم.</p>
     </div>
     <div class="partners-cards">
+      <!-- Boten Diesel -->
       <a href="https://www.boten-diesel.com/" target="_blank" class="partner-card">
-        <div>
-          <div class="partner-name">BOTEN <span class="sub">DIESEL</span></div>
+        <div class="partner-logo-box">
+          <div class="partner-logo-text" style="color:#1565C0;">BOTEN<span class="sub" style="color:#F59E0B;">DIESEL</span></div>
         </div>
-        <div class="partner-link"><span data-ar="زيارة الموقع" data-en="Visit website">زيارة الموقع</span> <i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+        <div class="partner-info">
+          <div class="partner-name-big">BOTEN DIESEL</div>
+          <span class="partner-origin" data-ar="ألمانيا / أوروبا" data-en="Germany / Europe">ألمانيا / أوروبا</span>
+          <p class="partner-desc" data-ar="الشركة الرائدة عالمياً في تصنيع أجهزة معايرة طلمبات الديزل عالية الدقة. أجهزة Boten هي المرجع الصناعي لورش الديزل الاحترافية حول العالم." data-en="The world's leading manufacturer of high-precision diesel pump calibration equipment. Boten devices are the industry reference for professional diesel workshops worldwide.">الشركة الرائدة عالمياً في تصنيع أجهزة معايرة طلمبات الديزل عالية الدقة. أجهزة Boten هي المرجع الصناعي لورش الديزل الاحترافية حول العالم.</p>
+          <span class="partner-visit" data-ar="زيارة الموقع الرسمي" data-en="Visit official website">زيارة الموقع الرسمي <i class="fa-solid fa-arrow-up-right-from-square" style="font-size:10px"></i></span>
+        </div>
       </a>
+      <!-- Deqpa -->
       <a href="https://deqpa.com.tr/" target="_blank" class="partner-card">
-        <div>
-          <div class="partner-name" style="color:var(--gold);">DEQPA</div>
+        <div class="partner-logo-box">
+          <div class="partner-logo-text" style="color:#DC2626;">DEQPA</div>
         </div>
-        <div class="partner-link"><span data-ar="زيارة الموقع" data-en="Visit website">زيارة الموقع</span> <i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+        <div class="partner-info">
+          <div class="partner-name-big" style="color:var(--gold);">DEQPA</div>
+          <span class="partner-origin" data-ar="تركيا" data-en="Turkey">تركيا</span>
+          <p class="partner-desc" data-ar="شركة تركية متخصصة في تصنيع قطع غيار ديزل عالية الجودة وأجهزة اختبار وحدات الحقن. تُعدّ Deqpa خياراً موثوقاً للمصانع والورش الكبرى على مستوى العالم." data-en="A Turkish company specializing in high-quality diesel spare parts and injection unit testing equipment. Deqpa is a trusted choice for factories and major workshops worldwide.">شركة تركية متخصصة في تصنيع قطع غيار ديزل عالية الجودة وأجهزة اختبار وحدات الحقن. تُعدّ Deqpa خياراً موثوقاً للمصانع والورش الكبرى على مستوى العالم.</p>
+          <span class="partner-visit" data-ar="زيارة الموقع الرسمي" data-en="Visit official website">زيارة الموقع الرسمي <i class="fa-solid fa-arrow-up-right-from-square" style="font-size:10px"></i></span>
+        </div>
       </a>
     </div>
   </div>
 </section>
 
-<!-- CLIENTS -->
+<!-- CLIENTS — infinite scrolling marquee -->
 <section id="clients">
   <div class="section-inner">
     <div class="section-tag" data-ar="من نخدم" data-en="WHO WE SERVE">من نخدم</div>
     <h2 class="section-title" data-ar="عملاؤنا المميزون" data-en="Our Valued Clients">عملاؤنا المميزون</h2>
     <div class="section-divider"></div>
-    <p class="section-desc" data-ar="نفخر بخدمة أكبر شركات المقاولات والبناء في مصر والمنطقة." data-en="We're proud to serve Egypt's and the region's largest construction and contracting companies.">نفخر بخدمة أكبر شركات المقاولات والبناء في مصر والمنطقة.</p>
-    <div class="marquee-outer">
-      <div class="marquee-track">
-        <!-- Row 1 (original) -->
-        <a href="https://www.hassanallam.com/" target="_blank" class="client-card">
-          <div class="client-logo-wrap"><img src="https://www.google.com/s2/favicons?domain=hassanallam.com&sz=64" alt="Hassan Allam" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="client-initials" style="display:none">HA</span></div>
-          <div class="client-name">Hassan Allam Holding</div>
-        </a>
-        <a href="https://www.arabcont.com/" target="_blank" class="client-card">
-          <div class="client-logo-wrap"><img src="https://www.google.com/s2/favicons?domain=arabcont.com&sz=64" alt="Arab Contractors" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="client-initials" style="display:none">AC</span></div>
-          <div class="client-name">Arab Contractors</div>
-        </a>
-        <a href="https://elhazek.com/" target="_blank" class="client-card">
-          <div class="client-logo-wrap"><img src="https://www.google.com/s2/favicons?domain=elhazek.com&sz=64" alt="Al Hazek" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="client-initials" style="display:none">AH</span></div>
-          <div class="client-name">Al Hazek Construction</div>
-        </a>
-        <a href="https://ess.petrojet.com.eg" target="_blank" class="client-card">
-          <div class="client-logo-wrap"><img src="https://www.google.com/s2/favicons?domain=petrojet.com.eg&sz=64" alt="Petrojet" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="client-initials" style="display:none">PJ</span></div>
-          <div class="client-name">Petrojet</div>
-        </a>
-        <a href="https://www.asgcgroup.com/" target="_blank" class="client-card">
-          <div class="client-logo-wrap"><img src="https://www.google.com/s2/favicons?domain=asgcgroup.com&sz=64" alt="ASGC" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="client-initials" style="display:none">AG</span></div>
-          <div class="client-name">ASGC</div>
-        </a>
-        <a href="http://www.daralmimar.com/" target="_blank" class="client-card">
-          <div class="client-logo-wrap"><img src="https://www.google.com/s2/favicons?domain=daralmimar.com&sz=64" alt="Dar Al Mimar" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="client-initials" style="display:none">DM</span></div>
-          <div class="client-name">Dar Al Mimar</div>
-        </a>
-        <a href="https://www.linkedin.com/company/apex-constructions-decoration/" target="_blank" class="client-card">
-          <div class="client-logo-wrap"><img src="https://www.google.com/s2/favicons?domain=linkedin.com&sz=64" alt="Apex" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="client-initials" style="display:none">AP</span></div>
-          <div class="client-name">Apex Construction</div>
-        </a>
-        <a href="https://www.linkedin.com/company/abu-gemeaa/" target="_blank" class="client-card">
-          <div class="client-logo-wrap"><img src="https://www.google.com/s2/favicons?domain=linkedin.com&sz=64" alt="Abu Gemeaa" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="client-initials" style="display:none">AG</span></div>
-          <div class="client-name">Abu Gemeaa Group</div>
-        </a>
-        <div class="client-card" style="cursor:default;">
-          <div class="client-logo-wrap"><span class="client-initials">KC</span></div>
-          <div class="client-name">Kerv Construction</div>
-        </div>
-        <!-- Row 2 (clone for infinite loop) -->
-        <a href="https://www.hassanallam.com/" target="_blank" class="client-card">
-          <div class="client-logo-wrap"><img src="https://www.google.com/s2/favicons?domain=hassanallam.com&sz=64" alt="Hassan Allam" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="client-initials" style="display:none">HA</span></div>
-          <div class="client-name">Hassan Allam Holding</div>
-        </a>
-        <a href="https://www.arabcont.com/" target="_blank" class="client-card">
-          <div class="client-logo-wrap"><img src="https://www.google.com/s2/favicons?domain=arabcont.com&sz=64" alt="Arab Contractors" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="client-initials" style="display:none">AC</span></div>
-          <div class="client-name">Arab Contractors</div>
-        </a>
-        <a href="https://elhazek.com/" target="_blank" class="client-card">
-          <div class="client-logo-wrap"><img src="https://www.google.com/s2/favicons?domain=elhazek.com&sz=64" alt="Al Hazek" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="client-initials" style="display:none">AH</span></div>
-          <div class="client-name">Al Hazek Construction</div>
-        </a>
-        <a href="https://ess.petrojet.com.eg" target="_blank" class="client-card">
-          <div class="client-logo-wrap"><img src="https://www.google.com/s2/favicons?domain=petrojet.com.eg&sz=64" alt="Petrojet" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="client-initials" style="display:none">PJ</span></div>
-          <div class="client-name">Petrojet</div>
-        </a>
-        <a href="https://www.asgcgroup.com/" target="_blank" class="client-card">
-          <div class="client-logo-wrap"><img src="https://www.google.com/s2/favicons?domain=asgcgroup.com&sz=64" alt="ASGC" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="client-initials" style="display:none">AG</span></div>
-          <div class="client-name">ASGC</div>
-        </a>
-        <a href="http://www.daralmimar.com/" target="_blank" class="client-card">
-          <div class="client-logo-wrap"><img src="https://www.google.com/s2/favicons?domain=daralmimar.com&sz=64" alt="Dar Al Mimar" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="client-initials" style="display:none">DM</span></div>
-          <div class="client-name">Dar Al Mimar</div>
-        </a>
-        <a href="https://www.linkedin.com/company/apex-constructions-decoration/" target="_blank" class="client-card">
-          <div class="client-logo-wrap"><img src="https://www.google.com/s2/favicons?domain=linkedin.com&sz=64" alt="Apex" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="client-initials" style="display:none">AP</span></div>
-          <div class="client-name">Apex Construction</div>
-        </a>
-        <a href="https://www.linkedin.com/company/abu-gemeaa/" target="_blank" class="client-card">
-          <div class="client-logo-wrap"><img src="https://www.google.com/s2/favicons?domain=linkedin.com&sz=64" alt="Abu Gemeaa" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="client-initials" style="display:none">AG</span></div>
-          <div class="client-name">Abu Gemeaa Group</div>
-        </a>
-        <div class="client-card" style="cursor:default;">
-          <div class="client-logo-wrap"><span class="client-initials">KC</span></div>
-          <div class="client-name">Kerv Construction</div>
-        </div>
-      </div>
-    </div>
+    <p class="section-desc" data-ar="نفخر بخدمة أكبر شركات المقاولات والبناء في مصر والمنطقة — شركات تثق بنا لإبقاء آلياتها تعمل بلا توقف." data-en="We're proud to serve Egypt's and the region's largest construction companies — companies that trust us to keep their machinery running without interruption.">نفخر بخدمة أكبر شركات المقاولات والبناء في مصر والمنطقة — شركات تثق بنا لإبقاء آلياتها تعمل بلا توقف.</p>
   </div>
-</section>
 
-<!-- TESTIMONIALS -->
-<section id="testimonials">
-  <div class="section-inner">
-    <div class="section-tag" data-ar="آراء عملائنا" data-en="TESTIMONIALS">آراء عملائنا</div>
-    <h2 class="section-title" data-ar="ماذا يقول عملاؤنا" data-en="What Our Clients Say">ماذا يقول عملاؤنا</h2>
-    <div class="section-divider"></div>
-    <div class="testimonials-grid">
-      <div class="testimonial-card">
-        <div class="star-row"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-        <div class="quote-mark">"</div>
-        <p class="testimonial-text" data-ar="Egypower هي شريكنا الأول في صيانة آلياتنا الثقيلة. خدمة سريعة، قطع غيار أصلية، وفريق احترافي يفهم احتياجاتنا بدقة." data-en="Egypower is our first partner for heavy machinery maintenance. Fast service, genuine parts, and a professional team that understands our needs precisely.">Egypower هي شريكنا الأول في صيانة آلياتنا الثقيلة. خدمة سريعة، قطع غيار أصلية، وفريق احترافي يفهم احتياجاتنا بدقة.</p>
-        <div class="testimonial-author">
-          <div class="author-avatar">ح</div>
-          <div>
-            <div class="author-name" data-ar="مدير الأسطول" data-en="Fleet Manager">مدير الأسطول</div>
-            <div class="author-company">Hassan Allam Sons</div>
-          </div>
-        </div>
-      </div>
-      <div class="testimonial-card">
-        <div class="star-row"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-        <div class="quote-mark">"</div>
-        <p class="testimonial-text" data-ar="استجابة ممتازة وكفاءة عالية في الإصلاح. وفّرت لنا Egypower وقتاً وتكلفةً كبيرَين في مشاريعنا الوطنية." data-en="Excellent response and high repair efficiency. Egypower saved us significant time and cost on our national projects.">استجابة ممتازة وكفاءة عالية في الإصلاح. وفّرت لنا Egypower وقتاً وتكلفةً كبيرَين في مشاريعنا الوطنية.</p>
-        <div class="testimonial-author">
-          <div class="author-avatar">م</div>
-          <div>
-            <div class="author-name" data-ar="مدير العمليات" data-en="Operations Manager">مدير العمليات</div>
-            <div class="author-company">Arab Contractors</div>
-          </div>
-        </div>
-      </div>
-      <div class="testimonial-card">
-        <div class="star-row"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-        <div class="quote-mark">"</div>
-        <p class="testimonial-text" data-ar="أجهزة المعايرة التي يوفرها Egypower رفعت من كفاءة معداتنا بشكل ملحوظ. نثق بخبرتهم على مدار السنين." data-en="The calibration devices provided by Egypower noticeably improved our equipment efficiency. We trust their expertise year after year.">أجهزة المعايرة التي يوفرها Egypower رفعت من كفاءة معداتنا بشكل ملحوظ. نثق بخبرتهم على مدار السنين.</p>
-        <div class="testimonial-author">
-          <div class="author-avatar">د</div>
-          <div>
-            <div class="author-name" data-ar="مدير الميكانيكا" data-en="Mechanical Director">مدير الميكانيكا</div>
-            <div class="author-company">Dar Al Maamar</div>
-          </div>
-        </div>
-      </div>
+  <div class="marquee-outer" style="margin-top:40px;">
+    <div class="marquee-track" id="marqueeTrack">
+      <!-- original set -->
+      <a href="https://www.hassanallam.com/" target="_blank" class="client-card"><div class="client-logo-wrap"><img src="https://www.google.com/s2/favicons?domain=hassanallam.com&sz=64" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="client-initials" style="display:none">HA</span></div><div class="client-name">Hassan Allam Holding</div></a>
+      <a href="https://www.arabcont.com/" target="_blank" class="client-card"><div class="client-logo-wrap"><img src="https://www.google.com/s2/favicons?domain=arabcont.com&sz=64" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="client-initials" style="display:none">AC</span></div><div class="client-name">Arab Contractors</div></a>
+      <a href="https://elhazek.com/" target="_blank" class="client-card"><div class="client-logo-wrap"><img src="https://www.google.com/s2/favicons?domain=elhazek.com&sz=64" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="client-initials" style="display:none">AH</span></div><div class="client-name">Al Hazek Construction</div></a>
+      <a href="https://ess.petrojet.com.eg" target="_blank" class="client-card"><div class="client-logo-wrap"><img src="https://www.google.com/s2/favicons?domain=petrojet.com.eg&sz=64" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="client-initials" style="display:none">PJ</span></div><div class="client-name">Petrojet</div></a>
+      <a href="https://www.asgcgroup.com/" target="_blank" class="client-card"><div class="client-logo-wrap"><img src="https://www.google.com/s2/favicons?domain=asgcgroup.com&sz=64" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="client-initials" style="display:none">AG</span></div><div class="client-name">ASGC</div></a>
+      <a href="http://www.daralmimar.com/" target="_blank" class="client-card"><div class="client-logo-wrap"><img src="https://www.google.com/s2/favicons?domain=daralmimar.com&sz=64" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="client-initials" style="display:none">DM</span></div><div class="client-name">Dar Al Mimar</div></a>
+      <a href="https://www.linkedin.com/company/apex-constructions-decoration/" target="_blank" class="client-card"><div class="client-logo-wrap"><span class="client-initials">AP</span></div><div class="client-name">Apex Construction</div></a>
+      <a href="https://www.linkedin.com/company/abu-gemeaa/" target="_blank" class="client-card"><div class="client-logo-wrap"><span class="client-initials">AG</span></div><div class="client-name">Abu Gemeaa Group</div></a>
+      <div class="client-card" style="cursor:default;"><div class="client-logo-wrap"><span class="client-initials">KC</span></div><div class="client-name">Kerv Construction</div></div>
+      <!-- cloned set for seamless loop -->
+      <a href="https://www.hassanallam.com/" target="_blank" class="client-card"><div class="client-logo-wrap"><img src="https://www.google.com/s2/favicons?domain=hassanallam.com&sz=64" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="client-initials" style="display:none">HA</span></div><div class="client-name">Hassan Allam Holding</div></a>
+      <a href="https://www.arabcont.com/" target="_blank" class="client-card"><div class="client-logo-wrap"><img src="https://www.google.com/s2/favicons?domain=arabcont.com&sz=64" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="client-initials" style="display:none">AC</span></div><div class="client-name">Arab Contractors</div></a>
+      <a href="https://elhazek.com/" target="_blank" class="client-card"><div class="client-logo-wrap"><img src="https://www.google.com/s2/favicons?domain=elhazek.com&sz=64" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="client-initials" style="display:none">AH</span></div><div class="client-name">Al Hazek Construction</div></a>
+      <a href="https://ess.petrojet.com.eg" target="_blank" class="client-card"><div class="client-logo-wrap"><img src="https://www.google.com/s2/favicons?domain=petrojet.com.eg&sz=64" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="client-initials" style="display:none">PJ</span></div><div class="client-name">Petrojet</div></a>
+      <a href="https://www.asgcgroup.com/" target="_blank" class="client-card"><div class="client-logo-wrap"><img src="https://www.google.com/s2/favicons?domain=asgcgroup.com&sz=64" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="client-initials" style="display:none">AG</span></div><div class="client-name">ASGC</div></a>
+      <a href="http://www.daralmimar.com/" target="_blank" class="client-card"><div class="client-logo-wrap"><img src="https://www.google.com/s2/favicons?domain=daralmimar.com&sz=64" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="client-initials" style="display:none">DM</span></div><div class="client-name">Dar Al Mimar</div></a>
+      <a href="https://www.linkedin.com/company/apex-constructions-decoration/" target="_blank" class="client-card"><div class="client-logo-wrap"><span class="client-initials">AP</span></div><div class="client-name">Apex Construction</div></a>
+      <a href="https://www.linkedin.com/company/abu-gemeaa/" target="_blank" class="client-card"><div class="client-logo-wrap"><span class="client-initials">AG</span></div><div class="client-name">Abu Gemeaa Group</div></a>
+      <div class="client-card" style="cursor:default;"><div class="client-logo-wrap"><span class="client-initials">KC</span></div><div class="client-name">Kerv Construction</div></div>
     </div>
   </div>
 </section>
@@ -1180,31 +536,31 @@ footer {
         <h2 class="contact-info-title" data-ar="نحن هنا لخدمتكم" data-en="We're Here For You">نحن هنا لخدمتكم</h2>
         <p class="contact-info-sub" data-ar="تواصل معنا للاستفسار عن الخدمات أو طلب عرض أسعار لقطع الغيار. فريقنا متاح لمساعدتك." data-en="Contact us for service inquiries or spare parts quotations. Our team is ready to help.">تواصل معنا للاستفسار عن الخدمات أو طلب عرض أسعار لقطع الغيار. فريقنا متاح لمساعدتك.</p>
         <div class="contact-methods">
-          <a href="https://wa.me/201000000000" target="_blank" class="contact-method">
+          <a href="https://wa.me/201116998695" target="_blank" class="contact-method">
             <div class="contact-method-icon green"><i class="fa-brands fa-whatsapp"></i></div>
-            <div><span class="contact-method-label">WhatsApp</span><span class="contact-method-value">+20 100 000 0000</span></div>
+            <div><span class="contact-method-label">WhatsApp</span><span class="contact-method-value">+20 111 699 8695</span></div>
           </a>
-          <a href="tel:+201000000000" class="contact-method">
+          <a href="tel:+201116998695" class="contact-method">
             <div class="contact-method-icon blue"><i class="fa-solid fa-phone"></i></div>
-            <div><span class="contact-method-label" data-ar="هاتف" data-en="Phone">هاتف</span><span class="contact-method-value">+20 100 000 0000</span></div>
+            <div><span class="contact-method-label" data-ar="هاتف" data-en="Phone">هاتف</span><span class="contact-method-value">+20 111 699 8695</span></div>
           </a>
           <a href="mailto:egypower@gmail.com" class="contact-method">
             <div class="contact-method-icon gold"><i class="fa-solid fa-envelope"></i></div>
             <div><span class="contact-method-label" data-ar="بريد إلكتروني" data-en="Email">بريد إلكتروني</span><span class="contact-method-value">egypower@gmail.com</span></div>
           </a>
-          <div class="contact-method" style="cursor:default;">
-            <div class="contact-method-icon" style="background:rgba(255,255,255,0.08);color:rgba(255,255,255,0.5);"><i class="fa-solid fa-location-dot"></i></div>
-            <div><span class="contact-method-label" data-ar="العنوان" data-en="Address">العنوان</span><span class="contact-method-value" data-ar="طنطا، محافظة الغربية، مصر" data-en="Tanta, Gharbia Governorate, Egypt">طنطا، محافظة الغربية، مصر</span></div>
-          </div>
+          <a href="https://maps.app.goo.gl/9scowmYLTC28GRVq7" target="_blank" class="contact-method">
+            <div class="contact-method-icon" style="background:rgba(255,255,255,0.08);color:rgba(255,255,255,0.6);"><i class="fa-solid fa-location-dot"></i></div>
+            <div><span class="contact-method-label" data-ar="العنوان" data-en="Address">العنوان</span><span class="contact-method-value" style="font-size:13px;" data-ar="الإزبة، المطرية، القاهرة 4530001" data-en="Al Izab, El Matareya, Cairo 4530001">الإزبة، المطرية، القاهرة 4530001</span></div>
+          </a>
         </div>
         <div class="map-wrap">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54695.27500661755!2d30.96677937666952!3d30.791557007279317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f7c95daafcf035%3A0x73215869fa5b5d12!2sTanta%2C%20Al%20Gharbiyya%20Governorate!5e0!3m2!1sen!2seg!4v1709400000000!5m2!1sen!2seg" width="100%" height="220" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3450.0!2d31.3!3d30.13!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDA3JzQ4LjAiTiAzMcKwMTgnMDAuMCJF!5e0!3m2!1sen!2seg!4v1709400000000!5m2!1sen!2seg" width="100%" height="230" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
       </div>
 
       <div class="contact-form">
         <div class="form-title" data-ar="أرسل رسالتك" data-en="Send Us a Message">أرسل رسالتك</div>
-        <form id="contactForm">
+        <form id="contactForm" onsubmit="handleSubmit(event)">
           <input type="hidden" name="_subject" value="New inquiry from Egypower website">
           <div class="form-group">
             <label class="form-label" data-ar="الاسم الكامل" data-en="Full Name">الاسم الكامل</label>
@@ -1222,12 +578,11 @@ footer {
             <label class="form-label" data-ar="الرسالة" data-en="Message">الرسالة</label>
             <textarea name="message" class="form-input" placeholder="..." required></textarea>
           </div>
-          <div id="formStatus" class="form-status" role="status" aria-live="polite"></div>
-          <button type="submit" class="btn-submit">
-            <span class="btn-spinner" aria-hidden="true"></span>
-            <i class="fa-solid fa-paper-plane btn-icon" aria-hidden="true"></i>
-            <span class="btn-text" data-ar="إرسال الرسالة" data-en="Send Message">إرسال الرسالة</span>
+          <button type="submit" class="btn-submit" id="submitBtn">
+            <i class="fa-solid fa-paper-plane"></i>
+            <span data-ar="إرسال الرسالة" data-en="Send Message">إرسال الرسالة</span>
           </button>
+          <div class="form-msg" id="formMsg"></div>
         </form>
       </div>
     </div>
@@ -1239,125 +594,83 @@ footer {
   <div class="footer-inner">
     <div class="footer-copy" data-ar="© Egypower 2025 – جميع الحقوق محفوظة." data-en="© Egypower 2025 – All Rights Reserved.">© Egypower 2025 – جميع الحقوق محفوظة.</div>
     <div class="social-links">
-      <a href="https://wa.me/201000000000" target="_blank" class="social-link wa"><i class="fa-brands fa-whatsapp"></i></a>
+      <a href="https://wa.me/201116998695" target="_blank" class="social-link wa"><i class="fa-brands fa-whatsapp"></i></a>
       <a href="#" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
       <a href="#" class="social-link"><i class="fa-brands fa-linkedin-in"></i></a>
     </div>
   </div>
 </footer>
 
-<!-- WHATSAPP FLOAT -->
-<a href="https://wa.me/201000000000" target="_blank" class="wa-float">
+<!-- WA FLOAT -->
+<a href="https://wa.me/201116998695" target="_blank" class="wa-float">
   <i class="fa-brands fa-whatsapp"></i>
   <span data-ar="تواصل الآن" data-en="Chat Now">تواصل الآن</span>
 </a>
 
-<script src="js/main.js"></script>
 <script>
 let lang = 'ar';
 
-function getFormMessage(type) {
-  if (type === 'success') {
-    return lang === 'ar'
-      ? 'تم إرسال رسالتك بنجاح! سنتواصل معك قريباً'
-      : "Message sent! We'll be in touch soon.";
-  }
-  return lang === 'ar'
-    ? 'حدث خطأ، يرجى المحاولة مرة أخرى أو التواصل عبر واتساب'
-    : 'Something went wrong. Please try WhatsApp instead.';
-}
-
-function setFormStatus(statusEl, type) {
-  statusEl.classList.remove('is-success', 'is-error');
-  if (!type) {
-    statusEl.textContent = '';
-    statusEl.style.display = 'none';
-    return;
-  }
-  statusEl.textContent = getFormMessage(type);
-  statusEl.classList.add(type === 'success' ? 'is-success' : 'is-error');
-}
-
-async function submitContactForm(form) {
-  const btn = form.querySelector('.btn-submit');
-  const statusEl = document.getElementById('formStatus');
-
-  setFormStatus(statusEl, null);
-  btn.disabled = true;
-  btn.classList.add('is-loading');
-
-  try {
-    const formData = new FormData(form);
-    const res = await fetch('https://formspree.io/f/mgopkbbe', {
-      method: 'POST',
-      body: formData,
-      headers: { 'Accept': 'application/json' },
-    });
-
-    if (!res.ok) throw new Error('Formspree request failed');
-
-    setFormStatus(statusEl, 'success');
-    form.reset();
-  } catch (err) {
-    setFormStatus(statusEl, 'error');
-  } finally {
-    btn.disabled = false;
-    btn.classList.remove('is-loading');
-  }
-}
-
 function toggleLang() {
   lang = lang === 'ar' ? 'en' : 'ar';
-  const html = document.documentElement;
-  const body = document.body;
-  const btn = document.getElementById('langBtn');
-
-  if (lang === 'en') {
-    html.setAttribute('dir', 'ltr');
-    html.setAttribute('lang', 'en');
-    body.classList.add('ltr');
-    btn.textContent = 'AR';
-  } else {
-    html.setAttribute('dir', 'rtl');
-    html.setAttribute('lang', 'ar');
-    body.classList.remove('ltr');
-    btn.textContent = 'EN';
-  }
-
+  const isAr = lang === 'ar';
+  document.documentElement.setAttribute('dir', isAr ? 'rtl' : 'ltr');
+  document.documentElement.setAttribute('lang', lang);
+  document.body.classList.toggle('ltr', !isAr);
+  document.getElementById('langBtn').textContent = isAr ? 'EN' : 'AR';
   document.querySelectorAll('[data-ar]').forEach(el => {
-    el.textContent = lang === 'ar' ? el.getAttribute('data-ar') : el.getAttribute('data-en');
+    el.textContent = isAr ? el.getAttribute('data-ar') : el.getAttribute('data-en');
   });
-
-  // Fix wa-float position
-  const waFloat = document.querySelector('.wa-float');
-  if (lang === 'en') {
-    waFloat.style.right = 'auto'; waFloat.style.left = '28px';
-  } else {
-    waFloat.style.left = 'auto'; waFloat.style.right = '28px';
-  }
-
-  // Update form status message language (if visible)
-  const statusEl = document.getElementById('formStatus');
-  if (statusEl && (statusEl.classList.contains('is-success') || statusEl.classList.contains('is-error'))) {
-    setFormStatus(statusEl, statusEl.classList.contains('is-success') ? 'success' : 'error');
-  }
+  const waf = document.querySelector('.wa-float');
+  if (!isAr) { waf.style.right = 'auto'; waf.style.left = '28px'; }
+  else        { waf.style.left  = 'auto'; waf.style.right = '28px'; }
 }
 
 function toggleMobile() {
   document.getElementById('mobileDrawer').classList.toggle('open');
 }
 
-function handleSubmit(e) {
+async function handleSubmit(e) {
   e.preventDefault();
-  submitContactForm(e.target);
+  const btn = document.getElementById('submitBtn');
+  const msg = document.getElementById('formMsg');
+  msg.className = 'form-msg';
+  btn.disabled = true;
+  btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> ' + (lang === 'ar' ? 'جاري الإرسال...' : 'Sending...');
+
+  try {
+    const res = await fetch('https://formspree.io/f/mgopkbbe', {
+      method: 'POST',
+      body: new FormData(e.target),
+      headers: { 'Accept': 'application/json' }
+    });
+    if (res.ok) {
+      msg.textContent = lang === 'ar'
+        ? 'تم إرسال رسالتك بنجاح! سنتواصل معك قريباً.'
+        : 'Message sent! We\'ll be in touch soon.';
+      msg.className = 'form-msg success';
+      e.target.reset();
+    } else {
+      throw new Error('failed');
+    }
+  } catch {
+    msg.textContent = lang === 'ar'
+      ? 'حدث خطأ، يرجى المحاولة مرة أخرى أو التواصل عبر واتساب.'
+      : 'Something went wrong. Please try WhatsApp instead.';
+    msg.className = 'form-msg error';
+  }
+  btn.disabled = false;
+  btn.innerHTML = '<i class="fa-solid fa-paper-plane"></i> <span>' + (lang === 'ar' ? 'إرسال الرسالة' : 'Send Message') + '</span>';
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  const form = document.getElementById('contactForm');
-  if (form) form.addEventListener('submit', handleSubmit);
+window.addEventListener('scroll', () => {
+  document.querySelector('nav').style.boxShadow =
+    window.scrollY > 20 ? '0 4px 24px rgba(0,0,0,0.4)' : 'none';
 });
 
-// Sticky nav
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 900)
+    document.getElementById('mobileDrawer').classList.remove('open');
+});
 </script>
 </body>
 </html>
