@@ -86,35 +86,16 @@ nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; a
 .hero-title .accent { color: var(--gold); }
 .hero-subtitle { font-size: 17px; font-weight: 400; color: rgba(255,255,255,0.65); line-height: 1.8; margin-bottom: 36px; max-width: 520px; }
 .hero-cta { display: flex; gap: 14px; flex-wrap: wrap; }
-
-/* Hero trust card — replaced stats */
-.hero-trust {
-  background: rgba(255,255,255,0.04);
-  border: 1px solid rgba(255,255,255,0.1);
-  border-radius: 10px; padding: 28px;
-  backdrop-filter: blur(10px);
-  display: flex; flex-direction: column; gap: 0;
-}
-.trust-item {
-  display: flex; align-items: center; gap: 16px;
-  padding: 18px 0;
-  border-bottom: 1px solid rgba(255,255,255,0.07);
-}
+.hero-trust { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 28px; backdrop-filter: blur(10px); display: flex; flex-direction: column; gap: 0; }
+.trust-item { display: flex; align-items: center; gap: 16px; padding: 18px 0; border-bottom: 1px solid rgba(255,255,255,0.07); }
 .trust-item:last-child { border-bottom: none; padding-bottom: 0; }
 .trust-item:first-child { padding-top: 0; }
-.trust-icon {
-  width: 44px; height: 44px; flex-shrink: 0;
-  background: rgba(21,101,192,0.25);
-  border-radius: 8px;
-  display: flex; align-items: center; justify-content: center;
-  color: var(--blue-glow); font-size: 18px;
-}
+.trust-icon { width: 44px; height: 44px; flex-shrink: 0; background: rgba(21,101,192,0.25); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: var(--blue-glow); font-size: 18px; }
 .trust-icon.gold-bg { background: rgba(245,158,11,0.2); color: var(--gold); }
 .trust-icon.green-bg { background: rgba(37,211,102,0.2); color: #25D366; }
 .trust-text-title { font-size: 14px; font-weight: 700; color: var(--white); line-height: 1.3; }
 .trust-text-sub { font-size: 12px; color: rgba(255,255,255,0.45); margin-top: 3px; }
-
-.hero-partners-strip { position: absolute; bottom: 0; left: 0; right: 0; background: rgba(255,255,255,0.04); border-top: 1px solid rgba(255,255,255,0.08); padding: 14px 40px; display: flex; align-items: center; gap: 32px; z-index: 2; }
+.hero-partners-strip { position: absolute; bottom: 0; left: 0; right: 0; background: rgba(255,255,255,0.04); border-top: 1px solid rgba(255,255,255,0.08); padding: 14px 40px; display: flex; align-items: center; gap: 32px; z-index: 2; direction: ltr; }
 .hero-partners-strip .label { color: rgba(255,255,255,0.35); font-size: 12px; font-weight: 600; letter-spacing: 1.5px; white-space: nowrap; }
 .partner-pill { background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.1); color: rgba(255,255,255,0.7); padding: 6px 16px; border-radius: 2px; font-size: 13px; font-weight: 700; letter-spacing: 1px; white-space: nowrap; }
 .partner-pill.gold { border-color: rgba(245,158,11,0.4); color: var(--gold-light); }
@@ -125,8 +106,8 @@ nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; a
 .btn-secondary { display: inline-flex; align-items: center; gap: 8px; background: transparent; color: var(--white); text-decoration: none; padding: 14px 28px; border-radius: 4px; font-size: 15px; font-weight: 700; border: 1px solid rgba(255,255,255,0.3); transition: all 0.25s; }
 .btn-secondary:hover { background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.6); }
 
-/* CONTACT BAR */
-.contact-bar { background: var(--blue); padding: 12px 40px; display: flex; align-items: center; justify-content: center; gap: 40px; }
+/* CONTACT BAR — always LTR so order stays phone→WA→email→location */
+.contact-bar { background: var(--blue); padding: 12px 40px; display: flex; align-items: center; justify-content: center; gap: 40px; direction: ltr; }
 .contact-bar-item { display: flex; align-items: center; gap: 10px; color: rgba(255,255,255,0.9); text-decoration: none; font-size: 14px; font-weight: 600; transition: color 0.2s; }
 .contact-bar-item:hover { color: var(--gold-light); }
 .contact-bar-item i { font-size: 16px; opacity: 0.8; }
@@ -168,7 +149,7 @@ section { padding: 80px 0; }
 .service-title { font-family: 'Barlow Condensed', 'Cairo', sans-serif; font-size: 20px; font-weight: 700; color: var(--navy); margin-bottom: 12px; }
 .service-desc { font-size: 14px; color: var(--text-muted); line-height: 1.7; }
 
-/* PARTNERS — enhanced */
+/* PARTNERS */
 #partners { background: var(--navy); padding: 80px 0; }
 .partners-inner { max-width: 1200px; margin: 0 auto; padding: 0 40px; display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: start; }
 .partners-heading { font-family: 'Barlow Condensed', 'Cairo', sans-serif; font-size: 38px; font-weight: 900; color: var(--white); line-height: 1.1; }
@@ -178,7 +159,6 @@ section { padding: 80px 0; }
 .partner-card { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 24px; display: flex; align-items: flex-start; gap: 20px; text-decoration: none; transition: all 0.3s; }
 .partner-card:hover { background: rgba(255,255,255,0.09); border-color: rgba(245,158,11,0.45); transform: translateY(-3px); box-shadow: 0 12px 32px rgba(0,0,0,0.3); }
 .partner-logo-box { width: 80px; height: 80px; flex-shrink: 0; background: var(--white); border-radius: 10px; display: flex; align-items: center; justify-content: center; overflow: hidden; padding: 10px; }
-.partner-logo-box img { width: 100%; height: 100%; object-fit: contain; }
 .partner-logo-text { font-family: 'Barlow Condensed', sans-serif; font-weight: 900; font-size: 18px; text-align: center; line-height: 1.1; }
 .partner-logo-text .sub { font-size: 11px; letter-spacing: 2px; display: block; }
 .partner-info { flex: 1; }
@@ -188,10 +168,22 @@ section { padding: 80px 0; }
 .partner-visit { display: inline-flex; align-items: center; gap: 6px; margin-top: 12px; font-size: 12px; font-weight: 700; color: rgba(255,255,255,0.35); transition: color 0.2s; }
 .partner-card:hover .partner-visit { color: var(--gold); }
 
-/* CLIENTS marquee — bigger cards */
+/* CLIENTS MARQUEE — direction:ltr fixes RTL disappearing bug */
 #clients { background: var(--gray-100); }
-.marquee-outer { overflow: hidden; margin-top: 48px; -webkit-mask-image: linear-gradient(90deg, transparent 0%, black 6%, black 94%, transparent 100%); mask-image: linear-gradient(90deg, transparent 0%, black 6%, black 94%, transparent 100%); }
-.marquee-track { display: flex; gap: 24px; width: max-content; animation: marquee-scroll 40s linear infinite; }
+.marquee-outer {
+  overflow: hidden;
+  margin-top: 48px;
+  direction: ltr;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, black 6%, black 94%, transparent 100%);
+  mask-image: linear-gradient(90deg, transparent 0%, black 6%, black 94%, transparent 100%);
+}
+.marquee-track {
+  display: flex;
+  gap: 24px;
+  width: max-content;
+  direction: ltr;
+  animation: marquee-scroll 40s linear infinite;
+}
 .marquee-track:hover { animation-play-state: paused; }
 @keyframes marquee-scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
 .client-card { flex-shrink: 0; width: 200px; background: var(--white); border: 1px solid var(--gray-200); border-radius: 12px; padding: 24px 16px 20px; display: flex; flex-direction: column; align-items: center; gap: 14px; text-decoration: none; transition: all 0.25s; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
@@ -214,8 +206,10 @@ section { padding: 80px 0; }
 .contact-method-icon.green { background: rgba(37,211,102,0.2); color: #25D366; }
 .contact-method-icon.gold { background: rgba(245,158,11,0.2); color: var(--gold); }
 .contact-method-label { font-size: 12px; color: rgba(255,255,255,0.4); font-weight: 600; display: block; }
-.contact-method-value { font-size: 15px; font-weight: 700; color: var(--white); }
-.map-wrap { border-radius: 8px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1); }
+.contact-method-value { font-size: 15px; font-weight: 700; color: var(--white); direction: ltr; display: block; }
+.map-wrap { border-radius: 8px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1); margin-top: 4px; }
+.map-link { display: block; text-align: center; margin-top: 10px; font-size: 13px; color: rgba(255,255,255,0.45); text-decoration: none; transition: color 0.2s; }
+.map-link:hover { color: var(--gold); }
 .contact-form { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 36px; }
 .form-title { font-size: 20px; font-weight: 700; color: var(--white); margin-bottom: 24px; }
 .form-group { margin-bottom: 18px; }
@@ -231,7 +225,7 @@ textarea.form-input { resize: vertical; min-height: 110px; }
 .form-msg.error { background: rgba(220,38,38,0.15); border: 1px solid rgba(220,38,38,0.4); color: #f87171; display: block; }
 
 /* FOOTER */
-footer { background: rgba(0,0,0,0.35); border-top: 1px solid rgba(255,255,255,0.07); padding: 24px 40px; }
+footer { background: var(--navy); border-top: 1px solid rgba(255,255,255,0.07); padding: 24px 40px; }
 .footer-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; }
 .footer-copy { font-size: 13px; color: rgba(255,255,255,0.35); }
 .social-links { display: flex; gap: 10px; }
@@ -240,9 +234,8 @@ footer { background: rgba(0,0,0,0.35); border-top: 1px solid rgba(255,255,255,0.
 .social-link.wa:hover { background: #25D366; }
 
 /* WA FLOAT */
-.wa-float { position: fixed; bottom: 28px; z-index: 200; display: flex; align-items: center; gap: 10px; background: #25D366; color: var(--white); text-decoration: none; padding: 13px 22px; border-radius: 50px; font-size: 15px; font-weight: 700; box-shadow: 0 6px 24px rgba(37,211,102,0.4); transition: all 0.3s; animation: wapulse 3s ease-in-out infinite; }
-[dir="rtl"] .wa-float { right: 28px; }
-[dir="ltr"] .wa-float { left: 28px; }
+.wa-float { position: fixed; bottom: 28px; right: 28px; z-index: 200; display: flex; align-items: center; gap: 10px; background: #25D366; color: var(--white); text-decoration: none; padding: 13px 22px; border-radius: 50px; font-size: 15px; font-weight: 700; box-shadow: 0 6px 24px rgba(37,211,102,0.4); transition: all 0.3s; animation: wapulse 3s ease-in-out infinite; }
+body.ltr .wa-float { right: auto; left: 28px; }
 .wa-float:hover { transform: translateY(-3px); box-shadow: 0 10px 32px rgba(37,211,102,0.55); }
 .wa-float i { font-size: 22px; }
 @keyframes wapulse { 0%,100%{box-shadow:0 6px 24px rgba(37,211,102,0.4)} 50%{box-shadow:0 6px 36px rgba(37,211,102,0.7)} }
@@ -265,7 +258,6 @@ footer { background: rgba(0,0,0,0.35); border-top: 1px solid rgba(255,255,255,0.
   .hero-trust { display: none; }
   .about-grid { grid-template-columns: 1fr; }
   .services-grid { grid-template-columns: repeat(2, 1fr); }
-  .clients-grid { grid-template-columns: repeat(2, 1fr); }
   .contact-grid { grid-template-columns: 1fr; }
   .partners-inner { grid-template-columns: 1fr; }
   .contact-bar { flex-wrap: wrap; gap: 16px; padding: 14px 20px; }
@@ -346,8 +338,6 @@ footer { background: rgba(0,0,0,0.35); border-top: 1px solid rgba(255,255,255,0.
         </a>
       </div>
     </div>
-
-    <!-- TRUST CARD — replaces low-number stats -->
     <div class="hero-trust">
       <div class="trust-item">
         <div class="trust-icon"><i class="fa-solid fa-award"></i></div>
@@ -379,7 +369,6 @@ footer { background: rgba(0,0,0,0.35); border-top: 1px solid rgba(255,255,255,0.
       </div>
     </div>
   </div>
-
   <div class="hero-partners-strip">
     <span class="label" data-ar="وكلاء حصريون لـ" data-en="EXCLUSIVE AGENTS FOR">وكلاء حصريون لـ</span>
     <span class="partner-pill gold">BOTEN DIESEL</span>
@@ -392,7 +381,7 @@ footer { background: rgba(0,0,0,0.35); border-top: 1px solid rgba(255,255,255,0.
   <a href="tel:+201116998695" class="contact-bar-item"><i class="fa-solid fa-phone"></i> +20 111 699 8695</a>
   <a href="https://wa.me/201116998695" target="_blank" class="contact-bar-item"><i class="fa-brands fa-whatsapp" style="color:#25D366"></i> WhatsApp</a>
   <a href="mailto:egypower@gmail.com" class="contact-bar-item"><i class="fa-solid fa-envelope"></i> egypower@gmail.com</a>
-  <a href="https://maps.app.goo.gl/9scowmYLTC28GRVq7" target="_blank" class="contact-bar-item"><i class="fa-solid fa-location-dot"></i> <span data-ar="المطرية، القاهرة" data-en="El Matareya, Cairo">المطرية، القاهرة</span></a>
+  <a href="https://maps.app.goo.gl/9scowmYLTC28GRVq7" target="_blank" class="contact-bar-item"><i class="fa-solid fa-location-dot"></i> El Matareya, Cairo</a>
 </div>
 
 <!-- ABOUT -->
@@ -455,28 +444,26 @@ footer { background: rgba(0,0,0,0.35); border-top: 1px solid rgba(255,255,255,0.
   </div>
 </section>
 
-<!-- PARTNERS — enhanced with logos and descriptions -->
+<!-- PARTNERS -->
 <section id="partners" style="padding:80px 0;">
   <div class="partners-inner">
     <div>
       <div class="section-tag" style="background:rgba(245,158,11,0.15);border-color:rgba(245,158,11,0.3);color:var(--gold-light);" data-ar="شركاؤنا" data-en="OUR PARTNERS">شركاؤنا</div>
       <h2 class="partners-heading"><span data-ar="وكلاء حصريون" data-en="Exclusive">وكلاء حصريون</span><br><span style="color:var(--gold)" data-ar="لعلامات عالمية" data-en="Global Partners">لعلامات عالمية</span></h2>
-      <p class="partners-sub" data-ar="نمثل أفضل العلامات التجارية العالمية في مجال معدات الديزل وأجهزة المعايرة — الأجهزة التي يثق بها محترفو الديزل في الصين وتركيا وعبر العالم." data-en="We represent the world's top brands in diesel equipment and calibration tools — the devices trusted by diesel professionals across China, Turkey, and beyond.">نمثل أفضل العلامات التجارية العالمية في مجال معدات الديزل وأجهزة المعايرة — الأجهزة التي يثق بها محترفو الديزل في أوروبا وتركيا وعبر العالم.</p>
+      <p class="partners-sub" data-ar="نمثل أفضل العلامات التجارية العالمية في مجال معدات الديزل وأجهزة المعايرة — الأجهزة التي يثق بها محترفو الديزل في الصين وتركيا وعبر العالم." data-en="We represent the world's top brands in diesel equipment and calibration tools — the devices trusted by diesel professionals across China, Turkey, and beyond.">نمثل أفضل العلامات التجارية العالمية في مجال معدات الديزل وأجهزة المعايرة — الأجهزة التي يثق بها محترفو الديزل في الصين وتركيا وعبر العالم.</p>
     </div>
     <div class="partners-cards">
-      <!-- Boten Diesel -->
       <a href="https://www.boten-diesel.com/" target="_blank" class="partner-card">
         <div class="partner-logo-box">
           <div class="partner-logo-text" style="color:#1565C0;">BOTEN<span class="sub" style="color:#F59E0B;">DIESEL</span></div>
         </div>
         <div class="partner-info">
           <div class="partner-name-big">BOTEN DIESEL</div>
-          <span class="partner-origin" data-ar="جيانغسو الصين" data-en="Jiangsu Province, China">ألمانيا / أوروبا</span>
+          <span class="partner-origin" data-ar="جيانغسو، الصين" data-en="Jiangsu Province, China">جيانغسو، الصين</span>
           <p class="partner-desc" data-ar="الشركة الرائدة عالمياً في تصنيع أجهزة معايرة طلمبات الديزل عالية الدقة. أجهزة Boten هي المرجع الصناعي لورش الديزل الاحترافية حول العالم." data-en="The world's leading manufacturer of high-precision diesel pump calibration equipment. Boten devices are the industry reference for professional diesel workshops worldwide.">الشركة الرائدة عالمياً في تصنيع أجهزة معايرة طلمبات الديزل عالية الدقة. أجهزة Boten هي المرجع الصناعي لورش الديزل الاحترافية حول العالم.</p>
           <span class="partner-visit" data-ar="زيارة الموقع الرسمي" data-en="Visit official website">زيارة الموقع الرسمي <i class="fa-solid fa-arrow-up-right-from-square" style="font-size:10px"></i></span>
         </div>
       </a>
-      <!-- Deqpa -->
       <a href="https://deqpa.com.tr/" target="_blank" class="partner-card">
         <div class="partner-logo-box">
           <div class="partner-logo-text" style="color:#DC2626;">DEQPA</div>
@@ -492,7 +479,7 @@ footer { background: rgba(0,0,0,0.35); border-top: 1px solid rgba(255,255,255,0.
   </div>
 </section>
 
-<!-- CLIENTS — infinite scrolling marquee -->
+<!-- CLIENTS -->
 <section id="clients">
   <div class="section-inner">
     <div class="section-tag" data-ar="من نخدم" data-en="WHO WE SERVE">من نخدم</div>
@@ -500,10 +487,8 @@ footer { background: rgba(0,0,0,0.35); border-top: 1px solid rgba(255,255,255,0.
     <div class="section-divider"></div>
     <p class="section-desc" data-ar="نفخر بخدمة أكبر شركات المقاولات والبناء في مصر والمنطقة — شركات تثق بنا لإبقاء آلياتها تعمل بلا توقف." data-en="We're proud to serve Egypt's and the region's largest construction companies — companies that trust us to keep their machinery running without interruption.">نفخر بخدمة أكبر شركات المقاولات والبناء في مصر والمنطقة — شركات تثق بنا لإبقاء آلياتها تعمل بلا توقف.</p>
   </div>
-
   <div class="marquee-outer" style="margin-top:40px;">
-    <div class="marquee-track" id="marqueeTrack">
-      <!-- original set -->
+    <div class="marquee-track">
       <a href="https://www.hassanallam.com/" target="_blank" class="client-card"><div class="client-logo-wrap"><img src="https://www.google.com/s2/favicons?domain=hassanallam.com&sz=64" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="client-initials" style="display:none">HA</span></div><div class="client-name">Hassan Allam Holding</div></a>
       <a href="https://www.arabcont.com/" target="_blank" class="client-card"><div class="client-logo-wrap"><img src="https://www.google.com/s2/favicons?domain=arabcont.com&sz=64" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="client-initials" style="display:none">AC</span></div><div class="client-name">Arab Contractors</div></a>
       <a href="https://elhazek.com/" target="_blank" class="client-card"><div class="client-logo-wrap"><img src="https://www.google.com/s2/favicons?domain=elhazek.com&sz=64" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="client-initials" style="display:none">AH</span></div><div class="client-name">Al Hazek Construction</div></a>
@@ -513,7 +498,7 @@ footer { background: rgba(0,0,0,0.35); border-top: 1px solid rgba(255,255,255,0.
       <a href="https://www.linkedin.com/company/apex-constructions-decoration/" target="_blank" class="client-card"><div class="client-logo-wrap"><span class="client-initials">AP</span></div><div class="client-name">Apex Construction</div></a>
       <a href="https://www.linkedin.com/company/abu-gemeaa/" target="_blank" class="client-card"><div class="client-logo-wrap"><span class="client-initials">AG</span></div><div class="client-name">Abu Gemeaa Group</div></a>
       <div class="client-card" style="cursor:default;"><div class="client-logo-wrap"><span class="client-initials">KC</span></div><div class="client-name">Kerv Construction</div></div>
-      <!-- cloned set for seamless loop -->
+      <!-- clone for infinite loop -->
       <a href="https://www.hassanallam.com/" target="_blank" class="client-card"><div class="client-logo-wrap"><img src="https://www.google.com/s2/favicons?domain=hassanallam.com&sz=64" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="client-initials" style="display:none">HA</span></div><div class="client-name">Hassan Allam Holding</div></a>
       <a href="https://www.arabcont.com/" target="_blank" class="client-card"><div class="client-logo-wrap"><img src="https://www.google.com/s2/favicons?domain=arabcont.com&sz=64" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="client-initials" style="display:none">AC</span></div><div class="client-name">Arab Contractors</div></a>
       <a href="https://elhazek.com/" target="_blank" class="client-card"><div class="client-logo-wrap"><img src="https://www.google.com/s2/favicons?domain=elhazek.com&sz=64" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="client-initials" style="display:none">AH</span></div><div class="client-name">Al Hazek Construction</div></a>
@@ -554,10 +539,15 @@ footer { background: rgba(0,0,0,0.35); border-top: 1px solid rgba(255,255,255,0.
           </a>
         </div>
         <div class="map-wrap">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3450.0!2d31.3!3d30.13!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDA3JzQ4LjAiTiAzMcKwMTgnMDAuMCJF!5e0!3m2!1sen!2seg!4v1709400000000!5m2!1sen!2seg" width="100%" height="230" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.4567!2d31.308916!3d30.121957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583e2be5555555%3A0x0!2zMzDCsDA3JzE5LjEiTiAzMcKwMTgnMzIuMSJF!5e0!3m2!1sar!2seg!4v1709400000000!5m2!1sar!2seg"
+            width="100%" height="230" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
+        <a href="https://maps.app.goo.gl/9scowmYLTC28GRVq7" target="_blank" class="map-link">
+          <i class="fa-solid fa-diamond-turn-right"></i>
+          <span data-ar="فتح في خرائط Google" data-en="Open in Google Maps">فتح في خرائط Google</span>
+        </a>
       </div>
-
       <div class="contact-form">
         <div class="form-title" data-ar="أرسل رسالتك" data-en="Send Us a Message">أرسل رسالتك</div>
         <form id="contactForm" onsubmit="handleSubmit(event)">
@@ -590,9 +580,9 @@ footer { background: rgba(0,0,0,0.35); border-top: 1px solid rgba(255,255,255,0.
 </section>
 
 <!-- FOOTER -->
-<footer style="background:var(--navy);">
+<footer>
   <div class="footer-inner">
-    <div class="footer-copy" data-ar="© Egypower 2025 – جميع الحقوق محفوظة." data-en="© Egypower 2025 – All Rights Reserved.">© Egypower 2025 – جميع الحقوق محفوظة.</div>
+    <div class="footer-copy" data-ar="© Egypower 2026 – جميع الحقوق محفوظة." data-en="© Egypower 2026 – All Rights Reserved.">© Egypower 2026 – جميع الحقوق محفوظة.</div>
     <div class="social-links">
       <a href="https://wa.me/201116998695" target="_blank" class="social-link wa"><i class="fa-brands fa-whatsapp"></i></a>
       <a href="#" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
@@ -620,9 +610,6 @@ function toggleLang() {
   document.querySelectorAll('[data-ar]').forEach(el => {
     el.textContent = isAr ? el.getAttribute('data-ar') : el.getAttribute('data-en');
   });
-  const waf = document.querySelector('.wa-float');
-  if (!isAr) { waf.style.right = 'auto'; waf.style.left = '28px'; }
-  else        { waf.style.left  = 'auto'; waf.style.right = '28px'; }
 }
 
 function toggleMobile() {
@@ -636,7 +623,6 @@ async function handleSubmit(e) {
   msg.className = 'form-msg';
   btn.disabled = true;
   btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> ' + (lang === 'ar' ? 'جاري الإرسال...' : 'Sending...');
-
   try {
     const res = await fetch('https://formspree.io/f/mgopkbbe', {
       method: 'POST',
@@ -644,18 +630,12 @@ async function handleSubmit(e) {
       headers: { 'Accept': 'application/json' }
     });
     if (res.ok) {
-      msg.textContent = lang === 'ar'
-        ? 'تم إرسال رسالتك بنجاح! سنتواصل معك قريباً.'
-        : 'Message sent! We\'ll be in touch soon.';
+      msg.textContent = lang === 'ar' ? 'تم إرسال رسالتك بنجاح! سنتواصل معك قريباً.' : "Message sent! We'll be in touch soon.";
       msg.className = 'form-msg success';
       e.target.reset();
-    } else {
-      throw new Error('failed');
-    }
+    } else { throw new Error('failed'); }
   } catch {
-    msg.textContent = lang === 'ar'
-      ? 'حدث خطأ، يرجى المحاولة مرة أخرى أو التواصل عبر واتساب.'
-      : 'Something went wrong. Please try WhatsApp instead.';
+    msg.textContent = lang === 'ar' ? 'حدث خطأ، يرجى المحاولة مرة أخرى أو التواصل عبر واتساب.' : 'Something went wrong. Please try WhatsApp instead.';
     msg.className = 'form-msg error';
   }
   btn.disabled = false;
@@ -663,13 +643,10 @@ async function handleSubmit(e) {
 }
 
 window.addEventListener('scroll', () => {
-  document.querySelector('nav').style.boxShadow =
-    window.scrollY > 20 ? '0 4px 24px rgba(0,0,0,0.4)' : 'none';
+  document.querySelector('nav').style.boxShadow = window.scrollY > 20 ? '0 4px 24px rgba(0,0,0,0.4)' : 'none';
 });
-
 window.addEventListener('resize', () => {
-  if (window.innerWidth > 900)
-    document.getElementById('mobileDrawer').classList.remove('open');
+  if (window.innerWidth > 900) document.getElementById('mobileDrawer').classList.remove('open');
 });
 </script>
 </body>
