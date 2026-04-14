@@ -12,284 +12,366 @@
 <meta property="og:locale" content="ar_EG">
 <meta name="robots" content="index, follow">
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Egypower",
-  "description": "Comprehensive diesel services in Egypt – maintenance, imported spare parts, pump and injection calibration.",
-  "telephone": "+201116998695",
-  "email": "egypower@gmail.com",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "477P+RQR, Abd Allah Hussein Abd El-Hady, Al Izab",
-    "addressLocality": "El Matareya",
-    "addressRegion": "Cairo",
-    "postalCode": "4530001",
-    "addressCountry": "EG"
-  },
-  "foundingDate": "2000",
-  "areaServed": "Egypt",
-  "serviceType": ["Diesel Maintenance", "Pump Calibration", "Injection Units", "Imported Spare Parts"]
-}
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"Egypower","description":"Comprehensive diesel services in Egypt – maintenance, imported spare parts, pump and injection calibration.","telephone":"+201155507881","email":"egypoweregypower@gmail.com","address":{"@type":"PostalAddress","streetAddress":"Egypower Diesel Workshop","addressLocality":"El Matareya","addressRegion":"Cairo","addressCountry":"EG"},"foundingDate":"2000","areaServed":"Egypt","serviceType":["Diesel Maintenance","Pump Calibration","Injection Units","Imported Spare Parts"]}
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Barlow+Condensed:wght@500;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <style>
-:root {
-  --navy: #0a1628; --navy-mid: #0f2040; --navy-light: #1a3260;
-  --blue: #1565C0; --blue-bright: #1976D2; --blue-glow: #2196F3;
-  --gold: #F59E0B; --gold-light: #FCD34D;
-  --white: #FFFFFF; --gray-100: #F1F5F9; --gray-200: #E2E8F0;
-  --gray-400: #94A3B8; --gray-600: #475569; --gray-800: #1E293B;
-  --text-main: #0f172a; --text-muted: #64748b;
+:root{
+  --navy:#0a1628;--navy-mid:#0f2040;--navy-light:#1a3260;
+  --blue:#1565C0;--blue-bright:#1976D2;--blue-glow:#2196F3;
+  --gold:#F59E0B;--gold-light:#FCD34D;
+  --white:#FFFFFF;--gray-100:#F1F5F9;--gray-200:#E2E8F0;
+  --gray-400:#94A3B8;--gray-600:#475569;--gray-800:#1E293B;
+  --text-main:#0f172a;--text-muted:#64748b;
 }
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { font-size: 16px; }
-body { font-family: 'Cairo', sans-serif; background: var(--white); color: var(--text-main); direction: rtl; overflow-x: hidden; }
-body.ltr { direction: ltr; font-family: 'Barlow Condensed', 'Cairo', sans-serif; }
-::-webkit-scrollbar { width: 6px; }
-::-webkit-scrollbar-track { background: var(--navy); }
-::-webkit-scrollbar-thumb { background: var(--blue-glow); border-radius: 3px; }
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{font-size:16px}
+body{font-family:'Cairo',sans-serif;background:var(--white);color:var(--text-main);direction:rtl;overflow-x:hidden}
+body.ltr{direction:ltr;font-family:'Barlow Condensed','Cairo',sans-serif}
+::-webkit-scrollbar{width:6px}
+::-webkit-scrollbar-track{background:var(--navy)}
+::-webkit-scrollbar-thumb{background:var(--blue-glow);border-radius:3px}
 
-/* NAV */
-nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 0 40px; height: 70px; background: rgba(10,22,40,0.96); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255,255,255,0.06); transition: all 0.3s; }
-.nav-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
-.nav-logo-text { font-family: 'Barlow Condensed', sans-serif; font-size: 26px; font-weight: 900; color: var(--white); letter-spacing: 2px; line-height: 1; }
-.nav-logo-text span { color: var(--gold); }
-.nav-links { display: flex; align-items: center; gap: 32px; list-style: none; }
-.nav-links a { color: rgba(255,255,255,0.75); text-decoration: none; font-size: 15px; font-weight: 600; letter-spacing: 0.5px; transition: color 0.2s; position: relative; }
-.nav-links a::after { content: ''; position: absolute; bottom: -4px; right: 0; left: 0; height: 2px; background: var(--gold); transform: scaleX(0); transform-origin: center; transition: transform 0.25s; }
-.nav-links a:hover { color: var(--white); }
-.nav-links a:hover::after { transform: scaleX(1); }
-.nav-actions { display: flex; align-items: center; gap: 12px; }
-.btn-lang { background: transparent; border: 1px solid rgba(255,255,255,0.25); color: rgba(255,255,255,0.8); padding: 6px 14px; border-radius: 4px; font-family: 'Cairo', sans-serif; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s; }
-.btn-lang:hover { background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.5); color: var(--white); }
-.btn-whatsapp-nav { display: flex; align-items: center; gap: 8px; background: #25D366; color: var(--white); text-decoration: none; padding: 8px 18px; border-radius: 4px; font-size: 14px; font-weight: 700; transition: all 0.2s; }
-.btn-whatsapp-nav:hover { background: #22be5c; transform: translateY(-1px); }
-.mobile-menu-btn { display: none; background: none; border: none; color: var(--white); font-size: 22px; cursor: pointer; }
-#mobileDrawer { display: none; position: fixed; top: 70px; left: 0; right: 0; background: var(--navy-mid); border-bottom: 1px solid rgba(255,255,255,0.1); z-index: 99; flex-direction: column; padding: 20px 24px; gap: 18px; }
-#mobileDrawer.open { display: flex; }
-#mobileDrawer a { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 17px; font-weight: 600; padding-bottom: 16px; border-bottom: 1px solid rgba(255,255,255,0.08); }
-#mobileDrawer a:last-child { border-bottom: none; }
+/* ── NAV ── */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:0 40px;height:70px;background:rgba(10,22,40,0.96);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,0.06);transition:box-shadow 0.3s}
+.nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.nav-logo-text{font-family:'Barlow Condensed',sans-serif;font-size:26px;font-weight:900;color:var(--white);letter-spacing:2px;line-height:1}
+.nav-logo-text span{color:var(--gold)}
+.nav-links{display:flex;align-items:center;gap:32px;list-style:none}
+.nav-links a{color:rgba(255,255,255,0.75);text-decoration:none;font-size:15px;font-weight:600;transition:color 0.2s;position:relative}
+.nav-links a::after{content:'';position:absolute;bottom:-4px;right:0;left:0;height:2px;background:var(--gold);transform:scaleX(0);transform-origin:center;transition:transform 0.25s}
+.nav-links a:hover{color:var(--white)}
+.nav-links a:hover::after{transform:scaleX(1)}
+.nav-actions{display:flex;align-items:center;gap:12px}
+.btn-lang{background:transparent;border:1px solid rgba(255,255,255,0.25);color:rgba(255,255,255,0.8);padding:6px 14px;border-radius:4px;font-family:'Cairo',sans-serif;font-size:13px;font-weight:600;cursor:pointer;transition:all 0.2s}
+.btn-lang:hover{background:rgba(255,255,255,0.1);color:var(--white)}
+.btn-wa-nav{display:flex;align-items:center;gap:8px;background:#25D366;color:var(--white);text-decoration:none;padding:8px 18px;border-radius:4px;font-size:14px;font-weight:700;transition:all 0.2s}
+.btn-wa-nav:hover{background:#22be5c;transform:translateY(-1px)}
+.mobile-menu-btn{display:none;background:none;border:none;color:var(--white);font-size:22px;cursor:pointer}
+#mobileDrawer{display:none;position:fixed;top:70px;left:0;right:0;background:var(--navy-mid);border-bottom:1px solid rgba(255,255,255,0.1);z-index:99;flex-direction:column;padding:20px 24px;gap:18px}
+#mobileDrawer.open{display:flex}
+#mobileDrawer a{color:rgba(255,255,255,0.8);text-decoration:none;font-size:17px;font-weight:600;padding-bottom:16px;border-bottom:1px solid rgba(255,255,255,0.08)}
+#mobileDrawer a:last-child{border-bottom:none}
 
-/* HERO */
-#home { position: relative; min-height: 100vh; display: flex; align-items: center; overflow: hidden; background: var(--navy); padding-top: 70px; }
-.hero-bg-img { position: absolute; inset: 0; background-image: url('https://images.unsplash.com/photo-1581092580497-e0d23cbdffd4?q=80&w=2070&auto=format&fit=crop'); background-size: cover; background-position: center; opacity: 0.18; }
-.hero-grid-overlay { position: absolute; inset: 0; background-image: linear-gradient(rgba(21,101,192,0.07) 1px, transparent 1px), linear-gradient(90deg, rgba(21,101,192,0.07) 1px, transparent 1px); background-size: 60px 60px; }
-.hero-gradient { position: absolute; inset: 0; background: linear-gradient(135deg, rgba(10,22,40,0.98) 0%, rgba(10,22,40,0.85) 50%, rgba(15,32,64,0.92) 100%); }
-.hero-accent { position: absolute; width: 600px; height: 600px; border-radius: 50%; background: radial-gradient(circle, rgba(33,150,243,0.12) 0%, transparent 70%); top: -100px; left: -100px; pointer-events: none; }
-.hero-content { position: relative; z-index: 2; width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 40px; display: grid; grid-template-columns: 1fr 380px; gap: 60px; align-items: center; }
-.hero-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(245,158,11,0.12); border: 1px solid rgba(245,158,11,0.3); color: var(--gold-light); padding: 6px 16px; border-radius: 2px; font-size: 13px; font-weight: 600; letter-spacing: 1px; margin-bottom: 24px; }
-.hero-title { font-family: 'Barlow Condensed', 'Cairo', sans-serif; font-size: clamp(38px, 5vw, 64px); font-weight: 900; line-height: 1.05; color: var(--white); margin-bottom: 20px; }
-.hero-title .accent { color: var(--gold); }
-.hero-subtitle { font-size: 17px; font-weight: 400; color: rgba(255,255,255,0.65); line-height: 1.8; margin-bottom: 36px; max-width: 520px; }
-.hero-cta { display: flex; gap: 14px; flex-wrap: wrap; }
-.hero-trust { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 28px; backdrop-filter: blur(10px); display: flex; flex-direction: column; gap: 0; }
-.trust-item { display: flex; align-items: center; gap: 16px; padding: 18px 0; border-bottom: 1px solid rgba(255,255,255,0.07); }
-.trust-item:last-child { border-bottom: none; padding-bottom: 0; }
-.trust-item:first-child { padding-top: 0; }
-.trust-icon { width: 44px; height: 44px; flex-shrink: 0; background: rgba(21,101,192,0.25); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: var(--blue-glow); font-size: 18px; }
-.trust-icon.gold-bg { background: rgba(245,158,11,0.2); color: var(--gold); }
-.trust-icon.green-bg { background: rgba(37,211,102,0.2); color: #25D366; }
-.trust-text-title { font-size: 14px; font-weight: 700; color: var(--white); line-height: 1.3; }
-.trust-text-sub { font-size: 12px; color: rgba(255,255,255,0.45); margin-top: 3px; }
-.hero-partners-strip { position: absolute; bottom: 0; left: 0; right: 0; background: rgba(255,255,255,0.04); border-top: 1px solid rgba(255,255,255,0.08); padding: 14px 40px; display: flex; align-items: center; gap: 32px; z-index: 2; direction: ltr; }
-.hero-partners-strip .label { color: rgba(255,255,255,0.35); font-size: 12px; font-weight: 600; letter-spacing: 1.5px; white-space: nowrap; }
-.partner-pill { background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.1); color: rgba(255,255,255,0.7); padding: 6px 16px; border-radius: 2px; font-size: 13px; font-weight: 700; letter-spacing: 1px; white-space: nowrap; }
-.partner-pill.gold { border-color: rgba(245,158,11,0.4); color: var(--gold-light); }
+/* ── HERO ── */
+#home{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden;background:var(--navy);padding-top:70px}
+.hero-bg-img{position:absolute;inset:0;background-image:url('https://images.unsplash.com/photo-1581092580497-e0d23cbdffd4?q=80&w=2070&auto=format&fit=crop');background-size:cover;background-position:center;opacity:0.18}
+.hero-grid-overlay{position:absolute;inset:0;background-image:linear-gradient(rgba(21,101,192,0.07) 1px,transparent 1px),linear-gradient(90deg,rgba(21,101,192,0.07) 1px,transparent 1px);background-size:60px 60px}
+.hero-gradient{position:absolute;inset:0;background:linear-gradient(135deg,rgba(10,22,40,0.98) 0%,rgba(10,22,40,0.85) 50%,rgba(15,32,64,0.92) 100%)}
+.hero-accent{position:absolute;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(33,150,243,0.12) 0%,transparent 70%);top:-100px;left:-100px;pointer-events:none}
+.hero-content{position:relative;z-index:2;width:100%;max-width:1200px;margin:0 auto;padding:0 40px;display:grid;grid-template-columns:1fr 380px;gap:60px;align-items:center}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(245,158,11,0.12);border:1px solid rgba(245,158,11,0.3);color:var(--gold-light);padding:6px 16px;border-radius:2px;font-size:13px;font-weight:600;letter-spacing:1px;margin-bottom:24px}
+.hero-title{font-family:'Barlow Condensed','Cairo',sans-serif;font-size:clamp(38px,5vw,64px);font-weight:900;line-height:1.05;color:var(--white);margin-bottom:20px}
+.hero-title .accent{color:var(--gold)}
+.hero-subtitle{font-size:17px;font-weight:400;color:rgba(255,255,255,0.65);line-height:1.8;margin-bottom:36px;max-width:520px}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+.hero-trust{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:28px;backdrop-filter:blur(10px);display:flex;flex-direction:column}
+.trust-item{display:flex;align-items:center;gap:16px;padding:18px 0;border-bottom:1px solid rgba(255,255,255,0.07)}
+.trust-item:last-child{border-bottom:none;padding-bottom:0}
+.trust-item:first-child{padding-top:0}
+.trust-icon{width:44px;height:44px;flex-shrink:0;background:rgba(21,101,192,0.25);border-radius:8px;display:flex;align-items:center;justify-content:center;color:var(--blue-glow);font-size:18px}
+.trust-icon.gold-bg{background:rgba(245,158,11,0.2);color:var(--gold)}
+.trust-icon.green-bg{background:rgba(37,211,102,0.2);color:#25D366}
+.trust-text-title{font-size:14px;font-weight:700;color:var(--white);line-height:1.3}
+.trust-text-sub{font-size:12px;color:rgba(255,255,255,0.45);margin-top:3px}
+.hero-partners-strip{position:absolute;bottom:0;left:0;right:0;background:rgba(255,255,255,0.04);border-top:1px solid rgba(255,255,255,0.08);padding:14px 40px;display:flex;align-items:center;gap:32px;z-index:2;direction:ltr}
+.hero-partners-strip .label{color:rgba(255,255,255,0.35);font-size:12px;font-weight:600;letter-spacing:1.5px;white-space:nowrap}
+.partner-pill{background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.1);color:rgba(255,255,255,0.7);padding:6px 16px;border-radius:2px;font-size:13px;font-weight:700;letter-spacing:1px;white-space:nowrap}
+.partner-pill.gold{border-color:rgba(245,158,11,0.4);color:var(--gold-light)}
 
 /* BUTTONS */
-.btn-primary { display: inline-flex; align-items: center; gap: 8px; background: var(--blue-bright); color: var(--white); text-decoration: none; padding: 14px 28px; border-radius: 4px; font-size: 15px; font-weight: 700; transition: all 0.25s; border: none; cursor: pointer; }
-.btn-primary:hover { background: var(--blue-glow); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(33,150,243,0.35); }
-.btn-secondary { display: inline-flex; align-items: center; gap: 8px; background: transparent; color: var(--white); text-decoration: none; padding: 14px 28px; border-radius: 4px; font-size: 15px; font-weight: 700; border: 1px solid rgba(255,255,255,0.3); transition: all 0.25s; }
-.btn-secondary:hover { background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.6); }
+.btn-primary{display:inline-flex;align-items:center;gap:8px;background:var(--blue-bright);color:var(--white);text-decoration:none;padding:14px 28px;border-radius:4px;font-size:15px;font-weight:700;transition:all 0.25s;border:none;cursor:pointer}
+.btn-primary:hover{background:var(--blue-glow);transform:translateY(-2px);box-shadow:0 8px 24px rgba(33,150,243,0.35)}
+.btn-secondary{display:inline-flex;align-items:center;gap:8px;background:transparent;color:var(--white);text-decoration:none;padding:14px 28px;border-radius:4px;font-size:15px;font-weight:700;border:1px solid rgba(255,255,255,0.3);transition:all 0.25s}
+.btn-secondary:hover{background:rgba(255,255,255,0.08);border-color:rgba(255,255,255,0.6)}
 
-/* CONTACT BAR — always LTR so order stays phone→WA→email→location */
-.contact-bar { background: var(--blue); padding: 12px 40px; display: flex; align-items: center; justify-content: center; gap: 40px; direction: ltr; }
-.contact-bar-item { display: flex; align-items: center; gap: 10px; color: rgba(255,255,255,0.9); text-decoration: none; font-size: 14px; font-weight: 600; transition: color 0.2s; }
-.contact-bar-item:hover { color: var(--gold-light); }
-.contact-bar-item i { font-size: 16px; opacity: 0.8; }
+/* CONTACT BAR */
+.contact-bar{background:var(--blue);padding:12px 40px;display:flex;align-items:center;justify-content:center;gap:40px;direction:ltr}
+.contact-bar-item{display:flex;align-items:center;gap:10px;color:rgba(255,255,255,0.9);text-decoration:none;font-size:14px;font-weight:600;transition:color 0.2s}
+.contact-bar-item:hover{color:var(--gold-light)}
+.contact-bar-item i{font-size:16px;opacity:0.8}
 
 /* SECTIONS */
-section { padding: 80px 0; }
-.section-inner { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
-.section-tag { display: inline-block; background: rgba(21,101,192,0.1); color: var(--blue); border: 1px solid rgba(21,101,192,0.2); padding: 4px 14px; border-radius: 2px; font-size: 12px; font-weight: 700; letter-spacing: 2px; margin-bottom: 14px; }
-.section-title { font-family: 'Barlow Condensed', 'Cairo', sans-serif; font-size: clamp(28px, 4vw, 42px); font-weight: 900; color: var(--navy); line-height: 1.1; margin-bottom: 16px; }
-.section-divider { width: 48px; height: 3px; background: var(--gold); margin-bottom: 20px; border-radius: 2px; }
-[dir="rtl"] .section-divider { margin-right: 0; }
-.section-desc { font-size: 16px; color: var(--text-muted); line-height: 1.8; max-width: 560px; }
+section{padding:80px 0}
+.section-inner{max-width:1200px;margin:0 auto;padding:0 40px}
+.section-tag{display:inline-block;background:rgba(21,101,192,0.1);color:var(--blue);border:1px solid rgba(21,101,192,0.2);padding:4px 14px;border-radius:2px;font-size:12px;font-weight:700;letter-spacing:2px;margin-bottom:14px}
+.section-title{font-family:'Barlow Condensed','Cairo',sans-serif;font-size:clamp(28px,4vw,42px);font-weight:900;color:var(--navy);line-height:1.1;margin-bottom:16px}
+.section-divider{width:48px;height:3px;background:var(--gold);margin-bottom:20px;border-radius:2px}
+[dir="rtl"] .section-divider{margin-right:0}
+.section-desc{font-size:16px;color:var(--text-muted);line-height:1.8;max-width:560px}
 
 /* ABOUT */
-#about { background: var(--gray-100); }
-.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
-.about-img-wrap { position: relative; border-radius: 6px; overflow: hidden; }
-.about-img-wrap img { width: 100%; height: 420px; object-fit: cover; display: block; }
-.about-img-badge { position: absolute; bottom: 20px; background: var(--navy); color: var(--white); padding: 16px 22px; border-left: 4px solid var(--gold); }
-[dir="rtl"] .about-img-badge { right: 20px; border-left: none; border-right: 4px solid var(--gold); }
-[dir="ltr"] .about-img-badge { left: 20px; }
-.about-img-badge strong { display: block; font-family: 'Barlow Condensed', sans-serif; font-size: 34px; font-weight: 900; color: var(--gold); line-height: 1; }
-.about-img-badge span { font-size: 13px; opacity: 0.75; }
-.about-points { list-style: none; margin-top: 28px; display: flex; flex-direction: column; gap: 14px; }
-.about-points li { display: flex; align-items: center; gap: 12px; font-size: 15px; font-weight: 600; color: var(--gray-800); }
-.about-points li i { color: var(--blue); font-size: 16px; }
+#about{background:var(--gray-100)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.about-img-wrap{position:relative;border-radius:10px;overflow:hidden}
+.about-img-wrap img{width:100%;height:420px;object-fit:cover;display:block}
+.about-img-badge{position:absolute;bottom:20px;background:var(--navy);color:var(--white);padding:16px 22px;border-left:4px solid var(--gold)}
+[dir="rtl"] .about-img-badge{right:20px;border-left:none;border-right:4px solid var(--gold)}
+[dir="ltr"] .about-img-badge{left:20px}
+.about-img-badge strong{display:block;font-family:'Barlow Condensed',sans-serif;font-size:34px;font-weight:900;color:var(--gold);line-height:1}
+.about-img-badge span{font-size:13px;opacity:0.75}
+.about-points{list-style:none;margin-top:28px;display:flex;flex-direction:column;gap:14px}
+.about-points li{display:flex;align-items:center;gap:12px;font-size:15px;font-weight:600;color:var(--gray-800)}
+.about-points li i{color:var(--blue);font-size:16px}
 
-/* SERVICES */
-#services { background: var(--white); }
-.services-header { text-align: center; margin-bottom: 56px; }
-.services-header .section-divider { margin: 0 auto 20px; }
-.services-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
-.service-card { background: var(--white); border: 1px solid var(--gray-200); border-radius: 6px; padding: 36px 24px; text-align: center; position: relative; overflow: hidden; transition: all 0.3s; cursor: default; }
-.service-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--blue); transform: scaleX(0); transform-origin: center; transition: transform 0.3s; }
-.service-card:hover { transform: translateY(-6px); box-shadow: 0 16px 40px rgba(10,22,40,0.12); border-color: transparent; }
-.service-card:hover::before { transform: scaleX(1); }
-.service-icon { width: 64px; height: 64px; background: rgba(21,101,192,0.08); color: var(--blue); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 26px; margin: 0 auto 20px; transition: all 0.3s; }
-.service-card:hover .service-icon { background: var(--blue); color: var(--white); }
-.service-title { font-family: 'Barlow Condensed', 'Cairo', sans-serif; font-size: 20px; font-weight: 700; color: var(--navy); margin-bottom: 12px; }
-.service-desc { font-size: 14px; color: var(--text-muted); line-height: 1.7; }
+/* ── SERVICES ── */
+#services{background:var(--white)}
+.services-header{text-align:center;margin-bottom:48px}
+.services-header .section-divider{margin:0 auto 20px}
+.services-img-banner{width:100%;height:260px;object-fit:cover;object-position:center 45%;border-radius:12px;margin-bottom:48px;display:block;box-shadow:0 8px 32px rgba(10,22,40,0.15)}
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.service-card{background:var(--white);border:1px solid var(--gray-200);border-radius:12px;padding:32px 28px;position:relative;overflow:hidden;transition:all 0.35s;cursor:default}
+.service-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--blue),var(--blue-glow));transform:scaleX(0);transform-origin:center;transition:transform 0.35s}
+.service-card:hover{transform:translateY(-8px);box-shadow:0 20px 48px rgba(10,22,40,0.12);border-color:transparent}
+.service-card:hover::before{transform:scaleX(1)}
+.service-icon-wrap{width:60px;height:60px;background:linear-gradient(135deg,rgba(21,101,192,0.1),rgba(33,150,243,0.06));color:var(--blue);border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:24px;margin-bottom:20px;transition:all 0.35s;border:1px solid rgba(21,101,192,0.15)}
+.service-card:hover .service-icon-wrap{background:var(--blue);color:var(--white);box-shadow:0 8px 20px rgba(21,101,192,0.3)}
+.service-title{font-family:'Barlow Condensed','Cairo',sans-serif;font-size:21px;font-weight:700;color:var(--navy);margin-bottom:16px;line-height:1.2}
+.service-bullets{list-style:none;display:flex;flex-direction:column;gap:10px}
+.service-bullets li{display:flex;align-items:flex-start;gap:10px;font-size:14px;color:var(--text-muted);line-height:1.6}
+.service-bullets li::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--blue-glow);flex-shrink:0;margin-top:6px}
+.service-card:hover .service-bullets li::before{background:var(--gold)}
 
-/* PARTNERS */
-#partners { background: var(--navy); padding: 80px 0; }
-.partners-inner { max-width: 1200px; margin: 0 auto; padding: 0 40px; display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: start; }
-.partners-heading { font-family: 'Barlow Condensed', 'Cairo', sans-serif; font-size: 38px; font-weight: 900; color: var(--white); line-height: 1.1; }
-.partners-heading span { color: var(--gold); }
-.partners-sub { color: rgba(255,255,255,0.5); font-size: 15px; margin-top: 12px; line-height: 1.7; }
-.partners-cards { display: flex; flex-direction: column; gap: 20px; }
-.partner-card { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 24px; display: flex; align-items: flex-start; gap: 20px; text-decoration: none; transition: all 0.3s; }
-.partner-card:hover { background: rgba(255,255,255,0.09); border-color: rgba(245,158,11,0.45); transform: translateY(-3px); box-shadow: 0 12px 32px rgba(0,0,0,0.3); }
-.partner-logo-box { width: 80px; height: 80px; flex-shrink: 0; background: var(--white); border-radius: 10px; display: flex; align-items: center; justify-content: center; overflow: hidden; padding: 10px; }
-.partner-logo-text { font-family: 'Barlow Condensed', sans-serif; font-weight: 900; font-size: 18px; text-align: center; line-height: 1.1; }
-.partner-logo-text .sub { font-size: 11px; letter-spacing: 2px; display: block; }
-.partner-info { flex: 1; }
-.partner-name-big { font-family: 'Barlow Condensed', sans-serif; font-size: 22px; font-weight: 900; color: var(--white); letter-spacing: 1px; line-height: 1; }
-.partner-origin { font-size: 11px; font-weight: 700; letter-spacing: 2px; color: var(--gold); margin-top: 4px; display: block; }
-.partner-desc { font-size: 13px; color: rgba(255,255,255,0.55); margin-top: 10px; line-height: 1.65; }
-.partner-visit { display: inline-flex; align-items: center; gap: 6px; margin-top: 12px; font-size: 12px; font-weight: 700; color: rgba(255,255,255,0.35); transition: color 0.2s; }
-.partner-card:hover .partner-visit { color: var(--gold); }
+/* ── BRANDS SECTION — f1automotriz style ── */
+#brands{background:var(--navy);padding:72px 0}
+.brands-inner{max-width:1200px;margin:0 auto;padding:0 40px}
+.brands-heading-row{text-align:center;margin-bottom:48px}
+.brands-eyebrow{display:inline-block;font-size:12px;font-weight:700;letter-spacing:3px;color:var(--gold);text-transform:uppercase;margin-bottom:12px}
+.brands-title{font-family:'Barlow Condensed','Cairo',sans-serif;font-size:clamp(26px,3.5vw,38px);font-weight:900;color:var(--white);line-height:1.1}
+.brands-divider{width:48px;height:3px;background:var(--gold);border-radius:2px;margin:16px auto 0}
 
-/* CLIENTS MARQUEE — direction:ltr fixes RTL disappearing bug */
-#clients { background: var(--gray-100); }
-.marquee-outer {
-  overflow: hidden;
-  margin-top: 48px;
-  direction: ltr;
-  -webkit-mask-image: linear-gradient(90deg, transparent 0%, black 6%, black 94%, transparent 100%);
-  mask-image: linear-gradient(90deg, transparent 0%, black 6%, black 94%, transparent 100%);
+/* Grid of brand logo cards */
+.brands-grid{
+  display:grid;
+  grid-template-columns:repeat(7,1fr);
+  gap:16px;
 }
-.marquee-track {
-  display: flex;
-  gap: 24px;
-  width: max-content;
-  direction: ltr;
-  animation: marquee-scroll 40s linear infinite;
+.brand-card{
+  background:rgba(255,255,255,0.06);
+  border:1px solid rgba(255,255,255,0.1);
+  border-radius:10px;
+  padding:20px 12px;
+  display:flex;flex-direction:column;
+  align-items:center;justify-content:center;
+  gap:10px;
+  transition:all 0.28s;
+  cursor:default;
+  min-height:110px;
 }
-.marquee-track:hover { animation-play-state: paused; }
-@keyframes marquee-scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
-.client-card { flex-shrink: 0; width: 200px; background: var(--white); border: 1px solid var(--gray-200); border-radius: 12px; padding: 24px 16px 20px; display: flex; flex-direction: column; align-items: center; gap: 14px; text-decoration: none; transition: all 0.25s; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
-.client-card:hover { border-color: var(--blue); box-shadow: 0 8px 28px rgba(21,101,192,0.15); transform: translateY(-5px); }
-.client-logo-wrap { width: 88px; height: 88px; background: var(--gray-100); border: 1px solid var(--gray-200); border-radius: 12px; display: flex; align-items: center; justify-content: center; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.06); padding: 10px; }
-.client-logo-wrap img { width: 100%; height: 100%; object-fit: contain; }
-.client-initials { font-family: 'Barlow Condensed', sans-serif; font-size: 26px; font-weight: 900; color: var(--blue); display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; }
-.client-name { font-size: 13px; font-weight: 700; color: var(--gray-600); text-align: center; line-height: 1.4; }
+.brand-card:hover{
+  background:rgba(255,255,255,0.12);
+  border-color:rgba(245,158,11,0.5);
+  transform:translateY(-4px);
+  box-shadow:0 8px 24px rgba(0,0,0,0.3);
+}
+/* Logo image inside card — white on dark */
+.brand-card img{
+  width:64px;height:40px;
+  object-fit:contain;
+  filter:brightness(0) invert(1);
+  opacity:0.85;
+  transition:opacity 0.28s;
+}
+.brand-card:hover img{opacity:1}
+/* Text fallback when no image */
+.brand-wordmark{
+  font-family:'Barlow Condensed',sans-serif;
+  font-size:18px;font-weight:900;
+  letter-spacing:1px;
+  color:rgba(255,255,255,0.85);
+  text-align:center;
+  line-height:1;
+  transition:color 0.28s;
+}
+.brand-card:hover .brand-wordmark{color:var(--white)}
+.brand-sub{font-size:10px;font-weight:600;letter-spacing:1px;color:rgba(255,255,255,0.35);text-align:center}
+
+/* ── PARTNERS ── */
+#partners{background:var(--navy-mid);padding:80px 0}
+.partners-inner{max-width:1200px;margin:0 auto;padding:0 40px;display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.partners-heading{font-family:'Barlow Condensed','Cairo',sans-serif;font-size:38px;font-weight:900;color:var(--white);line-height:1.1}
+.partners-heading span{color:var(--gold)}
+.partners-sub{color:rgba(255,255,255,0.5);font-size:15px;margin-top:12px;line-height:1.7}
+.partners-cards{display:flex;flex-direction:column;gap:20px}
+.partner-card{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:24px;display:flex;align-items:flex-start;gap:20px;text-decoration:none;transition:all 0.3s}
+.partner-card:hover{background:rgba(255,255,255,0.09);border-color:rgba(245,158,11,0.45);transform:translateY(-3px);box-shadow:0 12px 32px rgba(0,0,0,0.3)}
+.partner-logo-box{width:80px;height:80px;flex-shrink:0;background:var(--white);border-radius:10px;display:flex;align-items:center;justify-content:center;overflow:hidden;padding:10px}
+.partner-logo-box img{width:100%;height:100%;object-fit:contain}
+.partner-logo-text{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:18px;text-align:center;line-height:1.1}
+.partner-logo-text .sub{font-size:11px;letter-spacing:2px;display:block}
+.partner-info{flex:1}
+.partner-name-big{font-family:'Barlow Condensed',sans-serif;font-size:22px;font-weight:900;color:var(--white);letter-spacing:1px;line-height:1}
+.partner-origin{font-size:11px;font-weight:700;letter-spacing:2px;color:var(--gold);margin-top:4px;display:block}
+.partner-desc{font-size:13px;color:rgba(255,255,255,0.55);margin-top:10px;line-height:1.65}
+.partner-visit{display:inline-flex;align-items:center;gap:6px;margin-top:12px;font-size:12px;font-weight:700;color:rgba(255,255,255,0.35);transition:color 0.2s}
+.partner-card:hover .partner-visit{color:var(--gold)}
+
+/* ── CLIENTS CAROUSEL ── */
+#clients{background:var(--gray-100);padding:80px 0}
+.clients-carousel-wrap{position:relative;margin-top:48px}
+.clients-track-outer{overflow:hidden;border-radius:12px}
+.clients-track{
+  display:flex;
+  gap:24px;
+  transition:transform 0.45s cubic-bezier(0.25,0.46,0.45,0.94);
+  direction:ltr;
+}
+.client-card{
+  flex:0 0 calc(25% - 18px);
+  background:var(--white);
+  border:1px solid var(--gray-200);
+  border-radius:12px;
+  padding:28px 20px 22px;
+  display:flex;flex-direction:column;
+  align-items:center;gap:14px;
+  text-decoration:none;
+  transition:all 0.25s;
+  box-shadow:0 2px 10px rgba(0,0,0,0.05);
+}
+.client-card:hover{border-color:var(--blue);box-shadow:0 8px 28px rgba(21,101,192,0.15);transform:translateY(-4px)}
+.client-logo-wrap{
+  width:90px;height:90px;
+  background:var(--gray-100);
+  border:1px solid var(--gray-200);
+  border-radius:12px;
+  display:flex;align-items:center;justify-content:center;
+  overflow:hidden;
+  box-shadow:0 2px 8px rgba(0,0,0,0.06);
+  padding:10px;
+}
+.client-logo-wrap img{width:100%;height:100%;object-fit:contain}
+.client-initials{font-family:'Barlow Condensed',sans-serif;font-size:26px;font-weight:900;color:var(--blue);display:flex;align-items:center;justify-content:center;width:100%;height:100%}
+.client-name{font-size:13px;font-weight:700;color:var(--gray-600);text-align:center;line-height:1.4}
+
+/* Carousel nav */
+.carousel-btn{
+  position:absolute;top:50%;transform:translateY(-50%);
+  width:44px;height:44px;border-radius:50%;
+  background:var(--white);border:1px solid var(--gray-200);
+  color:var(--navy);font-size:16px;
+  display:flex;align-items:center;justify-content:center;
+  cursor:pointer;transition:all 0.2s;
+  box-shadow:0 4px 12px rgba(0,0,0,0.1);
+  z-index:10;
+}
+.carousel-btn:hover{background:var(--blue);color:var(--white);border-color:var(--blue)}
+.carousel-btn.prev{right:-22px}
+.carousel-btn.next{left:-22px}
+[dir="ltr"] .carousel-btn.prev{left:-22px;right:auto}
+[dir="ltr"] .carousel-btn.next{right:-22px;left:auto}
+.carousel-dots{display:flex;justify-content:center;gap:8px;margin-top:24px}
+.carousel-dot{width:8px;height:8px;border-radius:50%;background:var(--gray-200);border:none;cursor:pointer;transition:all 0.25s;padding:0}
+.carousel-dot.active{background:var(--blue);width:24px;border-radius:4px}
 
 /* CONTACT */
-#contact { background: var(--navy); }
-.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; }
-.contact-info-title { font-family: 'Barlow Condensed', 'Cairo', sans-serif; font-size: 38px; font-weight: 900; color: var(--white); line-height: 1.1; margin-bottom: 12px; }
-.contact-info-sub { color: rgba(255,255,255,0.5); font-size: 15px; margin-bottom: 36px; line-height: 1.7; }
-.contact-methods { display: flex; flex-direction: column; gap: 14px; margin-bottom: 28px; }
-.contact-method { display: flex; align-items: center; gap: 16px; text-decoration: none; padding: 16px 20px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; transition: all 0.2s; }
-.contact-method:hover { background: rgba(255,255,255,0.09); border-color: rgba(33,150,243,0.4); }
-.contact-method-icon { width: 42px; height: 42px; border-radius: 6px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0; }
-.contact-method-icon.blue { background: rgba(21,101,192,0.3); color: var(--blue-glow); }
-.contact-method-icon.green { background: rgba(37,211,102,0.2); color: #25D366; }
-.contact-method-icon.gold { background: rgba(245,158,11,0.2); color: var(--gold); }
-.contact-method-label { font-size: 12px; color: rgba(255,255,255,0.4); font-weight: 600; display: block; }
-.contact-method-value { font-size: 15px; font-weight: 700; color: var(--white); direction: ltr; display: block; }
-.map-wrap { border-radius: 8px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1); margin-top: 4px; }
-.map-link { display: block; text-align: center; margin-top: 10px; font-size: 13px; color: rgba(255,255,255,0.45); text-decoration: none; transition: color 0.2s; }
-.map-link:hover { color: var(--gold); }
-.contact-form { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 36px; }
-.form-title { font-size: 20px; font-weight: 700; color: var(--white); margin-bottom: 24px; }
-.form-group { margin-bottom: 18px; }
-.form-label { display: block; font-size: 13px; font-weight: 600; color: rgba(255,255,255,0.55); margin-bottom: 8px; }
-.form-input { width: 100%; background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.12); color: var(--white); padding: 12px 16px; border-radius: 4px; font-family: 'Cairo', sans-serif; font-size: 14px; transition: border-color 0.2s; outline: none; }
-.form-input::placeholder { color: rgba(255,255,255,0.25); }
-.form-input:focus { border-color: var(--blue-glow); }
-textarea.form-input { resize: vertical; min-height: 110px; }
-.btn-submit { width: 100%; background: var(--blue-bright); color: var(--white); border: none; border-radius: 4px; padding: 14px 24px; font-family: 'Cairo', sans-serif; font-size: 15px; font-weight: 700; cursor: pointer; transition: all 0.25s; display: flex; align-items: center; justify-content: center; gap: 8px; }
-.btn-submit:hover { background: var(--blue-glow); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(33,150,243,0.3); }
-.form-msg { display: none; padding: 14px 16px; border-radius: 6px; margin-top: 14px; font-size: 14px; font-weight: 600; text-align: center; }
-.form-msg.success { background: rgba(22,163,74,0.15); border: 1px solid rgba(22,163,74,0.4); color: #4ade80; display: block; }
-.form-msg.error { background: rgba(220,38,38,0.15); border: 1px solid rgba(220,38,38,0.4); color: #f87171; display: block; }
+#contact{background:var(--navy)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start}
+.contact-info-title{font-family:'Barlow Condensed','Cairo',sans-serif;font-size:38px;font-weight:900;color:var(--white);line-height:1.1;margin-bottom:12px}
+.contact-info-sub{color:rgba(255,255,255,0.5);font-size:15px;margin-bottom:36px;line-height:1.7}
+.contact-methods{display:flex;flex-direction:column;gap:14px;margin-bottom:28px}
+.contact-method{display:flex;align-items:center;gap:16px;text-decoration:none;padding:16px 20px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);border-radius:8px;transition:all 0.2s}
+.contact-method:hover{background:rgba(255,255,255,0.09);border-color:rgba(33,150,243,0.4)}
+.contact-method-icon{width:42px;height:42px;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}
+.contact-method-icon.blue{background:rgba(21,101,192,0.3);color:var(--blue-glow)}
+.contact-method-icon.green{background:rgba(37,211,102,0.2);color:#25D366}
+.contact-method-icon.gold{background:rgba(245,158,11,0.2);color:var(--gold)}
+.contact-method-label{font-size:12px;color:rgba(255,255,255,0.4);font-weight:600;display:block}
+.contact-method-value{font-size:15px;font-weight:700;color:var(--white);direction:ltr;display:block}
+.map-wrap{border-radius:8px;overflow:hidden;border:1px solid rgba(255,255,255,0.1);margin-top:4px}
+.map-link{display:block;text-align:center;margin-top:10px;font-size:13px;color:rgba(255,255,255,0.45);text-decoration:none;transition:color 0.2s}
+.map-link:hover{color:var(--gold)}
+.contact-form{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:36px}
+.form-title{font-size:20px;font-weight:700;color:var(--white);margin-bottom:24px}
+.form-group{margin-bottom:18px}
+.form-label{display:block;font-size:13px;font-weight:600;color:rgba(255,255,255,0.55);margin-bottom:8px}
+.form-input{width:100%;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);color:var(--white);padding:12px 16px;border-radius:4px;font-family:'Cairo',sans-serif;font-size:14px;transition:border-color 0.2s;outline:none}
+.form-input::placeholder{color:rgba(255,255,255,0.25)}
+.form-input:focus{border-color:var(--blue-glow)}
+.form-input.input-error{border-color:#f87171}
+textarea.form-input{resize:vertical;min-height:110px}
+.field-error{display:none;font-size:12px;color:#f87171;margin-top:6px;font-weight:600}
+.field-error.visible{display:block}
+.btn-submit{width:100%;background:var(--blue-bright);color:var(--white);border:none;border-radius:4px;padding:14px 24px;font-family:'Cairo',sans-serif;font-size:15px;font-weight:700;cursor:pointer;transition:all 0.25s;display:flex;align-items:center;justify-content:center;gap:8px}
+.btn-submit:hover{background:var(--blue-glow);transform:translateY(-2px);box-shadow:0 8px 24px rgba(33,150,243,0.3)}
+.form-msg{display:none;padding:14px 16px;border-radius:6px;margin-top:14px;font-size:14px;font-weight:600;text-align:center}
+.form-msg.success{background:rgba(22,163,74,0.15);border:1px solid rgba(22,163,74,0.4);color:#4ade80;display:block}
+.form-msg.error{background:rgba(220,38,38,0.15);border:1px solid rgba(220,38,38,0.4);color:#f87171;display:block}
 
 /* FOOTER */
-footer { background: var(--navy); border-top: 1px solid rgba(255,255,255,0.07); padding: 24px 40px; }
-.footer-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; }
-.footer-copy { font-size: 13px; color: rgba(255,255,255,0.35); }
-.social-links { display: flex; gap: 10px; }
-.social-link { width: 34px; height: 34px; border-radius: 4px; background: rgba(255,255,255,0.07); color: rgba(255,255,255,0.5); display: flex; align-items: center; justify-content: center; font-size: 14px; text-decoration: none; transition: all 0.2s; }
-.social-link:hover { background: var(--blue); color: var(--white); }
-.social-link.wa:hover { background: #25D366; }
+footer{background:var(--navy);border-top:1px solid rgba(255,255,255,0.07);padding:24px 40px}
+.footer-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between}
+.footer-copy{font-size:13px;color:rgba(255,255,255,0.35)}
+.social-links{display:flex;gap:10px}
+.social-link{width:34px;height:34px;border-radius:4px;background:rgba(255,255,255,0.07);color:rgba(255,255,255,0.5);display:flex;align-items:center;justify-content:center;font-size:14px;text-decoration:none;transition:all 0.2s}
+.social-link:hover{background:var(--blue);color:var(--white)}
+.social-link.wa:hover{background:#25D366}
 
 /* WA FLOAT */
-.wa-float { position: fixed; bottom: 28px; right: 28px; z-index: 200; display: flex; align-items: center; gap: 10px; background: #25D366; color: var(--white); text-decoration: none; padding: 13px 22px; border-radius: 50px; font-size: 15px; font-weight: 700; box-shadow: 0 6px 24px rgba(37,211,102,0.4); transition: all 0.3s; animation: wapulse 3s ease-in-out infinite; }
-body.ltr .wa-float { right: auto; left: 28px; }
-.wa-float:hover { transform: translateY(-3px); box-shadow: 0 10px 32px rgba(37,211,102,0.55); }
-.wa-float i { font-size: 22px; }
-@keyframes wapulse { 0%,100%{box-shadow:0 6px 24px rgba(37,211,102,0.4)} 50%{box-shadow:0 6px 36px rgba(37,211,102,0.7)} }
+.wa-float{position:fixed;bottom:28px;right:28px;z-index:200;display:flex;align-items:center;gap:10px;background:#25D366;color:var(--white);text-decoration:none;padding:13px 22px;border-radius:50px;font-size:15px;font-weight:700;box-shadow:0 6px 24px rgba(37,211,102,0.4);transition:all 0.3s;animation:wapulse 3s ease-in-out infinite}
+body.ltr .wa-float{right:auto;left:28px}
+.wa-float:hover{transform:translateY(-3px);box-shadow:0 10px 32px rgba(37,211,102,0.55)}
+.wa-float i{font-size:22px}
+@keyframes wapulse{0%,100%{box-shadow:0 6px 24px rgba(37,211,102,0.4)}50%{box-shadow:0 6px 36px rgba(37,211,102,0.7)}}
 
 /* ANIMATIONS */
-@keyframes fadeUp { from{opacity:0;transform:translateY(28px)} to{opacity:1;transform:translateY(0)} }
-.hero-badge { animation: fadeUp 0.5s ease both; }
-.hero-title { animation: fadeUp 0.6s ease 0.1s both; }
-.hero-subtitle { animation: fadeUp 0.6s ease 0.2s both; }
-.hero-cta { animation: fadeUp 0.6s ease 0.3s both; }
-.hero-trust { animation: fadeUp 0.6s ease 0.4s both; }
+@keyframes fadeUp{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
+.hero-badge{animation:fadeUp 0.5s ease both}
+.hero-title{animation:fadeUp 0.6s ease 0.1s both}
+.hero-subtitle{animation:fadeUp 0.6s ease 0.2s both}
+.hero-cta{animation:fadeUp 0.6s ease 0.3s both}
+.hero-trust{animation:fadeUp 0.6s ease 0.4s both}
 
 /* RESPONSIVE */
-@media (max-width: 900px) {
-  nav { padding: 0 20px; }
-  .nav-links { display: none; }
-  .btn-whatsapp-nav { display: none; }
-  .mobile-menu-btn { display: block; }
-  .hero-content { grid-template-columns: 1fr; }
-  .hero-trust { display: none; }
-  .about-grid { grid-template-columns: 1fr; }
-  .services-grid { grid-template-columns: repeat(2, 1fr); }
-  .contact-grid { grid-template-columns: 1fr; }
-  .partners-inner { grid-template-columns: 1fr; }
-  .contact-bar { flex-wrap: wrap; gap: 16px; padding: 14px 20px; }
-  .hero-partners-strip { flex-wrap: wrap; }
-  footer { padding: 20px; }
-  .footer-inner { flex-direction: column; gap: 14px; text-align: center; }
-  .section-inner { padding: 0 20px; }
-  .contact-form { padding: 24px; }
+@media(max-width:900px){
+  nav{padding:0 20px}
+  .nav-links{display:none}
+  .btn-wa-nav{display:none}
+  .mobile-menu-btn{display:block}
+  .hero-content{grid-template-columns:1fr}
+  .hero-trust{display:none}
+  .about-grid{grid-template-columns:1fr}
+  .services-grid{grid-template-columns:1fr}
+  .services-img-banner{height:180px}
+  .brands-grid{grid-template-columns:repeat(4,1fr)}
+  .client-card{flex:0 0 calc(50% - 12px)}
+  .contact-grid{grid-template-columns:1fr}
+  .partners-inner{grid-template-columns:1fr}
+  .contact-bar{flex-wrap:wrap;gap:16px;padding:14px 20px}
+  .hero-partners-strip{flex-wrap:wrap}
+  footer{padding:20px}
+  .footer-inner{flex-direction:column;gap:14px;text-align:center}
+  .section-inner{padding:0 20px}
+  .contact-form{padding:24px}
+  .carousel-btn.prev{right:-14px}
+  .carousel-btn.next{left:-14px}
 }
-@media (max-width: 600px) {
-  .services-grid { grid-template-columns: 1fr; }
+@media(max-width:500px){
+  .brands-grid{grid-template-columns:repeat(3,1fr)}
+  .client-card{flex:0 0 calc(100% - 0px)}
 }
 </style>
 </head>
 <body>
 
 <!-- NAV -->
-<nav>
+<nav id="mainNav">
   <a href="#home" class="nav-logo">
     <div class="nav-logo-text">EGY<span>POWER</span></div>
   </a>
   <ul class="nav-links">
-    <li><a href="#home" data-ar="الرئيسية" data-en="Home">الرئيسية</a></li>
-    <li><a href="#about" data-ar="من نحن" data-en="About">من نحن</a></li>
+    <li><a href="#home"    data-ar="الرئيسية"  data-en="Home">الرئيسية</a></li>
+    <li><a href="#about"   data-ar="من نحن"    data-en="About">من نحن</a></li>
     <li><a href="#services" data-ar="خدماتنا" data-en="Services">خدماتنا</a></li>
     <li><a href="#partners" data-ar="وكلاؤنا" data-en="Partners">وكلاؤنا</a></li>
-    <li><a href="#clients" data-ar="عملاؤنا" data-en="Clients">عملاؤنا</a></li>
-    <li><a href="#contact" data-ar="تواصل معنا" data-en="Contact">تواصل معنا</a></li>
+    <li><a href="#clients"  data-ar="عملاؤنا" data-en="Clients">عملاؤنا</a></li>
+    <li><a href="#contact"  data-ar="تواصل معنا" data-en="Contact">تواصل معنا</a></li>
   </ul>
   <div class="nav-actions">
     <button class="btn-lang" onclick="toggleLang()" id="langBtn">EN</button>
-    <a href="https://wa.me/201116998695" target="_blank" class="btn-whatsapp-nav">
+    <a href="https://wa.me/201155507881" target="_blank" class="btn-wa-nav">
       <i class="fa-brands fa-whatsapp"></i>
       <span data-ar="واتساب" data-en="WhatsApp">واتساب</span>
     </a>
@@ -299,14 +381,14 @@ body.ltr .wa-float { right: auto; left: 28px; }
 
 <!-- MOBILE DRAWER -->
 <div id="mobileDrawer">
-  <a href="#home" onclick="toggleMobile()" data-ar="الرئيسية" data-en="Home">الرئيسية</a>
-  <a href="#about" onclick="toggleMobile()" data-ar="من نحن" data-en="About">من نحن</a>
-  <a href="#services" onclick="toggleMobile()" data-ar="خدماتنا" data-en="Services">خدماتنا</a>
-  <a href="#partners" onclick="toggleMobile()" data-ar="وكلاؤنا" data-en="Partners">وكلاؤنا</a>
-  <a href="#clients" onclick="toggleMobile()" data-ar="عملاؤنا" data-en="Clients">عملاؤنا</a>
-  <a href="#contact" onclick="toggleMobile()" data-ar="تواصل معنا" data-en="Contact">تواصل معنا</a>
-  <a href="https://wa.me/201116998695" target="_blank" style="color:#25D366;">
-    <i class="fa-brands fa-whatsapp"></i> +20 111 699 8695
+  <a href="#home"    onclick="toggleMobile()" data-ar="الرئيسية"   data-en="Home">الرئيسية</a>
+  <a href="#about"   onclick="toggleMobile()" data-ar="من نحن"     data-en="About">من نحن</a>
+  <a href="#services" onclick="toggleMobile()" data-ar="خدماتنا"  data-en="Services">خدماتنا</a>
+  <a href="#partners" onclick="toggleMobile()" data-ar="وكلاؤنا"  data-en="Partners">وكلاؤنا</a>
+  <a href="#clients"  onclick="toggleMobile()" data-ar="عملاؤنا"  data-en="Clients">عملاؤنا</a>
+  <a href="#contact"  onclick="toggleMobile()" data-ar="تواصل معنا" data-en="Contact">تواصل معنا</a>
+  <a href="https://wa.me/201155507881" target="_blank" style="color:#25D366;">
+    <i class="fa-brands fa-whatsapp"></i> 01155507881
   </a>
 </div>
 
@@ -332,7 +414,7 @@ body.ltr .wa-float { right: auto; left: 28px; }
           <i class="fa-solid fa-wrench"></i>
           <span data-ar="استكشف خدماتنا" data-en="Explore Services">استكشف خدماتنا</span>
         </a>
-        <a href="https://wa.me/201116998695" target="_blank" class="btn-secondary" style="border-color:rgba(37,211,102,0.5);color:#25D366;">
+        <a href="https://wa.me/201155507881" target="_blank" class="btn-secondary" style="border-color:rgba(37,211,102,0.5);color:#25D366;">
           <i class="fa-brands fa-whatsapp"></i>
           <span data-ar="تواصل عبر واتساب" data-en="Chat on WhatsApp">تواصل عبر واتساب</span>
         </a>
@@ -378,10 +460,10 @@ body.ltr .wa-float { right: auto; left: 28px; }
 
 <!-- CONTACT BAR -->
 <div class="contact-bar">
-  <a href="tel:+201116998695" class="contact-bar-item"><i class="fa-solid fa-phone"></i> +20 111 699 8695</a>
-  <a href="https://wa.me/201116998695" target="_blank" class="contact-bar-item"><i class="fa-brands fa-whatsapp" style="color:#25D366"></i> WhatsApp</a>
-  <a href="mailto:egypower@gmail.com" class="contact-bar-item"><i class="fa-solid fa-envelope"></i> egypower@gmail.com</a>
-  <a href="https://maps.app.goo.gl/9scowmYLTC28GRVq7" target="_blank" class="contact-bar-item"><i class="fa-solid fa-location-dot"></i> El Matareya, Cairo</a>
+  <a href="tel:+201155507881" class="contact-bar-item"><i class="fa-solid fa-phone"></i> 01155507881</a>
+  <a href="https://wa.me/201155507881" target="_blank" class="contact-bar-item"><i class="fa-brands fa-whatsapp" style="color:#25D366"></i> WhatsApp</a>
+  <a href="mailto:egypoweregypower@gmail.com" class="contact-bar-item"><i class="fa-solid fa-envelope"></i> egypoweregypower@gmail.com</a>
+  <a href="https://maps.app.goo.gl/egypower" target="_blank" class="contact-bar-item"><i class="fa-solid fa-location-dot"></i> <span data-ar="المطرية، القاهرة" data-en="El Matareya, Cairo">المطرية، القاهرة</span></a>
 </div>
 
 <!-- ABOUT -->
@@ -389,6 +471,7 @@ body.ltr .wa-float { right: auto; left: 28px; }
   <div class="section-inner">
     <div class="about-grid">
       <div class="about-img-wrap">
+        <!-- Replace src with: logos/main.jpg once deployed -->
         <img src="https://images.unsplash.com/photo-1530046339160-ce3e530c7d2f?q=80&w=2070&auto=format&fit=crop" alt="Egypower Workshop">
         <div class="about-img-badge">
           <strong>25+</strong>
@@ -416,31 +499,100 @@ body.ltr .wa-float { right: auto; left: 28px; }
   <div class="section-inner">
     <div class="services-header">
       <div class="section-tag" data-ar="ما نقدمه" data-en="WHAT WE OFFER">ما نقدمه</div>
-      <h2 class="section-title" data-ar="خدماتنا المتكاملة" data-en="Our Services">خدماتنا المتكاملة</h2>
+      <h2 class="section-title" data-ar="خدماتنا المتخصصة" data-en="Our Specialized Services">خدماتنا المتخصصة</h2>
       <div class="section-divider"></div>
+      <p class="section-desc" style="margin:0 auto;text-align:center;" data-ar="نقدم حلولاً متكاملة لصيانة ومعايرة منظومة الحقن في محركات الديزل الثقيلة." data-en="Comprehensive maintenance and calibration for heavy diesel injection systems.">نقدم حلولاً متكاملة لصيانة ومعايرة منظومة الحقن في محركات الديزل الثقيلة.</p>
     </div>
+
+    <!-- Service image banner — replace src with logos/1.jpg through logos/7.jpg as needed -->
+    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2070&auto=format&fit=crop"
+         class="services-img-banner"
+         alt="Diesel injection components – Egypower">
+
     <div class="services-grid">
       <div class="service-card">
-        <div class="service-icon"><i class="fa-solid fa-wrench"></i></div>
-        <div class="service-title" data-ar="صيانة الديزل" data-en="Diesel Maintenance">صيانة الديزل</div>
-        <p class="service-desc" data-ar="تشخيص وإصلاح كامل لمحركات الديزل الثقيلة باستخدام أحدث التقنيات والأدوات المتخصصة." data-en="Full diagnostics and repair for heavy diesel engines using state-of-the-art tools and techniques.">تشخيص وإصلاح كامل لمحركات الديزل الثقيلة باستخدام أحدث التقنيات والأدوات المتخصصة.</p>
+        <div class="service-icon-wrap"><i class="fa-solid fa-gauge-high"></i></div>
+        <div class="service-title" data-ar="ضبط واختبار طلمبات الديزل" data-en="Diesel Pump Calibration">ضبط واختبار طلمبات الديزل</div>
+        <ul class="service-bullets">
+          <li data-ar="معايرة دقيقة لمعدلات التدفق وتوقيت الحقن لضمان أعلى كفاءة للمحرك." data-en="Precise flow rate and injection timing adjustment for peak engine efficiency.">معايرة دقيقة لمعدلات التدفق وتوقيت الحقن لضمان أعلى كفاءة للمحرك.</li>
+          <li data-ar="إعادة تأهيل الطلمبات لمواصفات المصنع لتقليل استهلاك الوقود والانبعاثات." data-en="Restoring pumps to OEM specs to reduce fuel consumption and emissions.">إعادة تأهيل الطلمبات لمواصفات المصنع لتقليل استهلاك الوقود والانبعاثات.</li>
+        </ul>
       </div>
       <div class="service-card">
-        <div class="service-icon"><i class="fa-solid fa-boxes-stacked"></i></div>
-        <div class="service-title" data-ar="قطع غيار مستوردة" data-en="Imported Spare Parts">قطع غيار مستوردة</div>
-        <p class="service-desc" data-ar="قطع غيار أصلية عالية الجودة مستوردة مباشرة من المصنّع، مع ضمان الجودة والأصالة لجميع الأنواع." data-en="High-quality genuine parts imported directly from manufacturers, with quality and authenticity guaranteed.">قطع غيار أصلية عالية الجودة مستوردة مباشرة من المصنّع، مع ضمان الجودة والأصالة لجميع الأنواع.</p>
+        <div class="service-icon-wrap"><i class="fa-solid fa-spray-can-sparkles"></i></div>
+        <div class="service-title" data-ar="صيانة ومعايرة رشاشات الديزل" data-en="Diesel Injector Service">صيانة ومعايرة رشاشات الديزل</div>
+        <ul class="service-bullets">
+          <li data-ar="تنظيف بالموجات فوق الصوتية واختبار نمط الرش لضمان احتراق مثالي." data-en="Ultrasonic cleaning and spray pattern testing for optimal combustion.">تنظيف بالموجات فوق الصوتية واختبار نمط الرش لضمان احتراق مثالي.</li>
+          <li data-ar="ضبط ضغط الفتح لجميع أنواع الرشاشات لضمان سلاسة تشغيل المحرك." data-en="Adjusting opening pressure for all injector types for smooth engine operation.">ضبط ضغط الفتح لجميع أنواع الرشاشات لضمان سلاسة تشغيل المحرك.</li>
+        </ul>
       </div>
       <div class="service-card">
-        <div class="service-icon"><i class="fa-solid fa-gauge-high"></i></div>
-        <div class="service-title" data-ar="ضبط الطلمبات" data-en="Pump Calibration">ضبط الطلمبات</div>
-        <p class="service-desc" data-ar="معايرة دقيقة لطلمبات الديزل باستخدام أجهزة Boten المتخصصة لتحقيق أقصى كفاءة في استهلاك الوقود." data-en="Precision calibration of diesel pumps using Boten specialized devices to maximize fuel efficiency.">معايرة دقيقة لطلمبات الديزل باستخدام أجهزة Boten المتخصصة لتحقيق أقصى كفاءة في استهلاك الوقود.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon"><i class="fa-solid fa-microchip"></i></div>
-        <div class="service-title" data-ar="وحدات الحقن" data-en="Injection Units">وحدات الحقن</div>
-        <p class="service-desc" data-ar="ضبط واختبار احترافي لوحدات وأنظمة حقن الديزل الحديثة بما فيها أنظمة Common Rail." data-en="Professional adjustment and testing of modern diesel injection units and systems including Common Rail.">ضبط واختبار احترافي لوحدات وأنظمة حقن الديزل الحديثة بما فيها أنظمة Common Rail.</p>
+        <div class="service-icon-wrap"><i class="fa-solid fa-microchip"></i></div>
+        <div class="service-title" data-ar="وحدات حقن الديزل (EUI / EUP)" data-en="Diesel Injection Units (EUI / EUP)">وحدات حقن الديزل (EUI / EUP)</div>
+        <ul class="service-bullets">
+          <li data-ar="صيانة واختبار وحدات الحقن الإلكترونية الخاصة بالشاحنات والمعدات الثقيلة." data-en="Specialized maintenance for electronic unit injectors in trucks and heavy machinery.">صيانة واختبار وحدات الحقن الإلكترونية الخاصة بالشاحنات والمعدات الثقيلة.</li>
+          <li data-ar="محاكاة ظروف التشغيل القاسية لضمان كفاءة الأداء تحت الأحمال العالية." data-en="Load testing to ensure full performance under extreme operating conditions.">محاكاة ظروف التشغيل القاسية لضمان كفاءة الأداء تحت الأحمال العالية.</li>
+        </ul>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- BRANDS — f1automotriz style dark grid -->
+<section id="brands">
+  <div class="brands-inner">
+    <div class="brands-heading-row">
+      <div class="brands-eyebrow" data-ar="قطع الغيار التي نعتمدها" data-en="PARTS WE WORK WITH">قطع الغيار التي نعتمدها</div>
+      <h2 class="brands-title" data-ar="علامات عالمية موثوقة" data-en="Trusted Global Brands">علامات عالمية موثوقة</h2>
+      <div class="brands-divider"></div>
+    </div>
+
+    <!-- 7 brand cards — replace src with logos/bosch.png etc when available -->
+    <div class="brands-grid">
+
+      <div class="brand-card">
+        <!-- logos/bosch.png -->
+        <div class="brand-wordmark" style="color:#E8271B;font-size:22px;">BOSCH</div>
+        <div class="brand-sub">Germany</div>
+      </div>
+
+      <div class="brand-card">
+        <!-- logos/delphi.png -->
+        <div class="brand-wordmark">DELPHI</div>
+        <div class="brand-sub">USA</div>
+      </div>
+
+      <div class="brand-card">
+        <!-- logos/cat.png -->
+        <div class="brand-wordmark" style="color:#FFCD11;font-size:26px;">CAT</div>
+        <div class="brand-sub">Caterpillar</div>
+      </div>
+
+      <div class="brand-card">
+        <!-- logos/zexel.png -->
+        <div class="brand-wordmark">ZEXEL</div>
+        <div class="brand-sub">Japan</div>
+      </div>
+
+      <div class="brand-card">
+        <!-- logos/denso.png -->
+        <div class="brand-wordmark" style="color:#00AEEF;">DENSO</div>
+        <div class="brand-sub">Japan</div>
+      </div>
+
+      <div class="brand-card">
+        <!-- logos/cummins.png -->
+        <div class="brand-wordmark" style="color:#F37021;">CUMMINS</div>
+        <div class="brand-sub">USA</div>
+      </div>
+
+      <div class="brand-card">
+        <!-- logos/stanadyne.png -->
+        <div class="brand-wordmark" style="font-size:14px;">STANADYNE</div>
+        <div class="brand-sub">USA</div>
+      </div>
+
+    </div><!-- /brands-grid -->
   </div>
 </section>
 
@@ -450,11 +602,12 @@ body.ltr .wa-float { right: auto; left: 28px; }
     <div>
       <div class="section-tag" style="background:rgba(245,158,11,0.15);border-color:rgba(245,158,11,0.3);color:var(--gold-light);" data-ar="شركاؤنا" data-en="OUR PARTNERS">شركاؤنا</div>
       <h2 class="partners-heading"><span data-ar="وكلاء حصريون" data-en="Exclusive">وكلاء حصريون</span><br><span style="color:var(--gold)" data-ar="لعلامات عالمية" data-en="Global Partners">لعلامات عالمية</span></h2>
-      <p class="partners-sub" data-ar="نمثل أفضل العلامات التجارية العالمية في مجال معدات الديزل وأجهزة المعايرة — الأجهزة التي يثق بها محترفو الديزل في الصين وتركيا وعبر العالم." data-en="We represent the world's top brands in diesel equipment and calibration tools — the devices trusted by diesel professionals across China, Turkey, and beyond.">نمثل أفضل العلامات التجارية العالمية في مجال معدات الديزل وأجهزة المعايرة — الأجهزة التي يثق بها محترفو الديزل في الصين وتركيا وعبر العالم.</p>
+      <p class="partners-sub" data-ar="نمثل أفضل العلامات التجارية العالمية في مجال معدات الديزل وأجهزة المعايرة — الأجهزة التي يثق بها محترفو الديزل في الصين وتركيا وعبر العالم." data-en="We represent the world's top brands in diesel equipment and calibration tools — trusted by professionals across China, Turkey, and beyond.">نمثل أفضل العلامات التجارية العالمية في مجال معدات الديزل وأجهزة المعايرة — الأجهزة التي يثق بها محترفو الديزل في الصين وتركيا وعبر العالم.</p>
     </div>
     <div class="partners-cards">
       <a href="https://www.boten-diesel.com/" target="_blank" class="partner-card">
         <div class="partner-logo-box">
+          <!-- logos/boten.png -->
           <div class="partner-logo-text" style="color:#1565C0;">BOTEN<span class="sub" style="color:#F59E0B;">DIESEL</span></div>
         </div>
         <div class="partner-info">
@@ -466,6 +619,7 @@ body.ltr .wa-float { right: auto; left: 28px; }
       </a>
       <a href="https://deqpa.com.tr/" target="_blank" class="partner-card">
         <div class="partner-logo-box">
+          <!-- logos/deqpa.png -->
           <div class="partner-logo-text" style="color:#DC2626;">DEQPA</div>
         </div>
         <div class="partner-info">
@@ -479,35 +633,111 @@ body.ltr .wa-float { right: auto; left: 28px; }
   </div>
 </section>
 
-<!-- CLIENTS -->
+<!-- CLIENTS CAROUSEL -->
 <section id="clients">
   <div class="section-inner">
     <div class="section-tag" data-ar="من نخدم" data-en="WHO WE SERVE">من نخدم</div>
     <h2 class="section-title" data-ar="عملاؤنا المميزون" data-en="Our Valued Clients">عملاؤنا المميزون</h2>
     <div class="section-divider"></div>
-    <p class="section-desc" data-ar="نفخر بخدمة أكبر شركات المقاولات والبناء في مصر والمنطقة — شركات تثق بنا لإبقاء آلياتها تعمل بلا توقف." data-en="We're proud to serve Egypt's and the region's largest construction companies — companies that trust us to keep their machinery running without interruption.">نفخر بخدمة أكبر شركات المقاولات والبناء في مصر والمنطقة — شركات تثق بنا لإبقاء آلياتها تعمل بلا توقف.</p>
+    <p class="section-desc" data-ar="نفخر بخدمة أكبر شركات المقاولات والبناء في مصر والمنطقة." data-en="Proudly serving Egypt's largest construction and contracting companies.">نفخر بخدمة أكبر شركات المقاولات والبناء في مصر والمنطقة.</p>
   </div>
-  <div class="marquee-outer" style="margin-top:40px;">
-    <div class="marquee-track">
-      <a href="https://www.hassanallam.com/" target="_blank" class="client-card"><div class="client-logo-wrap"><img src="https://www.google.com/s2/favicons?domain=hassanallam.com&sz=64" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="client-initials" style="display:none">HA</span></div><div class="client-name">Hassan Allam Holding</div></a>
-      <a href="https://www.arabcont.com/" target="_blank" class="client-card"><div class="client-logo-wrap"><img src="https://www.google.com/s2/favicons?domain=arabcont.com&sz=64" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="client-initials" style="display:none">AC</span></div><div class="client-name">Arab Contractors</div></a>
-      <a href="https://elhazek.com/" target="_blank" class="client-card"><div class="client-logo-wrap"><img src="https://www.google.com/s2/favicons?domain=elhazek.com&sz=64" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="client-initials" style="display:none">AH</span></div><div class="client-name">Al Hazek Construction</div></a>
-      <a href="https://ess.petrojet.com.eg" target="_blank" class="client-card"><div class="client-logo-wrap"><img src="https://www.google.com/s2/favicons?domain=petrojet.com.eg&sz=64" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="client-initials" style="display:none">PJ</span></div><div class="client-name">Petrojet</div></a>
-      <a href="https://www.asgcgroup.com/" target="_blank" class="client-card"><div class="client-logo-wrap"><img src="https://www.google.com/s2/favicons?domain=asgcgroup.com&sz=64" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="client-initials" style="display:none">AG</span></div><div class="client-name">ASGC</div></a>
-      <a href="http://www.daralmimar.com/" target="_blank" class="client-card"><div class="client-logo-wrap"><img src="https://www.google.com/s2/favicons?domain=daralmimar.com&sz=64" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="client-initials" style="display:none">DM</span></div><div class="client-name">Dar Al Mimar</div></a>
-      <a href="https://www.linkedin.com/company/apex-constructions-decoration/" target="_blank" class="client-card"><div class="client-logo-wrap"><span class="client-initials">AP</span></div><div class="client-name">Apex Construction</div></a>
-      <a href="https://www.linkedin.com/company/abu-gemeaa/" target="_blank" class="client-card"><div class="client-logo-wrap"><span class="client-initials">AG</span></div><div class="client-name">Abu Gemeaa Group</div></a>
-      <div class="client-card" style="cursor:default;"><div class="client-logo-wrap"><span class="client-initials">KC</span></div><div class="client-name">Kerv Construction</div></div>
-      <!-- clone for infinite loop -->
-      <a href="https://www.hassanallam.com/" target="_blank" class="client-card"><div class="client-logo-wrap"><img src="https://www.google.com/s2/favicons?domain=hassanallam.com&sz=64" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="client-initials" style="display:none">HA</span></div><div class="client-name">Hassan Allam Holding</div></a>
-      <a href="https://www.arabcont.com/" target="_blank" class="client-card"><div class="client-logo-wrap"><img src="https://www.google.com/s2/favicons?domain=arabcont.com&sz=64" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="client-initials" style="display:none">AC</span></div><div class="client-name">Arab Contractors</div></a>
-      <a href="https://elhazek.com/" target="_blank" class="client-card"><div class="client-logo-wrap"><img src="https://www.google.com/s2/favicons?domain=elhazek.com&sz=64" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="client-initials" style="display:none">AH</span></div><div class="client-name">Al Hazek Construction</div></a>
-      <a href="https://ess.petrojet.com.eg" target="_blank" class="client-card"><div class="client-logo-wrap"><img src="https://www.google.com/s2/favicons?domain=petrojet.com.eg&sz=64" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="client-initials" style="display:none">PJ</span></div><div class="client-name">Petrojet</div></a>
-      <a href="https://www.asgcgroup.com/" target="_blank" class="client-card"><div class="client-logo-wrap"><img src="https://www.google.com/s2/favicons?domain=asgcgroup.com&sz=64" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="client-initials" style="display:none">AG</span></div><div class="client-name">ASGC</div></a>
-      <a href="http://www.daralmimar.com/" target="_blank" class="client-card"><div class="client-logo-wrap"><img src="https://www.google.com/s2/favicons?domain=daralmimar.com&sz=64" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="client-initials" style="display:none">DM</span></div><div class="client-name">Dar Al Mimar</div></a>
-      <a href="https://www.linkedin.com/company/apex-constructions-decoration/" target="_blank" class="client-card"><div class="client-logo-wrap"><span class="client-initials">AP</span></div><div class="client-name">Apex Construction</div></a>
-      <a href="https://www.linkedin.com/company/abu-gemeaa/" target="_blank" class="client-card"><div class="client-logo-wrap"><span class="client-initials">AG</span></div><div class="client-name">Abu Gemeaa Group</div></a>
-      <div class="client-card" style="cursor:default;"><div class="client-logo-wrap"><span class="client-initials">KC</span></div><div class="client-name">Kerv Construction</div></div>
+
+  <div class="section-inner" style="padding-top:0">
+    <div class="clients-carousel-wrap">
+      <!-- Prev button -->
+      <button class="carousel-btn prev" onclick="carouselMove(-1)" aria-label="Previous">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+      <!-- Next button -->
+      <button class="carousel-btn next" onclick="carouselMove(1)" aria-label="Next">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+
+      <div class="clients-track-outer">
+        <div class="clients-track" id="clientsTrack">
+
+          <!-- Card 1 — replace img src with logos/hassan-allam.png -->
+          <a href="https://www.hassanallam.com/" target="_blank" class="client-card">
+            <div class="client-logo-wrap">
+              <img src="https://www.google.com/s2/favicons?domain=hassanallam.com&sz=64" alt="Hassan Allam"
+                   onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <span class="client-initials" style="display:none">HA</span>
+            </div>
+            <div class="client-name">Hassan Allam Holding</div>
+          </a>
+
+          <!-- Card 2 -->
+          <a href="https://www.arabcont.com/" target="_blank" class="client-card">
+            <div class="client-logo-wrap">
+              <img src="https://www.google.com/s2/favicons?domain=arabcont.com&sz=64" alt="Arab Contractors"
+                   onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <span class="client-initials" style="display:none">AC</span>
+            </div>
+            <div class="client-name">Arab Contractors</div>
+          </a>
+
+          <!-- Card 3 -->
+          <a href="https://elhazek.com/" target="_blank" class="client-card">
+            <div class="client-logo-wrap">
+              <img src="https://www.google.com/s2/favicons?domain=elhazek.com&sz=64" alt="Al Hazek"
+                   onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <span class="client-initials" style="display:none">AH</span>
+            </div>
+            <div class="client-name">Al Hazek Construction</div>
+          </a>
+
+          <!-- Card 4 -->
+          <a href="https://ess.petrojet.com.eg" target="_blank" class="client-card">
+            <div class="client-logo-wrap">
+              <img src="https://www.google.com/s2/favicons?domain=petrojet.com.eg&sz=64" alt="Petrojet"
+                   onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <span class="client-initials" style="display:none">PJ</span>
+            </div>
+            <div class="client-name">Petrojet</div>
+          </a>
+
+          <!-- Card 5 -->
+          <a href="https://www.asgcgroup.com/" target="_blank" class="client-card">
+            <div class="client-logo-wrap">
+              <img src="https://www.google.com/s2/favicons?domain=asgcgroup.com&sz=64" alt="ASGC"
+                   onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <span class="client-initials" style="display:none">AG</span>
+            </div>
+            <div class="client-name">ASGC</div>
+          </a>
+
+          <!-- Card 6 -->
+          <a href="http://www.daralmimar.com/" target="_blank" class="client-card">
+            <div class="client-logo-wrap">
+              <img src="https://www.google.com/s2/favicons?domain=daralmimar.com&sz=64" alt="Dar Al Mimar"
+                   onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <span class="client-initials" style="display:none">DM</span>
+            </div>
+            <div class="client-name">Dar Al Mimar</div>
+          </a>
+
+          <!-- Card 7 -->
+          <a href="https://www.linkedin.com/company/apex-constructions-decoration/" target="_blank" class="client-card">
+            <div class="client-logo-wrap"><span class="client-initials">AP</span></div>
+            <div class="client-name">Apex Construction</div>
+          </a>
+
+          <!-- Card 8 -->
+          <a href="https://www.linkedin.com/company/abu-gemeaa/" target="_blank" class="client-card">
+            <div class="client-logo-wrap"><span class="client-initials">AG</span></div>
+            <div class="client-name">Abu Gemeaa Group</div>
+          </a>
+
+          <!-- Card 9 -->
+          <div class="client-card" style="cursor:default;">
+            <div class="client-logo-wrap"><span class="client-initials">KC</span></div>
+            <div class="client-name">Kerv Construction</div>
+          </div>
+
+        </div><!-- /clients-track -->
+      </div><!-- /clients-track-outer -->
+
+      <div class="carousel-dots" id="carouselDots"></div>
     </div>
   </div>
 </section>
@@ -521,52 +751,57 @@ body.ltr .wa-float { right: auto; left: 28px; }
         <h2 class="contact-info-title" data-ar="نحن هنا لخدمتكم" data-en="We're Here For You">نحن هنا لخدمتكم</h2>
         <p class="contact-info-sub" data-ar="تواصل معنا للاستفسار عن الخدمات أو طلب عرض أسعار لقطع الغيار. فريقنا متاح لمساعدتك." data-en="Contact us for service inquiries or spare parts quotations. Our team is ready to help.">تواصل معنا للاستفسار عن الخدمات أو طلب عرض أسعار لقطع الغيار. فريقنا متاح لمساعدتك.</p>
         <div class="contact-methods">
-          <a href="https://wa.me/201116998695" target="_blank" class="contact-method">
+          <a href="https://wa.me/201155507881" target="_blank" class="contact-method">
             <div class="contact-method-icon green"><i class="fa-brands fa-whatsapp"></i></div>
-            <div><span class="contact-method-label">WhatsApp</span><span class="contact-method-value">+20 111 699 8695</span></div>
+            <div><span class="contact-method-label">WhatsApp</span><span class="contact-method-value">01155507881</span></div>
           </a>
-          <a href="tel:+201116998695" class="contact-method">
+          <a href="tel:+201155507881" class="contact-method">
             <div class="contact-method-icon blue"><i class="fa-solid fa-phone"></i></div>
-            <div><span class="contact-method-label" data-ar="هاتف" data-en="Phone">هاتف</span><span class="contact-method-value">+20 111 699 8695</span></div>
+            <div><span class="contact-method-label" data-ar="هاتف" data-en="Phone">هاتف</span><span class="contact-method-value">01155507881</span></div>
           </a>
-          <a href="mailto:egypower@gmail.com" class="contact-method">
+          <a href="mailto:egypoweregypower@gmail.com" class="contact-method">
             <div class="contact-method-icon gold"><i class="fa-solid fa-envelope"></i></div>
-            <div><span class="contact-method-label" data-ar="بريد إلكتروني" data-en="Email">بريد إلكتروني</span><span class="contact-method-value">egypower@gmail.com</span></div>
+            <div><span class="contact-method-label" data-ar="بريد إلكتروني" data-en="Email">بريد إلكتروني</span><span class="contact-method-value">egypoweregypower@gmail.com</span></div>
           </a>
-          <a href="https://maps.app.goo.gl/9scowmYLTC28GRVq7" target="_blank" class="contact-method">
+          <a href="https://www.google.com/maps/place/Egypower/@30.114623,31.2868993,17z" target="_blank" class="contact-method">
             <div class="contact-method-icon" style="background:rgba(255,255,255,0.08);color:rgba(255,255,255,0.6);"><i class="fa-solid fa-location-dot"></i></div>
-            <div><span class="contact-method-label" data-ar="العنوان" data-en="Address">العنوان</span><span class="contact-method-value" style="font-size:13px;" data-ar="الإزبة، المطرية، القاهرة 4530001" data-en="Al Izab, El Matareya, Cairo 4530001">الإزبة، المطرية، القاهرة 4530001</span></div>
+            <div><span class="contact-method-label" data-ar="العنوان" data-en="Address">العنوان</span><span class="contact-method-value" style="font-size:13px;" data-ar="ايجى باور للطلمبات، المطرية، القاهرة" data-en="Egypower Diesel, El Matareya, Cairo">ايجى باور للطلمبات، المطرية، القاهرة</span></div>
           </a>
         </div>
         <div class="map-wrap">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.4567!2d31.308916!3d30.121957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583e2be5555555%3A0x0!2zMzDCsDA3JzE5LjEiTiAzMcKwMTgnMzIuMSJF!5e0!3m2!1sar!2seg!4v1709400000000!5m2!1sar!2seg"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d868.3!2d31.2868993!3d30.114623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14581522e50123e5%3A0x4fdcce9e9a5f1aa1!2z2KfZitqp2Yog2KjYp9mI2LEg2YTZhNi32YTZhdi52KfYqg!5e0!3m2!1sar!2seg!4v1709400000000!5m2!1sar!2seg"
             width="100%" height="230" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
-        <a href="https://maps.app.goo.gl/9scowmYLTC28GRVq7" target="_blank" class="map-link">
+        <a href="https://www.google.com/maps/place/Egypower/@30.114623,31.2868993,17z" target="_blank" class="map-link">
           <i class="fa-solid fa-diamond-turn-right"></i>
           <span data-ar="فتح في خرائط Google" data-en="Open in Google Maps">فتح في خرائط Google</span>
         </a>
       </div>
+
       <div class="contact-form">
         <div class="form-title" data-ar="أرسل رسالتك" data-en="Send Us a Message">أرسل رسالتك</div>
-        <form id="contactForm" onsubmit="handleSubmit(event)">
+        <form id="contactForm" novalidate onsubmit="handleSubmit(event)">
           <input type="hidden" name="_subject" value="New inquiry from Egypower website">
           <div class="form-group">
-            <label class="form-label" data-ar="الاسم الكامل" data-en="Full Name">الاسم الكامل</label>
-            <input type="text" name="name" class="form-input" placeholder="..." required>
+            <label class="form-label" for="f-name" data-ar="الاسم الكامل *" data-en="Full Name *">الاسم الكامل *</label>
+            <input type="text" id="f-name" name="name" class="form-input" placeholder="...">
+            <div class="field-error" id="err-name" data-ar="يرجى إدخال اسمك الكامل." data-en="Please enter your full name.">يرجى إدخال اسمك الكامل.</div>
           </div>
           <div class="form-group">
-            <label class="form-label" data-ar="رقم الهاتف" data-en="Phone Number">رقم الهاتف</label>
-            <input type="tel" name="phone" class="form-input" placeholder="+20...">
+            <label class="form-label" for="f-phone" data-ar="رقم الهاتف" data-en="Phone Number">رقم الهاتف</label>
+            <input type="tel" id="f-phone" name="phone" class="form-input" placeholder="01...">
+            <div class="field-error" id="err-phone" data-ar="رقم الهاتف غير صحيح." data-en="Phone number is invalid.">رقم الهاتف غير صحيح.</div>
           </div>
           <div class="form-group">
-            <label class="form-label" data-ar="البريد الإلكتروني" data-en="Email Address">البريد الإلكتروني</label>
-            <input type="email" name="email" class="form-input" placeholder="...">
+            <label class="form-label" for="f-email" data-ar="البريد الإلكتروني" data-en="Email Address">البريد الإلكتروني</label>
+            <input type="email" id="f-email" name="email" class="form-input" placeholder="...">
+            <div class="field-error" id="err-email" data-ar="يرجى إدخال بريد إلكتروني صحيح." data-en="Please enter a valid email address.">يرجى إدخال بريد إلكتروني صحيح.</div>
           </div>
           <div class="form-group">
-            <label class="form-label" data-ar="الرسالة" data-en="Message">الرسالة</label>
-            <textarea name="message" class="form-input" placeholder="..." required></textarea>
+            <label class="form-label" for="f-msg" data-ar="الرسالة *" data-en="Message *">الرسالة *</label>
+            <textarea id="f-msg" name="message" class="form-input" placeholder="..."></textarea>
+            <div class="field-error" id="err-msg" data-ar="يرجى كتابة رسالتك (10 أحرف على الأقل)." data-en="Please write your message (at least 10 characters).">يرجى كتابة رسالتك (10 أحرف على الأقل).</div>
           </div>
           <button type="submit" class="btn-submit" id="submitBtn">
             <i class="fa-solid fa-paper-plane"></i>
@@ -584,7 +819,7 @@ body.ltr .wa-float { right: auto; left: 28px; }
   <div class="footer-inner">
     <div class="footer-copy" data-ar="© Egypower 2026 – جميع الحقوق محفوظة." data-en="© Egypower 2026 – All Rights Reserved.">© Egypower 2026 – جميع الحقوق محفوظة.</div>
     <div class="social-links">
-      <a href="https://wa.me/201116998695" target="_blank" class="social-link wa"><i class="fa-brands fa-whatsapp"></i></a>
+      <a href="https://wa.me/201155507881" target="_blank" class="social-link wa"><i class="fa-brands fa-whatsapp"></i></a>
       <a href="#" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
       <a href="#" class="social-link"><i class="fa-brands fa-linkedin-in"></i></a>
     </div>
@@ -592,12 +827,13 @@ body.ltr .wa-float { right: auto; left: 28px; }
 </footer>
 
 <!-- WA FLOAT -->
-<a href="https://wa.me/201116998695" target="_blank" class="wa-float">
+<a href="https://wa.me/201155507881" target="_blank" class="wa-float">
   <i class="fa-brands fa-whatsapp"></i>
   <span data-ar="تواصل الآن" data-en="Chat Now">تواصل الآن</span>
 </a>
 
 <script>
+/* ─── Language ─── */
 let lang = 'ar';
 
 function toggleLang() {
@@ -610,40 +846,138 @@ function toggleLang() {
   document.querySelectorAll('[data-ar]').forEach(el => {
     el.textContent = isAr ? el.getAttribute('data-ar') : el.getAttribute('data-en');
   });
+  // Update any visible field errors to new language
+  document.querySelectorAll('.field-error.visible').forEach(el => {
+    el.textContent = isAr ? el.getAttribute('data-ar') : el.getAttribute('data-en');
+  });
+  // Rebuild carousel for new direction
+  initCarousel();
 }
 
 function toggleMobile() {
   document.getElementById('mobileDrawer').classList.toggle('open');
 }
 
+/* ─── Carousel ─── */
+let carouselIndex = 0;
+const VISIBLE = 4; // cards visible at once
+
+function initCarousel() {
+  const track = document.getElementById('clientsTrack');
+  const cards = track.querySelectorAll('.client-card');
+  const total = cards.length;
+  const pages = Math.ceil(total / VISIBLE);
+  carouselIndex = 0;
+  moveCarousel(0);
+
+  // Dots
+  const dotsEl = document.getElementById('carouselDots');
+  dotsEl.innerHTML = '';
+  for (let i = 0; i < pages; i++) {
+    const d = document.createElement('button');
+    d.className = 'carousel-dot' + (i === 0 ? ' active' : '');
+    d.setAttribute('aria-label', 'Go to page ' + (i+1));
+    d.onclick = () => { carouselIndex = i; moveCarousel(i); };
+    dotsEl.appendChild(d);
+  }
+}
+
+function moveCarousel(idx) {
+  const track = document.getElementById('clientsTrack');
+  const cards = track.querySelectorAll('.client-card');
+  const total = cards.length;
+  const pages = Math.ceil(total / VISIBLE);
+
+  // Clamp
+  carouselIndex = Math.max(0, Math.min(idx, pages - 1));
+
+  // Calculate card width + gap dynamically
+  const cardWidth = cards[0].getBoundingClientRect().width || 200;
+  const gap = 24;
+  const offset = carouselIndex * (VISIBLE * (cardWidth + gap));
+
+  // RTL — reverse direction
+  const isRtl = document.documentElement.getAttribute('dir') === 'rtl';
+  track.style.transform = isRtl
+    ? `translateX(${offset}px)`
+    : `translateX(-${offset}px)`;
+
+  // Update dots
+  document.querySelectorAll('.carousel-dot').forEach((d, i) => {
+    d.classList.toggle('active', i === carouselIndex);
+  });
+}
+
+function carouselMove(dir) {
+  const track = document.getElementById('clientsTrack');
+  const total = track.querySelectorAll('.client-card').length;
+  const pages = Math.ceil(total / VISIBLE);
+  const isRtl = document.documentElement.getAttribute('dir') === 'rtl';
+  // In RTL, left arrow (next) should go forward in index, right arrow (prev) backward
+  const step = isRtl ? -dir : dir;
+  carouselIndex = (carouselIndex + step + pages) % pages;
+  moveCarousel(carouselIndex);
+}
+
+window.addEventListener('load', initCarousel);
+window.addEventListener('resize', () => moveCarousel(carouselIndex));
+
+/* ─── Form validation ─── */
+function showError(fieldId, errId, show) {
+  const inp = document.getElementById(fieldId);
+  const err = document.getElementById(errId);
+  inp.classList.toggle('input-error', show);
+  err.classList.toggle('visible', show);
+  if (show) err.textContent = lang === 'ar' ? err.getAttribute('data-ar') : err.getAttribute('data-en');
+}
+
+function validateForm() {
+  let ok = true;
+  const name = document.getElementById('f-name').value.trim();
+  if (name.length < 2) { showError('f-name','err-name',true); ok=false; } else showError('f-name','err-name',false);
+  const phone = document.getElementById('f-phone').value.trim();
+  if (phone && !/^[+\d\s\-()]{7,20}$/.test(phone)) { showError('f-phone','err-phone',true); ok=false; } else showError('f-phone','err-phone',false);
+  const email = document.getElementById('f-email').value.trim();
+  if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { showError('f-email','err-email',true); ok=false; } else showError('f-email','err-email',false);
+  const msg = document.getElementById('f-msg').value.trim();
+  if (msg.length < 10) { showError('f-msg','err-msg',true); ok=false; } else showError('f-msg','err-msg',false);
+  return ok;
+}
+
+['f-name','f-phone','f-email','f-msg'].forEach(id => {
+  const errMap = {'f-name':'err-name','f-phone':'err-phone','f-email':'err-email','f-msg':'err-msg'};
+  document.getElementById(id).addEventListener('input', () => showError(id, errMap[id], false));
+});
+
 async function handleSubmit(e) {
   e.preventDefault();
+  if (!validateForm()) return;
   const btn = document.getElementById('submitBtn');
   const msg = document.getElementById('formMsg');
   msg.className = 'form-msg';
   btn.disabled = true;
-  btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> ' + (lang === 'ar' ? 'جاري الإرسال...' : 'Sending...');
+  btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> ' + (lang==='ar' ? 'جاري الإرسال...' : 'Sending...');
   try {
     const res = await fetch('https://formspree.io/f/mgopkbbe', {
-      method: 'POST',
-      body: new FormData(e.target),
-      headers: { 'Accept': 'application/json' }
+      method:'POST', body:new FormData(e.target), headers:{'Accept':'application/json'}
     });
     if (res.ok) {
-      msg.textContent = lang === 'ar' ? 'تم إرسال رسالتك بنجاح! سنتواصل معك قريباً.' : "Message sent! We'll be in touch soon.";
+      msg.textContent = lang==='ar' ? 'تم إرسال رسالتك بنجاح! سنتواصل معك قريباً.' : "Message sent! We'll be in touch soon.";
       msg.className = 'form-msg success';
       e.target.reset();
-    } else { throw new Error('failed'); }
+      ['f-name','f-phone','f-email','f-msg'].forEach(id => showError(id, id.replace('f-','err-'), false));
+    } else throw new Error();
   } catch {
-    msg.textContent = lang === 'ar' ? 'حدث خطأ، يرجى المحاولة مرة أخرى أو التواصل عبر واتساب.' : 'Something went wrong. Please try WhatsApp instead.';
+    msg.textContent = lang==='ar' ? 'حدث خطأ. يرجى التواصل عبر واتساب.' : 'Something went wrong. Please try WhatsApp.';
     msg.className = 'form-msg error';
   }
   btn.disabled = false;
-  btn.innerHTML = '<i class="fa-solid fa-paper-plane"></i> <span>' + (lang === 'ar' ? 'إرسال الرسالة' : 'Send Message') + '</span>';
+  btn.innerHTML = '<i class="fa-solid fa-paper-plane"></i> <span>' + (lang==='ar' ? 'إرسال الرسالة' : 'Send Message') + '</span>';
 }
 
+/* ─── Nav shadow on scroll ─── */
 window.addEventListener('scroll', () => {
-  document.querySelector('nav').style.boxShadow = window.scrollY > 20 ? '0 4px 24px rgba(0,0,0,0.4)' : 'none';
+  document.getElementById('mainNav').style.boxShadow = window.scrollY > 20 ? '0 4px 24px rgba(0,0,0,0.4)' : 'none';
 });
 window.addEventListener('resize', () => {
   if (window.innerWidth > 900) document.getElementById('mobileDrawer').classList.remove('open');
