@@ -359,8 +359,8 @@ section{padding:80px 0}
    CLIENTS CAROUSEL — fixed navigation
 ══════════════════════════════════════════ */
 #clients{background:var(--gray-100);padding:80px 0}
-.carousel-wrap{position:relative;margin-top:48px}
-.carousel-viewport{overflow:hidden;border-radius:12px;padding:4px 0}
+.carousel-wrap{position:relative;margin-top:48px;width:100%}
+.carousel-viewport{overflow:hidden;border-radius:12px;padding:4px 0;width:100%}
 .carousel-track{
   display:flex;gap:20px;
   transition:transform 0.45s cubic-bezier(0.25,0.46,0.45,0.94);
@@ -510,7 +510,13 @@ body.ltr .wa-float{right:auto;left:28px}
 }
 @media(max-width:600px){
   .brands-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .client-card{flex:0 0 100%}
+  /* One client card per slide — width matches viewport so carousel JS step matches visible card */
+  .client-card{
+    flex:0 0 100%;
+    min-width:100%;
+    max-width:100%;
+    box-sizing:border-box;
+  }
   .brands-inner{padding:0 20px}
   .partners-inner{padding:0 20px}
 }

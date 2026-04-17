@@ -71,42 +71,51 @@ function updateSlideshowArrows() {
 }
 
 /* ─── CLIENTS CAROUSEL ─── */
-const CARDS_PER_PAGE = 4;
+/** Must match CSS: 1 card (≤600px), 2 cards (≤900px), 4 cards (desktop). */
+function getClientsCardsPerPage() {
+  const w = window.innerWidth;
+  if (w <= 600) return 1;
+  if (w <= 900) return 2;
+  return 4;
+}
+
 let carouselPage = 0;
 
 function buildCarousel() {
   const track = document.getElementById('carouselTrack');
+  if (!track) return;
   const cards = Array.from(track.querySelectorAll('.client-card'));
   const total = cards.length;
-  const pages = Math.ceil(total / CARDS_PER_PAGE);
-  carouselPage = 0;
-  track.style.transform = 'translateX(0)';
+  const cpp = getClientsCardsPerPage();
+  const pages = Math.ceil(total / cpp) || 1;
+  carouselPage = Math.max(0, Math.min(carouselPage, pages - 1));
 
   const dotsEl = document.getElementById('carouselDots');
   dotsEl.innerHTML = '';
   for (let i = 0; i < pages; i++) {
     const d = document.createElement('button');
-    d.className = 'carousel-dot' + (i === 0 ? ' active' : '');
+    d.className = 'carousel-dot' + (i === carouselPage ? ' active' : '');
     d.setAttribute('aria-label', 'Go to page ' + (i + 1));
     d.onclick = () => goCarousel(i);
     dotsEl.appendChild(d);
   }
   updateCarouselBtns(pages);
+  goCarousel(carouselPage);
 }
 
 function goCarousel(page) {
   const track = document.getElementById('carouselTrack');
   const cards = Array.from(track.querySelectorAll('.client-card'));
   const total = cards.length;
-  const pages = Math.ceil(total / CARDS_PER_PAGE);
+  const cpp = getClientsCardsPerPage();
+  const pages = Math.ceil(total / cpp) || 1;
 
   carouselPage = Math.max(0, Math.min(page, pages - 1));
 
-  // Measure card + gap
-  const card  = cards[0];
-  const gap   = 20;
-  const cardW = card.getBoundingClientRect().width || 200;
-  const offset = carouselPage * CARDS_PER_PAGE * (cardW + gap);
+  const card = cards[0];
+  const gap = 20;
+  const cardW = card ? card.getBoundingClientRect().width || 200 : 200;
+  const offset = carouselPage * cpp * (cardW + gap);
   track.style.transform = `translateX(-${offset}px)`;
 
   document.querySelectorAll('.carousel-dot').forEach((d, i) => {
@@ -118,7 +127,8 @@ function goCarousel(page) {
 function carouselStep(dir) {
   const track = document.getElementById('carouselTrack');
   const total = track.querySelectorAll('.client-card').length;
-  const pages = Math.ceil(total / CARDS_PER_PAGE);
+  const cpp = getClientsCardsPerPage();
+  const pages = Math.ceil(total / cpp) || 1;
   goCarousel((carouselPage + dir + pages) % pages);
 }
 
@@ -265,7 +275,7 @@ window.addEventListener('DOMContentLoaded', () => {
   initBrandLogoFallbacks();
 });
 window.addEventListener('resize', () => {
-  goCarousel(carouselPage);
+  buildCarousel();
   if (window.innerWidth > 900) document.getElementById('mobileDrawer').classList.remove('open');
 });
 window.addEventListener('scroll', () => {
