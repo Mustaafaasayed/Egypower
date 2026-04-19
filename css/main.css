@@ -492,6 +492,7 @@ body.ltr .wa-float{right:auto;left:28px}
 
 /* ── RESPONSIVE ── */
 @media(max-width:900px){
+  #home{ min-height:90vh; }
   nav{padding:0 20px}
   .nav-links,.btn-wa-nav{display:none}
   .mobile-menu-btn{display:block}
@@ -509,6 +510,7 @@ body.ltr .wa-float{right:auto;left:28px}
   .services-slideshow{height:260px}
 }
 @media(max-width:600px){
+  .partner-logo-box{ width:80px; height:80px; }
   .brands-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
   /* One client card per slide — width matches viewport so carousel JS step matches visible card */
   .client-card{
